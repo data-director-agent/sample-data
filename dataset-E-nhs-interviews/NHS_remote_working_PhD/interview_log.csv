@@ -1,0 +1,26 @@
+participant_code,interview_date,duration_min,role_group,trust,working_pattern,consent_form_initialled,withdrawal_requested,recording_deleted
+P01,2026-02-05,56,Clinical manager,Trust C,Compressed hours,1;2;3;4;5;6,,yes
+P02,2026-02-05,55,Nurse,Trust A,Compressed hours,1;2;3;4;5;6,,yes
+P03,2026-02-11,49,Allied health professional,Trust A,Hybrid 3 days home,1;2;3;4;5;6,,yes
+P04,2026-02-12,55,Clinical manager,Trust B,Hybrid 1-2 days home,1;2;3;4;5;6,,yes
+P05,2026-02-15,52,Doctor,Trust C,Compressed hours,1;2;3;4;5;6,,yes
+P06,2026-02-17,62,Healthcare scientist,Trust C,Hybrid 1-2 days home,1;2;3;4;5;6,,yes
+P07,2026-03-03,52,Nurse,Trust B,Shift work,1;2;3;4;5;6,,yes
+P08,2026-02-25,50,Nurse,Trust B,On site,1;2;3;4;5;6,,yes
+P09,2026-02-17,50,Doctor,Trust B,Shift work,1;2;3;4;5;6,2026-03-03,yes
+P10,2026-03-02,51,Allied health professional,Trust C,Remote,1;2;3;4;5;6,,yes
+P11,2026-03-06,47,Nurse,Trust B,Hybrid 1-2 days home,1;2;3;4;5;6,,yes
+P12,2026-03-17,47,Allied health professional,Trust B,Hybrid 1-2 days home,1;2;3;4;5;6,,yes
+P13,2026-03-10,47,Clinical manager,Trust B,Compressed hours,1;2;3;4;5;6,,yes
+P14,2026-03-26,58,Allied health professional,Trust C,Compressed hours,1;2;3;4;6,,yes
+P15,2026-03-16,46,Allied health professional,Trust A,On site,1;2;3;4;5;6,,yes
+P16,2026-03-19,47,Clinical manager,Trust C,Remote,1;2;3;4;5;6,,yes
+P17,2026-03-21,56,Nurse,Trust C,Remote,1;2;3;4;5;6,,yes
+P18,2026-03-26,48,Allied health professional,Trust B,Shift work,1;2;3;4;5;6,,yes
+P19,2026-03-24,53,Allied health professional,Trust B,On site,1;2;3;4;5;6,2026-05-05,yes
+P20,2026-03-30,53,Healthcare scientist,Trust B,Shift work,1;2;3;4;5;6,,yes
+P21,2026-04-09,45,Clinical manager,Trust A,Hybrid 1-2 days home,1;2;3;4;5;6,,yes
+P22,2026-04-05,53,Allied health professional,Trust C,Shift work,1;2;3;4;5;6,,no
+P23,2026-04-09,46,Doctor,Trust B,Remote,1;2;3;4;5;6,,no
+P24,2026-04-11,49,Nurse,Trust A,Remote,1;2;3;4;5;6,,yes
+P25,2026-04-16,56,Clinical manager,Trust B,Hybrid 1-2 days home,1;2;3;4;5;6,,yes

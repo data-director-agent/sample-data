@@ -6,7 +6,7 @@ Example synthetic data sets for testing the Data Director AI Agent prototypes, u
 
 ## Contents
 
-Four small datasets, each shaped like a folder a researcher might genuinely inherit.
+Five small datasets, each shaped like a folder a researcher might genuinely inherit.
 
 | Dataset | Discipline | Format |
 |---|---|---|
@@ -14,6 +14,7 @@ Four small datasets, each shaped like a folder a researcher might genuinely inhe
 | **B. Perovskite XRD and SEM** | Materials physics | ASCII scans, PNG, INI, text |
 | **C. Community wellbeing survey** | Social and health science | CSV, text |
 | **D. Cylinder flow simulation** | Computational science (HPC) | YAML, SLURM logs, CSV, Python |
+| **E. NHS staff interviews** | Social science, health services | Text, CSV |
 
 Pick the one closest to your own discipline. Verify every claim an AI tool makes against the files themselves.
 
