@@ -1,0 +1,16 @@
+Sun 20 Oct 2024 11:33:03 BST
+Job 3129693 starting on node150
+lbm2d v0.4-dev  nx=800 ny=400 Re=40 tau=0.8000  u_inf=0.05
+step       0  rho_min=0.99209  rho_max=1.00790
+step   10000  rho_min=0.99202  rho_max=1.00799
+step   20000  rho_min=0.99204  rho_max=1.00797
+step   30000  rho_min=0.99203  rho_max=1.00793
+step   40000  rho_min=0.99203  rho_max=1.00798
+step   50000  rho_min=0.99204  rho_max=1.00796
+step   60000  rho_min=0.99207  rho_max=1.00797
+step   70000  rho_min=0.99200  rho_max=1.00799
+step   80000  rho_min=0.99209  rho_max=1.00792
+step   90000  rho_min=0.99202  rho_max=1.00798
+step  100000  rho_min=0.99205  rho_max=1.00793
+step  110000  rho_min=0.99208  rho_max=1.00795
+Run completed normally.

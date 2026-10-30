@@ -1,0 +1,13 @@
+# cylinder flow
+re: 100
+nx: 800
+ny: 400
+cylinder_d: 80
+u_inf: 0.05
+steps: 120000
+output_every: 200
+collision: trt
+magic_parameter: 0.1875
+bc_inlet: zou_he
+bc_outlet: convective
+seed: 6774

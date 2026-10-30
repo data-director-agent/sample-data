@@ -1,0 +1,12 @@
+ELN EXPORT - pages 14-17 (A. Novak)       [exported to text, formatting lost]
+Project: Mn-doped CsPbBr3 films for stable emitters      Funder: EPSRC  EP/X999999/1 (fictional)
+Group: Example University Dept of Physics & Astronomy (fictional)
+
+p14  Batch B1 precursors supplied by Acme Perovskite Ltd (industrial partner) under the collaboration agreement. B2, B3 made in-house (glovebox).
+p14  Films spin-coated on glass, 100C 10 min. Mn nominal, NOT measured (no EDX yet).
+p15  XRD 'a' scans on the 4th/5th Dec. Cu source. Aligned with the Si standard on the 3rd - peak was ~0.03 deg low, did not correct the data.
+p15  S5a and S6b header says 1.5418, everything else 1.5406. Different export settings? check. Some files came off the other PC with no header at all.
+p16  'b' scans (6 Jan) = same films after ~30 days in ambient air, unencapsulated (~40-50% RH, room T). S6b obviously degraded.
+p16  SEM on the 4th. Did not save scale bars in the images, magnifications in session.ini. Images 7 and 8 got muddled, don't remember which sample.
+p17  Collaboration agreement: Acme has first right of review for 90 days before any publication or deposit of B1-derived results. Patent filing under discussion. DO NOT share B1 composition details until cleared.
+p17  Need to ask Dr S. Haldane (PI) whether data go in the institutional repository or somewhere else.

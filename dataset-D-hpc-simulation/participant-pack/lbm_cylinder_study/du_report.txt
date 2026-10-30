@@ -1,0 +1,5 @@
+$ du -sh /mnt/parscratch/users/aca21xy/lbm/*/fields
+ 61G  /mnt/parscratch/users/aca21xy/lbm/run_001/fields
+ ...
+218G  /mnt/parscratch/users/aca21xy/lbm/run_012/fields
+total 2.1T

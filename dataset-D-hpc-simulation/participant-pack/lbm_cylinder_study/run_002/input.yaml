@@ -1,0 +1,12 @@
+# cylinder flow
+re: 40
+nx: 400
+ny: 200
+cylinder_d: 40
+u_inf: 0.05
+steps: 60000
+output_every: 100
+collision: bgk
+bc_inlet: zou_he
+bc_outlet: convective
+seed: 8102

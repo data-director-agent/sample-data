@@ -1,0 +1,7 @@
+Mon 21 Oct 2024 09:13:03 BST
+Job 3129973 starting on node121
+lbm2d v0.4-dev  nx=800 ny=400 Re=60 tau=0.7000  u_inf=0.05
+step       0  rho_min=0.99205  rho_max=1.00797
+step   10000  rho_min=0.99202  rho_max=1.00794
+step   20000  rho_min=0.99205  rho_max=1.00800
+slurmstepd: error: Detected 1 oom_kill event in StepId=3129973.0. Some of the step tasks have been OOM Killed.

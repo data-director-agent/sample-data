@@ -1,0 +1,7 @@
+Sample,Mn (%),Batch,Anneal,Notes
+S1,0,B1,"100C 10min",pure
+S2,1,B1,100C 10min,
+S3,2,B2,"100 C / 10 mins",
+S4,5,B2,"100C 10min",repeat scan needed?
+S5,10,B3,100C 10 min,"slightly yellow"
+S6,15,B3,"100C, 10min","impurity?? check ageing"
