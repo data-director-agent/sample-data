@@ -1,4 +1,4 @@
-# sample-data
+# Data Director Sample Data
 
 Example synthetic data sets for testing the Data Director AI Agent prototypes, used in the Data Stewards Network workshop *Agentic AI for Research Data Management* (University of Sheffield, 24 November 2026).
 
