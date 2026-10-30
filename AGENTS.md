@@ -12,6 +12,7 @@ This repository must not contain any workshop activities or exercises. It only c
 dataset-{A..E}-*/
   README.md       # Participant-facing description
   crib-sheet.md   # Answer key: planted problems and true answers
+  SHA256SUMS      # Checksums of the inherited folder; regenerate after any change
   <inherited folder>/   # The messy folder participants are given
 ```
 
@@ -20,8 +21,5 @@ dataset-{A..E}-*/
 - Everything must stay synthetic: people, organisations, grant numbers, credentials, quotes. Never add real data.
 - The inherited folders are deliberately flawed. Do not "fix" inconsistencies, odd names or missing files; they are planted problems.
 - If you change an inherited folder, update that dataset's `crib-sheet.md` to match, and the README table if the contents change.
+- Update `CHANGELOG.md` for notable changes.
 - Keep README.md free of participant-facing hints about planted problems; those belong only in crib sheets.
-
-## Known Staleness
-
-The root `README.md` "Layout" section still mentions `participant-packs/` and `scenario-cards/`, which were removed in recent commits. Fix it if you touch the README.

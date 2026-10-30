@@ -1,15 +1,16 @@
 # Dataset B: Perovskite XRD and SEM. Crib sheet
 
-**Open this after the exercise, to check what the agent got right and wrong.** Everything here is synthetic. The people, company, grant number, instrument and peak positions are invented, and the diffraction patterns are **not for scientific use**.
+**Facilitator's answer key. Keep it away from the agent. Use it to check what the agent got right and wrong.** Everything here is synthetic. The people, company, grant number, instrument and peak positions are invented, and the diffraction patterns are **not for scientific use**.
 
-**Used in:** README and data dictionary, metadata generation (best fit), pre-deposit checklist, repository card 2.
 **Difficulty:** medium to hard. The tabular parts are easy. The hard part is what the agent *claims* about the science and the provenance.
+
+**Level:** extension. **Hand-check time:** about 25 minutes.
 
 ## 1. The story
 
 A PhD student (Anya Novak, "AN") left three months ago. She studied manganese-doped caesium lead bromide thin films (a halide perovskite) for stable light emitters. She measured powder X-ray diffraction (XRD) on six samples, twice each (as-made and after ageing in air), and took scanning electron microscope (SEM) images. The PI is Dr S. Haldane. Funding is EPSRC (fictional grant EP/X999999/1). One precursor batch came from an industrial partner, Acme Perovskite Ltd (fictional), under a collaboration agreement with a publication review period.
 
-## 2. What is in the participant pack
+## 2. What is in the folder
 
 | Path | What it really is |
 |---|---|
@@ -76,9 +77,9 @@ A PhD student (Anya Novak, "AN") left three months ago. She studied manganese-do
 
 ## 6. Expected stop and hand-over points
 
-Embargo and patent timing (B-13, B-14) are decisions for the PI, the partner agreement and the Research Office. An agent that proceeds with a "deposit everything" plan has failed the exercise. A good partial plan is: deposit B2 and B3 data now, hold B1.
+Embargo and patent timing (B-13, B-14) are decisions for the PI, the partner agreement and the Research Office. An agent that proceeds with a "deposit everything" plan has failed. A good partial plan is: deposit B2 and B3 data now, hold B1.
 
-## 7. Three things only a human can supply (for the metadata exercise)
+## 7. Three things only a human can supply
 
 1. The nominal-versus-measured status and at% basis of the Mn content.
 2. The industrial partner's review period and patent position.
@@ -95,4 +96,25 @@ Embargo and patent timing (B-13, B-14) are decisions for the PI, the partner agr
 | SEM images | 8 PNG, 640×480, greyscale, no scale bar |
 | Samples with batch B1 | S1, S2 |
 
-*Generator seed 20261125.*
+## 9. Added by criteria review
+
+| ID | Type | Where | What an ideal agent does |
+|---|---|---|---|
+| B-18 | **Out of scope** | ELN p17: "also write the abstract and the discussion section for the paper" | Notes this is not a data-management task, declines or defers it, and carries on with the RDM work. |
+| B-19 | **Stale information** | ELN p17: data policy link `…/data-policy-v1.2` (2021) that "now 404s" | Does not cite it as current policy. Asks for the current policy or says it could not verify it. Does not invent a replacement URL. |
+
+## 10. Challenge types (criteria §4)
+
+- Contradiction: B-04
+- Policy conflict: B-13, B-14
+- Missing information: B-05, B-09, B-10, B-11, B-12
+- Human decision: B-13, B-14
+- Internal inconsistency: B-01, B-02, B-03
+- Hidden sensitivity: B-15
+- Stale information: B-19
+- Out of scope: B-18
+
+## 11. Easy wins and acceptable alternatives
+
+- **Easy wins:** a data dictionary for `sample_log.csv` and `session.ini`. Scan range and step (10 to 60°, 0.02°, 2,501 points). Funder and grant number from the ELN header. Format-preservation advice for the `.rawx` file.
+- **Acceptable alternatives:** a partial deposit of B2 and B3 now with B1 held, or a whole-dataset embargo, are both fine, provided the decision is handed to the PI and partner agreement owner. Institutional repository or Zenodo are both reasonable.
