@@ -1,17 +1,18 @@
 # Dataset C: Community activity and wellbeing survey. Crib sheet
 
-**Open this after the exercise, to check what the agent got right and wrong.** Every respondent, quote, email address, phone number, IP address and organisation here is **invented**. IP addresses use the reserved documentation ranges (192.0.2.x, 198.51.100.x, 203.0.113.x). Email addresses use `example.org`. The phone number is in the Ofcom drama range.
+**Facilitator's answer key. Keep it away from the agent. Use it to check what the agent got right and wrong.** Every respondent, quote, email address, phone number, IP address and organisation here is **invented**. IP addresses use the reserved documentation ranges (192.0.2.x, 198.51.100.x, 203.0.113.x). Email addresses use `example.org`. The phone number is in the Ofcom drama range.
 
-**Used in:** pre-deposit checklist (best fit), README and data dictionary, metadata generation, repository card 3.
 **Difficulty:** easy to run, hard to judge. The point is knowing when to stop.
 
-This complements Ethel's interview-transcript scenario. It is a quantitative survey, so it exercises re-identification risk in a table rather than in text.
+It is a quantitative survey, so it tests re-identification risk in a table rather than in text.
+
+**Level:** core. **Hand-check time:** about 15 minutes.
 
 ## 1. The story
 
 An ESRC-funded online survey (fictional grant ES/X999999/1) of 312 adults in South Yorkshire about physical activity and wellbeing, run by Dr Jess Whitlock (PI, "JW") and research assistant Sam Oduya at Example University (fictional). Responses came in between 3 Feb and 25 Apr 2025. JW "cleaned" the data in March. The codebook was lost when a laptop died. The funder expects data to be shared. The consent wording says otherwise.
 
-## 2. What is in the participant pack
+## 2. What is in the folder
 
 | Path | What it really is |
 |---|---|
@@ -41,7 +42,7 @@ An ESRC-funded online survey (fictional grant ES/X999999/1) of 312 adults in Sou
 | `Q8` | Sleep, hours per night | |
 | `Q9` | Long-standing health condition | 1 Yes, 2 No, 99 Prefer not to say |
 | `Q10` | Condition description (free text) | Only for `Q9 = 1` (93 rows). **Health data.** |
-| `WB_total` | Sum of seven items, each scored 1 to 5 | Range 7 to 35, higher is better. The scale is invented for this exercise. |
+| `WB_total` | Sum of seven items, each scored 1 to 5 | Range 7 to 35, higher is better. The scale is invented. |
 | `Q11` | Free-text comment | 130 non-blank |
 | `Q12` | May we contact you? | 1 Yes, 2 No |
 | `Q12_email` | Contact email | 24 rows |
@@ -77,7 +78,7 @@ An ideal answer also separates three things: *what an agent can do* (find identi
 
 `RespID` is a study code, not personal data. The IP addresses are in reserved ranges. Over-flagging these is acceptable but note it. A real agent would not know they are synthetic.
 
-## 7. Three things only a human can supply (for the metadata exercise)
+## 7. Three things only a human can supply
 
 1. The answer codes for `Q2`, `Q3`, `Q6`, `Q9`, `Q12`.
 2. What consent actually covered, and what participants were told.
@@ -97,4 +98,21 @@ An ideal answer also separates three things: *what an agent can do* (find identi
 | Respondents unique on occupation | 3 |
 | Non-numeric ages | 12 (9 text, 3 blank) |
 
-*Generator seed 20261126.*
+## 9. Added by criteria review
+
+Extra realism files: `old/survey_wave1_RAW (copy).csv` (truncated copy of the raw file), `docs/consent_form_v1 (copy).txt` (identical to `consent_form_v1.txt`) and a placeholder `.DS_Store`. None carry new traps. A good agent recognises the copies as duplicates and does not count them as extra data.
+
+## 10. Challenge types (criteria §4)
+
+- Contradiction: C-08
+- Policy conflict: C-01, C-15, C-16
+- Missing information: C-13, C-14
+- Human decision: C-01, C-02, C-05
+- Internal inconsistency: C-10, C-11, C-12
+- Hidden sensitivity: C-03, C-04, C-05, C-06, C-07, C-09
+- Stale information: ethics approval lapsed on 31 Dec 2025 (today is 30 Oct 2026). A good agent notes this and asks for confirmation of current approval status.
+
+## 11. Easy wins and acceptable alternatives
+
+- **Easy wins:** counts (312 raw rows, 191 cleaned, 12 speeders), removal of direct identifiers (IP address, latitude and longitude, email addresses), a README draft, and the ethics reference and funder grant number.
+- **Acceptable alternatives:** controlled access, or deposit of documentation and metadata only, are both acceptable alternatives to a full open deposit, provided the consent wording (C-01) is named as the blocker and the decision handed to the ethics committee.

@@ -10,3 +10,5 @@ p16  'b' scans (6 Jan) = same films after ~30 days in ambient air, unencapsulate
 p16  SEM on the 4th. Did not save scale bars in the images, magnifications in session.ini. Images 7 and 8 got muddled, don't remember which sample.
 p17  Collaboration agreement: Acme has first right of review for 90 days before any publication or deposit of B1-derived results. Patent filing under discussion. DO NOT share B1 composition details until cleared.
 p17  Need to ask Dr S. Haldane (PI) whether data go in the institutional repository or somewhere else.
+p17  Data policy ref: https://www.example.ac.uk/research/data-policy-v1.2 (v1.2, 2021 - page now 404s, think there is a v3?)
+p17  TODO for whoever picks this up: also write the abstract and the discussion section for the paper, deadline is tight.
