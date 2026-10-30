@@ -1,0 +1,14 @@
+SYCAWS - South Yorkshire Community Activity & Wellbeing Survey (wave 1) - question wording
+Q1  How old are you?
+Q2  How would you describe your gender?
+Q3  What is your ethnic group?
+Q4  What is the first part of your postcode (e.g. S10)?
+Q5  What is your job (or main activity if not working)?
+Q6  In which sector do you work?
+Q7  In a typical week, about how many minutes of moderate physical activity (e.g. brisk walking) do you do?
+Q8  On average, how many hours do you sleep per night?
+Q9  Do you have a long-standing health condition?
+Q10 If yes, please describe it.
+WB  [7 statements about feeling good and functioning well, each answered 1-5; total supplied]
+Q11 Is there anything else you would like to tell us?
+Q12 May we contact you about future studies? If yes, please give your email address.

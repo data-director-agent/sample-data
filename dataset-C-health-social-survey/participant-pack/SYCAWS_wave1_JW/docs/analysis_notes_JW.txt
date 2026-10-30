@@ -1,0 +1,7 @@
+JW notes - March
+- Dropped the speeders (< 90 s). Exported 'cleaned' on 31 March; April responses not yet added, need to redo.
+- 99 = prefer not to say (all questions, careful with age!)
+- Collapsed Q3 into 3 groups for the models.
+- WB total = sum of the 7 items. Higher is better.
+- TODO: finish the codebook, lost the old one when the laptop died. Ask Sam.
+- TODO: delete IP addresses before sharing with Sam

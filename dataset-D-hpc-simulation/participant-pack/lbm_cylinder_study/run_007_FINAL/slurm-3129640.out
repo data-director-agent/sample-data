@@ -1,0 +1,10 @@
+Mon 21 Oct 2024 12:40:03 BST
+Job 3129640 starting on node181
+lbm2d v0.4-dev  nx=800 ny=400 Re=20 tau=1.1000  u_inf=0.05
+step       0  rho_min=0.99204  rho_max=1.00799
+step   10000  rho_min=0.99205  rho_max=1.00798
+step   20000  rho_min=0.99206  rho_max=1.00796
+step   30000  rho_min=0.99200  rho_max=1.00794
+step   40000  rho_min=0.99205  rho_max=1.00792
+step   50000  rho_min=0.99205  rho_max=1.00790
+slurmstepd: error: *** JOB 3129640 ON node181 CANCELLED AT 2024-10-21T16:40:09 DUE TO TIME LIMIT ***

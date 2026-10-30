@@ -1,0 +1,7 @@
+run log - MO (2024)
+- 400 grid first, then 800 to check resolution
+- 7 never finished (time limit, asked for 4h by mistake), 9 OOM at nx=800 -> reran with fewer ranks (retry)
+- 11 blew up, 11b is the good one (changed something in the collision step, check input)
+- fields not copied back, too big, still on parscratch (see du_report.txt)
+- St from FFT of Cl, second half of the run. results_summary.csv done by hand, double check.
+- TODO README, licence for the code, tidy up

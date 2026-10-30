@@ -1,0 +1,16 @@
+HALLAM MOOR FIELD NOTES (DW) - 2024-25
+=====================================
+24/02/2024  Collected the 3 nodes from the lab. Loggers set to local time (they follow BST). Dan W. + Aroha F. (07700 900123 / 07700 900456)
+26 Feb 24   Calibrated T sensors in the ice bath, offsets in the spreadsheet. N03 looks odd, rechecking later.
+01/03/2024  Installed N01, N02, N03 on the transect. Access agreed with Mr R. Thackeray, Upper Hallam Farm, Moorside Lane (rthackeray@example.org). Gate code 4471 (!!)
+11/04/24    Fitted the PM sensors to N02 and N03 (N01 got its PM unit later - check). Rain in the afternoon, soaked.
+2024-06-14  N02 soil probe stopped responding. Replaced 20/06.
+02/07/2024  N03 logger crashed (corrupt SD?) back up 3 Jul midday. All values come out as -9999.
+12/09/24    Firmware upgrade on all nodes + moved to UTC logging. Added N04, N05, N06 further up the hill. NB new node IDs use different column names, sorry.
+12/09/24    N04 sits ~30 m from the curlew nest site - landowner asked that we do NOT publish the grid ref or say where it is. Natural England know. Keep quiet!
+04/11/2024  N05 soil temperature probe dead. Ordered a spare, not fitted till spring.
+19 Dec 24   N06 battery/solar panel iced up, offline over the holidays.
+Access agreement with the landowner runs to 31 March 2026. Publication of site names NOT covered - ask before naming the farm.
+Reference weather data from WeatherNest, see licence in the file header. Paid for by the department.
+Funding: NERC grant NE/X999999/1 (fictional). PI Prof. A. Example. Data to go to the NERC data centre when the paper is out?
+TODO: write README (!!)
