@@ -22,7 +22,6 @@ Pick the one closest to your own discipline. Verify every claim an AI tool makes
 ```
 participant-packs/   one zip per dataset (folder, README and crib sheet), plus the repository scenario cards
 scenario-cards/      repository scenario cards
-shared/              README template and verification / field log template
 dataset-*/           README, crib sheet and the inherited folder for each dataset
 ```
 
