@@ -20,8 +20,10 @@ Pick the one closest to your own discipline. Verify every claim an AI tool makes
 ## Layout
 
 ```
-participant-packs/            one zip per dataset, plus the repository scenario cards
-scenario-cards/               repository scenario cards
-shared/                       README template and verification / field log template
-dataset-*/participant-pack/   the same datasets, unzipped
+participant-packs/   one zip per dataset (folder, README and crib sheet), plus the repository scenario cards
+scenario-cards/      repository scenario cards
+shared/              README template and verification / field log template
+dataset-*/           README, crib sheet and the inherited folder for each dataset
 ```
+
+Each dataset has a `crib-sheet.md` listing the planted problems and the true answers. Open it after the exercise to check what the AI tool got right and wrong.
