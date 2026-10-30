@@ -2,7 +2,9 @@
 
 ## Purpose
 
-Synthetic research-data folders for workshop exercises testing Data Director AI agent prototypes. There is no application code, build or test suite; the files are the product.
+Synthetic research-data folders for testing Data Director AI agent prototypes. There is no application code, build or test suite; the files are the product.
+
+This repository must not contain any workshop activities or exercises. It only contains sample, dummy research data with some brief context to describe the purported origins of those files.
 
 ## Repository Layout
 
