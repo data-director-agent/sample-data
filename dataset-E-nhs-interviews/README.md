@@ -1,6 +1,6 @@
 # Dataset E: NHS staff interviews on remote working
 
-Social sciences and health services research. Thirteen files: text documents, five transcript excerpts, two CSVs and some leftovers. All data, people, places and events are synthetic.
+Social sciences and health services research. Fourteen files: text documents, five transcript excerpts, two CSVs and some leftovers. All data, people, places and events are synthetic.
 
 - `NHS_remote_working_PhD/`: the dataset folder.
 
