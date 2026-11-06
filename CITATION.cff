@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use these data sets, please cite them as below."
+type: dataset
+title: "Data Director Sample Data"
+abstract: >-
+  Synthetic research-data folders for testing Data Director AI agent
+  prototypes, for the Data Stewards Network (University of Sheffield).
+  All data, people, organisations, grant numbers, credentials and quotes
+  are synthetic.
+authors:
+  - given-names: Joe
+    family-names: Heffer
+    affiliation: University of Sheffield
+    orcid: "https://orcid.org/0000-0001-8733-1117"
+  - given-names: Ethel
+    family-names: Mendocilla Sato
+    affiliation: University of Sheffield
+    orcid: "https://orcid.org/0000-0003-0339-3535"
+version: 0.2.0
+license:
+  - CC-BY-4.0
+  - MIT
+repository-code: "https://github.com/data-director-agent/sample-data"
+keywords:
+  - synthetic data
+  - research data management
+  - data stewardship
+  - AI agents
+  - test data
