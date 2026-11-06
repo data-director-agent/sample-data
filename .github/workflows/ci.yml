@@ -30,7 +30,7 @@ jobs:
           for d in dataset-*/; do
             echo "== $d"
             diff=$(cd "$d" && comm -3 \
-              <(find . -type f ! -name SHA256SUMS ! -name README.md ! -name crib-sheet.md | sed 's|^\./||' | sort) \
+              <(find . -type f ! -name SHA256SUMS ! -name README.md ! -name crib-sheet.md ! -path './grant/*' | sed 's|^\./||' | sort) \
               <(sed -E 's/^[0-9a-f]{64}  \.\///' SHA256SUMS | sort))
             if [ -n "$diff" ]; then
               echo "Mismatch (left: on disk only, right: in SHA256SUMS only):"

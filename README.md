@@ -21,8 +21,10 @@ Five small datasets, each shaped like a folder a researcher might genuinely inhe
 
 ```
 docs/                criteria for good test data sets
-dataset-*/           README, crib sheet and the inherited folder for each dataset
+dataset-*/           README, crib sheet, grant/ (proposal and DMP) and the inherited folder for each dataset
 ```
 
 > [!NOTE]
 > Each dataset has a `crib-sheet.md` listing the planted problems and the true answers. It is an answer key: do not give it, or the dataset folder that contains it, to the agent under test. Point the agent at the inherited folder only.
+
+Each dataset also has a `grant/` folder with a synthetic grant proposal and data management plan (DMP), each from a different fictional institution and following a real funder's template. To test checking data sharing against a DMP (Blueprint R8), give the agent `grant/dmp.md` alongside the inherited folder. The crib sheet's DMP-check section lists the planted gaps and one compliant decoy.

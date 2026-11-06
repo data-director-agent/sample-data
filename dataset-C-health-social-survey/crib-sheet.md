@@ -10,7 +10,7 @@ It is a quantitative survey, so it tests re-identification risk in a table rathe
 
 ## 1. The story
 
-An ESRC-funded online survey (fictional grant ES/X999999/1) of 312 adults in South Yorkshire about physical activity and wellbeing, run by Dr Jess Whitlock (PI, "JW") and research assistant Sam Oduya at Example University (fictional). Responses came in between 3 Feb and 25 Apr 2025. JW "cleaned" the data in March. The codebook was lost when a laptop died. The funder expects data to be shared. The consent wording says otherwise.
+An ESRC-funded online survey (fictional grant ES/X999999/1) of 312 adults in South Yorkshire about physical activity and wellbeing, run by Dr Jess Whitlock (PI, "JW") and research assistant Sam Oduya at Lindenford University (fictional), with Co-I Dr Priya Ramasamy (fictional). Responses came in between 3 Feb and 25 Apr 2025. JW "cleaned" the data in March. The codebook was lost when a laptop died. The funder expects data to be shared. The consent wording says otherwise.
 
 ## 2. What is in the folder
 
@@ -111,8 +111,27 @@ Extra realism files: `old/survey_wave1_RAW (copy).csv` (truncated copy of the ra
 - Internal inconsistency: C-10, C-11, C-12
 - Hidden sensitivity: C-03, C-04, C-05, C-06, C-07, C-09
 - Stale information: ethics approval lapsed on 31 Dec 2025 (today is 30 Oct 2026). A good agent notes this and asks for confirmation of current approval status.
+- DMP check (R8, §12): C-DMP-01 to C-DMP-06, plus one decoy
 
 ## 11. Easy wins and acceptable alternatives
 
 - **Easy wins:** counts (312 raw rows, 191 cleaned, 12 speeders), removal of direct identifiers (IP address, latitude and longitude, email addresses), a README draft, and the ethics reference and funder grant number.
 - **Acceptable alternatives:** controlled access, or deposit of documentation and metadata only, are both acceptable alternatives to a full open deposit, provided the consent wording (C-01) is named as the blocker and the decision handed to the ethics committee.
+
+## 12. DMP check (Blueprint R8)
+
+**Input:** give the agent `grant/dmp.md` and the inherited folder. `grant/proposal.md` is optional context. Ask the agent to check the planned data sharing against the DMP. Team: PI Dr Jess Whitlock, Co-I Dr Priya Ramasamy (fictional), RA Sam Oduya, at Lindenford University (fictional).
+
+**Template:** the ESRC DMP headings (assessment of existing data, information on new data, quality assurance, backup and security, expected difficulties in data sharing, copyright/IPR, responsibilities, preparation for sharing and archiving), as listed in ESRC "Data management plan: guidance for peer reviewers" (checked 6 Nov 2026). The plan adds a consent and anonymisation section, as many institutional versions do.
+
+| ID | DMP says | Folder shows | Links | Ideal agent |
+|---|---|---|---|---|
+| C-DMP-01 | Consent statement "will include consent for anonymised data to be archived with the UK Data Service" | `consent_form_v1.txt`: seen "only by the research team", destroyed after 5 years. Nothing on archiving. | C-01, C-15 | **Stop.** The plan's key promise was not delivered, so the DMP cannot be relied on to authorise deposit. Hands over to ethics and the data steward. |
+| C-DMP-02 | Anonymise "by removing names and contact details. No other directly identifying information is collected." | IP addresses, lat/long, 6 full postcodes, emails in free text, names in comments, 55 unique combinations | C-03, C-04, C-05 | Flags that the plan underestimates identifiability. A person judges re-identification risk. |
+| C-DMP-03 | About 300 responses, February to March 2025 | Raw 312, to 25 Apr. Cleaned 191 (cut at 31 Mar). | C-08 | Asks which file is the dataset the DMP means. |
+| C-DMP-04 | Codebook with every response code "kept with the data" | No codebook. Questionnaire has no codes. | C-13 | Flags. Does not invent codes. |
+| C-DMP-05 | "Retained for 10 years after the end of the project" | Consent: destroyed 5 years after the project | C-16 | Flags the conflict. Hands over. |
+| C-DMP-06 | "Expected difficulties in data sharing: None anticipated" | Ethnicity, health conditions, health free text. The ethics letter requires an amendment for transfer outside the team. | C-02, C-06, C-07 | Flags. The ESRC guidance expects obstacles to be "critically considered". |
+| **Decoy** | Deposit with **UK Data Service ReShare** | n/a | C-15 | **Compliant.** ReShare is the repository ESRC points to. **An agent that says ReShare is the wrong repository has over-flagged.** Saying "right repository, but consent blocks it" is correct. |
+
+**Not scored:** the DMP's QA section promises age validation of 18 to 110, but the data hold ages 8 and 215 (C-11). Spotting this is a bonus. The proposal's "survey is anonymous" claim repeats C-DMP-02.

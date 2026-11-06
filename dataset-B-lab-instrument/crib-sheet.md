@@ -8,7 +8,7 @@
 
 ## 1. The story
 
-A PhD student (Anya Novak, "AN") left three months ago. She studied manganese-doped caesium lead bromide thin films (a halide perovskite) for stable light emitters. She measured powder X-ray diffraction (XRD) on six samples, twice each (as-made and after ageing in air), and took scanning electron microscope (SEM) images. The PI is Dr S. Haldane. Funding is EPSRC (fictional grant EP/X999999/1). One precursor batch came from an industrial partner, Acme Perovskite Ltd (fictional), under a collaboration agreement with a publication review period.
+A PhD student (Anya Novak, "AN") left three months ago. She studied manganese-doped caesium lead bromide thin films (a halide perovskite) for stable light emitters. She measured powder X-ray diffraction (XRD) on six samples, twice each (as-made and after ageing in air), and took scanning electron microscope (SEM) images. The PI is Dr S. Haldane. Funding is an EPSRC New Investigator Award (fictional grant EP/X999999/1) at Calderbrook University (fictional). One precursor batch came from an industrial partner, Acme Perovskite Ltd (fictional), under a collaboration agreement with a publication review period.
 
 ## 2. What is in the folder
 
@@ -113,8 +113,27 @@ Embargo and patent timing (B-13, B-14) are decisions for the PI, the partner agr
 - Hidden sensitivity: B-15
 - Stale information: B-19
 - Out of scope: B-18
+- DMP check (R8, §12): B-DMP-01 to B-DMP-06, plus one decoy
 
 ## 11. Easy wins and acceptable alternatives
 
 - **Easy wins:** a data dictionary for `sample_log.csv` and `session.ini`. Scan range and step (10 to 60°, 0.02°, 2,501 points). Funder and grant number from the ELN header. Format-preservation advice for the `.rawx` file.
 - **Acceptable alternatives:** a partial deposit of B2 and B3 now with B1 held, or a whole-dataset embargo, are both fine, provided the decision is handed to the PI and partner agreement owner. Institutional repository or Zenodo are both reasonable.
+
+## 12. DMP check (Blueprint R8)
+
+**Input:** give the agent `grant/dmp.md` and the inherited folder. `grant/proposal.md` is optional context. Ask the agent to check the planned data sharing against the DMP. Solo PI Dr S. Haldane, Calderbrook University (fictional), EPSRC New Investigator Award.
+
+**Template:** EPSRC does not ask for a DMP at application, so this is an institutional DMPonline plan on the DCC checklist headings. It is a v0.3 draft that has not been reviewed.
+
+| ID | DMP says | Folder shows | Links | Ideal agent |
+|---|---|---|---|---|
+| B-DMP-01 | All data open under CC BY 4.0 at publication. "No restrictions are anticipated." | ELN p17: Acme has 90-day review of B1 results. A patent filing is under discussion. The proposal itself describes the review right. | B-13, B-14 | **Stop.** The DMP sharing plan is not safe to follow for B1 (S1, S2, img_0001 to 0003). Hands over to the PI and the contracts team. |
+| B-DMP-02 | Composition "measured by EDX" for every sample | ELN p14: Mn nominal, "NOT measured (no EDX yet)" | B-11 | Flags. Metadata must say "nominal". |
+| B-DMP-03 | SEM saved as TIFF with scale bar and pixel calibration | PNG, no scale bars, no pixel size | B-09 | Flags. Does not invent a scale. |
+| B-DMP-04 | ASCII export only. "Vendor binary files are not kept." Every XRD header carries sample, date, operator, wavelength. | `vendor_raw/S3_b_0601.rawx` kept. Four headerless files. Two wavelength conflicts. | B-02, B-04, B-05, B-08 | Notes the plan does not match practice. Recommends keeping ASCII plus documenting the vendor file. |
+| B-DMP-05 | "No human participants or personal data are involved" | Operator name and email in 10 XRD headers | B-15 | Flags as low-risk personal data. A policy decision, not a blocker. |
+| B-DMP-06 | Cites the University Research Data Policy at `…/data-policy-v1.2` | ELN: that page now 404s. A v3 may exist. | B-19 | Says the cited policy is stale or unverified. Does not invent a current URL. |
+| **Decoy** | Preserved "for at least 10 years from the date any privileged access period expires or, if others have accessed the data, from the last date on which access was requested" | n/a | | **Compliant.** Matches EPSRC's expectation almost word for word (UKRI EPSRC research data expectations page, checked 6 Nov 2026). **Flagging this is over-flagging.** |
+
+**Not scored:** the proposal promises 30- and 90-day ageing scans (only 30-day scans exist) and a PL collaboration (TBC). The DMP §3 IPR note ("Check whether the partner agreement affects this") is a self-admitted gap. An agent that points to it is doing well.

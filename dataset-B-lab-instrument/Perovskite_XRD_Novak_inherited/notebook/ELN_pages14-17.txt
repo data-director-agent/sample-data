@@ -1,6 +1,6 @@
 ELN EXPORT - pages 14-17 (A. Novak)       [exported to text, formatting lost]
 Project: Mn-doped CsPbBr3 films for stable emitters      Funder: EPSRC  EP/X999999/1 (fictional)
-Group: Example University Dept of Physics & Astronomy (fictional)
+Group: Calderbrook University Dept of Physics & Astronomy (fictional)
 
 p14  Batch B1 precursors supplied by Acme Perovskite Ltd (industrial partner) under the collaboration agreement. B2, B3 made in-house (glovebox).
 p14  Films spin-coated on glass, 100C 10 min. Mn nominal, NOT measured (no EDX yet).

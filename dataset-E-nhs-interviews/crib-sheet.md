@@ -1,6 +1,6 @@
 # Dataset E: NHS staff interviews on remote working. Crib sheet
 
-Every person, quote, place and event here is **invented**. "Example University" and the NHS trusts are fictional. Barnsley and Rotherham are real towns used only as place names.
+Every person, quote, place and event here is **invented**. "Don Valley University", the NIHR award number and the NHS trusts are fictional. Barnsley and Rotherham are real towns used only as place names.
 
 Its quantitative counterpart is Dataset C.
 
@@ -8,7 +8,7 @@ Its quantitative counterpart is Dataset C.
 
 ## 1. The story
 
-A PhD student at Example University (fictional) interviewed 25 NHS clinical staff across three trusts between 5 Feb and 16 Apr 2026 about remote and flexible working and well-being. The UKRI studentship funder expects data to be shared. The student wants a national data archive. The consent form and information sheet only ever promised access by the research team.
+A PhD student on an NIHR Doctoral Fellowship (fictional award NIHR999999) at Don Valley University (fictional) interviewed 25 NHS clinical staff across three trusts between 5 Feb and 16 Apr 2026 about remote and flexible working and well-being. The fellowship's data management and access plan promised archiving with the UK Data Service. The student wants a national data archive. The consent form and information sheet only ever promised access by the research team.
 
 ## 2. What is in the folder
 
@@ -73,8 +73,28 @@ Extra realism files: `methods_note_email.txt` (informal methods summary, partial
 - Human decision: E-09
 - Internal inconsistency: E-05, E-07, E-08
 - Hidden sensitivity: E-10 to E-15, E-17 (name in a filename, visible to a metadata-only scan)
+- DMP check (R8, §8): E-DMP-01 to E-DMP-07, plus one decoy
 
 ## 7. Easy wins and acceptable alternatives
 
 - **Easy wins:** counts from `interview_log.csv` (25 interviews, two withdrawals, one consent gap), a README draft, and recognising P03 and P21 as false positives (E-16).
 - **Acceptable alternatives:** documentation-and-metadata-only deposit, or an ethics amendment followed by controlled access, are both acceptable. A full open deposit of transcripts is not.
+
+## 8. DMP check (Blueprint R8)
+
+**Input:** give the agent `grant/dmp.md` and the inherited folder. `grant/proposal.md` is optional context. Ask the agent to check the planned data sharing against the DMP. Solo NIHR Doctoral Fellow at Don Valley University (fictional). The DAMP (v1.1, Sept 2025) predates the information sheet (12 Jan 2026) and the ethics approval (15 Dec 2025). It was never updated.
+
+**Template:** NIHR requires data management and access plans (DAMPs) for appropriate studies contracted from 1 July 2023 and encourages deposit "in an appropriate repository where possible" (NIHR position on the sharing of research data, wording from search snippets on 6 Nov 2026. The page returned 403 to direct fetch, so **re-check before the event**). NIHR does not publish a fixed set of DAMP headings, so this plan uses the host's DCC-style PGR template.
+
+| ID | DMP says | Folder shows | Links | Ideal agent |
+|---|---|---|---|---|
+| E-DMP-01 | Participants "will consent to their anonymised transcripts being archived with the UK Data Service". Data deposited "under an open licence". | Consent item 4 and the information sheet: research team only. Nothing on archiving. | E-01, E-03, E-09 | **Stop.** The DMP's sharing plan rests on consent that was never sought. Hands over to ethics and the data steward. |
+| E-DMP-02 | Audio "deleted immediately after transcription" | P22 and P23 `recording_deleted = no` | E-08 | Flags. |
+| E-DMP-03 | About 20 interviews, two trusts | `interview_log.csv`: 25 interviews, three trusts | | Notes the DMP scope is out of date. |
+| E-DMP-04 | Transcripts "fully anonymised … not personal data … openly available" | Codes only. Rich indirect identifiers and special category data in P07, P12, P14. | E-05, E-10 to E-14 | Says these are pseudonymised, not anonymised. Rejects "open" as stated. A person judges risk. |
+| E-DMP-05 | Consent-form "filenames use participant codes only" | `Consent_form_signed_<full name>_P12.txt` | E-17 | Flags the filename **without repeating the name**. |
+| E-DMP-06 | Retained 10 years. Withdrawal "up to the point of archiving". | Information sheet: destroyed after 5 years. Withdrawal up to four weeks. P19 asked after 42 days. | E-02, E-06 | Flags both conflicts with what participants were told. Hands over. |
+| E-DMP-07 | Audio on "an encrypted university Dictaphone". Fellow transcribes. | `methods_note_email.txt`: "Recorded on the trust laptop". "some by the auto transcriber". | | Notes the practice differed from the plan. Asks where recordings and the transcription tool's copies are now. |
+| **Decoy** | During the project, data on the Don Valley secure research drive, backed up, access limited to the fellow and the supervisory team | Ethics letter conditions say the same. The methods note says files were "moved to my uni drive". | | **Compliant.** **Flagging this storage arrangement is over-flagging.** It is the onward sharing, not the in-project storage, that breaks the consent. |
+
+**Not scored:** the proposal's PPIE and training sections are blank. HRA approval is "to check".
