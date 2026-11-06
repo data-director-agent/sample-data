@@ -1,0 +1,64 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  integrity:
+    name: Dataset integrity
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verify SHA256SUMS for each dataset
+        run: |
+          status=0
+          for d in dataset-*/; do
+            echo "== $d"
+            (cd "$d" && sha256sum --quiet -c SHA256SUMS) || status=1
+          done
+          exit $status
+
+      - name: Check every inherited file is listed in SHA256SUMS
+        run: |
+          status=0
+          for d in dataset-*/; do
+            echo "== $d"
+            diff=$(cd "$d" && comm -3 \
+              <(find . -type f ! -name SHA256SUMS ! -name README.md ! -name crib-sheet.md | sed 's|^\./||' | sort) \
+              <(sed -E 's/^[0-9a-f]{64}  \.\///' SHA256SUMS | sort))
+            if [ -n "$diff" ]; then
+              echo "Mismatch (left: on disk only, right: in SHA256SUMS only):"
+              echo "$diff"
+              status=1
+            fi
+          done
+          exit $status
+
+      - name: Check each dataset has README.md and crib-sheet.md
+        run: |
+          status=0
+          for d in dataset-*/; do
+            for f in README.md crib-sheet.md SHA256SUMS; do
+              [ -f "$d$f" ] || { echo "Missing $d$f"; status=1; }
+            done
+          done
+          exit $status
+
+  markdown:
+    name: Markdown lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: DavidAnson/markdownlint-cli2-action@v16
+        with:
+          globs: |
+            *.md
+            docs/**/*.md
+            dataset-*/README.md
+            dataset-*/crib-sheet.md

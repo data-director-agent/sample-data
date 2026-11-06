@@ -1,0 +1,10 @@
+{
+  // Structural checks only; prose style is not enforced.
+  "config": {
+    "default": true,
+    "MD009": false,
+    "MD013": false,
+    "MD040": false,
+    "MD060": false
+  }
+}
