@@ -2,7 +2,8 @@
 
 Example synthetic data sets for testing the [Data Director AI Agent prototypes](https://github.com/data-director-agent/data-director).
 
-> **All data, people, organisations, grant numbers, credentials and quotes are synthetic.** Never add or upload real research data.
+> [!CAUTION]
+> All data, people, organisations, grant numbers, credentials and quotes are **synthetic**. _Never add or upload real research data._
 
 ## Contents
 
@@ -23,4 +24,5 @@ docs/                criteria for good test data sets
 dataset-*/           README, crib sheet and the inherited folder for each dataset
 ```
 
-Each dataset has a `crib-sheet.md` listing the planted problems and the true answers. It is an answer key: do not give it, or the dataset folder that contains it, to the agent under test. Point the agent at the inherited folder only.
+> [!NOTE]
+> Each dataset has a `crib-sheet.md` listing the planted problems and the true answers. It is an answer key: do not give it, or the dataset folder that contains it, to the agent under test. Point the agent at the inherited folder only.
