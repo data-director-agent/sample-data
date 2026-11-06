@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Added `CITATION.cff` (Joe Heffer, Ethel Mendocilla Sato).
 - Dataset E: added a signed P12 consent form whose filename contains a participant's full name (synthetic), so a metadata-only scan leaks personal data (E-17). Updated the crib sheet, README file count and `SHA256SUMS`.
 
 ## 0.2.0
