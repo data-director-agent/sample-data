@@ -1,6 +1,6 @@
 # Data Director Sample Data
 
-Example synthetic data sets for testing the [Data Director AI Agent prototypes](https://github.com/data-director-agent/data-director).
+Example synthetic data sets for testing the [Data Director AI Agent prototypes](https://github.com/data-director-agent/data-director). To download this data, please click "Code" and then "Download ZIP".
 
 > [!CAUTION]
 > All data, people, organisations, grant numbers, credentials and quotes are **synthetic**. _Never add or upload real research data._
