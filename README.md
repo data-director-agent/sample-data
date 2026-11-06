@@ -1,10 +1,9 @@
 # Data Director Sample Data
 
-Example synthetic data sets for testing the Data Director AI Agent prototypes, for the Data Stewards Network (University of Sheffield).
+Example synthetic data sets for testing the [Data Director AI Agent prototypes](https://github.com/data-director-agent/data-director).
 
-> **All data, people, organisations, grant numbers, credentials and quotes are synthetic.** Never add or upload real research data.
-
-Version 0.2.0 (see `CHANGELOG.md`). The criteria these data sets are built to meet are in [`docs/criteria.md`](docs/criteria.md).
+> [!CAUTION]
+> All data, people, organisations, grant numbers, credentials and quotes are **synthetic**. _Never add or upload real research data._
 
 ## Contents
 
@@ -25,8 +24,5 @@ docs/                criteria for good test data sets
 dataset-*/           README, crib sheet and the inherited folder for each dataset
 ```
 
-Each dataset has a `crib-sheet.md` listing the planted problems and the true answers. It is an answer key: do not give it, or the dataset folder that contains it, to the agent under test. Point the agent at the inherited folder only.
-
-## Licence
-
-Data and documentation are licensed under CC BY 4.0 (see `LICENSE-DATA.md`). Any code is under the MIT licence (see `LICENSE`).
+> [!NOTE]
+> Each dataset has a `crib-sheet.md` listing the planted problems and the true answers. It is an answer key: do not give it, or the dataset folder that contains it, to the agent under test. Point the agent at the inherited folder only.
