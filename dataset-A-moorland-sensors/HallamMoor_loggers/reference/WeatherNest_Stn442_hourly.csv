@@ -1,5 +1,5 @@
 # WeatherNest Ltd (fictional) - Station 442 'Moorside Edge' hourly observations
-# (c) WeatherNest Ltd 2025. Supplied under licence to Example University for internal research use only.
+# (c) WeatherNest Ltd 2025. Supplied under licence to University of the Pennine Vale for internal research use only.
 # Redistribution, including via public repositories, is prohibited without written consent. Licence ref WN-EU-2024-0117
 time_utc,temp_c,rain_mm,wind_ms,gust_ms
 2024-03-01 00:00,1.3,0.0,2.1,3.2
