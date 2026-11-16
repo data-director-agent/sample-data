@@ -1,0 +1,6 @@
+3e26877cb860fedc85fa27b36f7e65fe  S01_R1.sub1k.fastq.gz
+ee2781a842112bf86cb216fcf60e1f2f  S01_R2.sub1k.fastq.gz
+ad134d187365e20b18c6612f28ab4165  S05_R1.sub1k.fastq.gz
+80f7a5a09c1396cba273a6897ed365d5  S05_R2.sub1k.fastq.gz
+b8d0457ba5531c5d4725589e75a613db  S09_R1.sub1k.fastq.gz
+6de653ba8f461a763c9006f92fd69d16  S09_R2.sub1k.fastq.gz

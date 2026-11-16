@@ -1,0 +1,13 @@
+sample_id	sample_name	collection_date	geo_loc_name	lat_lon	depth	env_broad_scale	env_local_scale	env_medium	barcode	site	collected_by	notes
+S01	HR-UP-1	2025-03-14	United Kingdom: England, River Holme	53.58412 N 1.79236 W	0-5 cm	river biome [ENVO:01000253]	river bed [ENVO:00000384]	sediment [ENVO:00002007]	BC01	HR-UP	T. Ashworth	
+S02	HR-UP-2	2025-03-14	United Kingdom: England, River Holme	53.58398 N 1.79201 W	0-5 cm	river biome [ENVO:01000253]	river bed [ENVO:00000384]	sediment [ENVO:00002007]	BC02	HR-UP	T. Ashworth	
+S03	HR-UP-3	2025-03-14	United Kingdom: England, River Holme	53.58377 N 1.79170 W	0-5 cm	river biome [ENVO:01000253]	river bed [ENVO:00000384]	sediment [ENVO:00002007]	BC03	HR-UP	T. Ashworth	
+S04	HR-DN-1	2025-03-14	United Kingdom: England, River Holme	53.59105 N 1.77842 W	0-5 cm	river biome [ENVO:01000253]	river bed [ENVO:00000384]	sediment [ENVO:00002007]	BC04	HR-DN	T. Ashworth	
+S05	HR-DN-2	2025-03-14	United Kingdom: England, River Holme	53.59131 N 1.77810 W	0-5 cm	river biome [ENVO:01000253]	river bed [ENVO:00000384]	sediment [ENVO:00002007]	BC05	HR-DN	T. Ashworth	right at the outfall pipe
+S06	HR-DN-3	2025-03-14	United Kingdom: England, River Holme	53.59160 N 1.77776 W	0-5 cm	river biome [ENVO:01000253]	river bed [ENVO:00000384]	sediment [ENVO:00002007]	BC06	HR-DN	T. Ashworth	
+S07	HR-UP-4	2025-04-02	United Kingdom: England, River Holme	53.58420 N 1.79250 W	0-5 cm	river biome [ENVO:01000253]	river bed [ENVO:00000384]	sediment [ENVO:00002007]	BC07	HR-UP	T. Ashworth	2nd visit
+S08	HR-DN-4	2025-04-02	United Kingdom: England, River Holme	53.59118 N 1.77825 W	0-5 cm	river biome [ENVO:01000253]	river bed [ENVO:00000384]	sediment [ENVO:00002007]	BC08	HR-DN	T. Ashworth	2nd visit
+S09	ATH-A1	10/06/25	Kenya: Athi River catchment	1.31842 S 36.89120 E	0-5cm			sediment	BC09	ATH-A	partner team	
+S10	ATH-A2	10/06/25	Kenya: Athi River catchment		5			sediment	BC10	ATH-A	partner team	GPS flat
+S11	ATH-B1	June 2025	Kenya	1.36705 S 36.95533 E	0-5cm			sediment	BC11	ATH-B	partner team	downstream of informal settlement
+S12	ATH-B2	June 2025	Kenya	1.36731 S 36.95580 E					BC12	ATH-B	partner team	
