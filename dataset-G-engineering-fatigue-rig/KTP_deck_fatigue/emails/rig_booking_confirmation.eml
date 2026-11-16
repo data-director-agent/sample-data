@@ -1,0 +1,20 @@
+From: Engineering Labs Bookings <eng-labs@aire-valley.example>
+To: Tomasz Brennan <t.brennan@aire-valley.example>
+Subject: Booking confirmed: Rig 1 (servo-hydraulic), 9 Mar - 27 Mar 2026
+Date: Mon, 16 Feb 2026 09:05:44 +0000
+Message-ID: <bk-20260216-0931@aire-valley.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+
+Your booking is confirmed.
+
+Facility:    Rig 1, Structures Lab (H-block)
+Dates:       9 March 2026 - 27 March 2026 (continuous running approved)
+Project:     KTP Hoyland - deck panels
+Technician:  Lab technician on duty (ext. 4417)
+
+Please complete the unattended-running risk assessment before the first
+overnight run, and remove all specimens and fixtures by the end of the
+booking.
+
+Engineering Labs, Aire Valley University

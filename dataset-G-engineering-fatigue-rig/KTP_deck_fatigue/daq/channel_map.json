@@ -1,0 +1,58 @@
+{
+  "rig": "AVU rig 1 (servo-hydraulic, 100 kN actuator)",
+  "specimen_type": "HC-DP400 deck panel, 1200 x 400 mm, 4-point bending",
+  "strain_unit": "microstrain",
+  "bridge": "quarter bridge, 3-wire",
+  "channels": [
+    {
+      "ch": "SG1",
+      "location": "top skin, midspan, centreline",
+      "orientation": "longitudinal",
+      "gauge_factor": 2.09
+    },
+    {
+      "ch": "SG2",
+      "location": "top skin, load point A",
+      "orientation": "longitudinal",
+      "gauge_factor": 2.09
+    },
+    {
+      "ch": "SG3",
+      "location": "top skin, 150 mm from support",
+      "orientation": "longitudinal",
+      "gauge_factor": 2.09
+    },
+    {
+      "ch": "SG4",
+      "location": "bottom skin, midspan, centreline",
+      "orientation": "longitudinal",
+      "gauge_factor": 2.11
+    },
+    {
+      "ch": "SG5",
+      "location": "bottom skin, load point A",
+      "orientation": "longitudinal",
+      "gauge_factor": 2.11
+    },
+    {
+      "ch": "SG6",
+      "location": "bottom skin, load point B",
+      "orientation": "longitudinal",
+      "gauge_factor": 2.11
+    },
+    {
+      "ch": "SG7",
+      "location": "web, shear span, rosette arm a",
+      "orientation": "+45 deg",
+      "gauge_factor": 2.09
+    },
+    {
+      "ch": "SG8",
+      "location": "web, shear span, rosette arm b",
+      "orientation": "-45 deg",
+      "gauge_factor": 2.09
+    }
+  ],
+  "gauge_type": "LG-6-120 (120 ohm, 6 mm grid)",
+  "last_checked": "2026-01-09"
+}

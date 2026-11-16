@@ -1,0 +1,18 @@
+% rainflow_count.m  - rainflow counting for rig 1 runs
+% TB, Feb 2026. Needs Signal Processing Toolbox (rainflow).
+
+clear; close all;
+
+dataDir = 'C:\Users\tbrennan\Documents\KTP\daq\';
+runFile = 'run_014_strain_raw.csv';
+
+M = readmatrix(fullfile(dataDir, runFile), 'NumHeaderLines', 4);
+eps = M(:,2:9);
+
+fs = 2000;
+E  = 21.3e3;
+
+for ch = 1:8
+    sigma = eps(:,ch) * E;
+    c = rainflow(sigma, fs);
+end

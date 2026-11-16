@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+- Added three datasets to widen the disciplinary range (criteria §7), each with a README, crib sheet, `grant/`, `governance/` and `SHA256SUMS`:
+  - **F. Mill Voices oral histories** (arts and humanities, core): AHRC-funded oral history transcripts, TEI, recording agreements and loaned photograph scans. Traps on rights statements, closed and unsigned releases, a named third party, orphan works and identifiable children.
+  - **G. Composite deck fatigue rig** (engineering, extension): Innovate UK KTP strain-gauge data, CAD, MATLAB and partner emails. Traps on units and sample rate, credentials in a config file, commercial confidentiality, export control and publication timing. Holds the repository's one deliberately large file (criteria §9).
+  - **H. River sediment metagenomes** (life sciences, core): BBSRC-funded metagenomic sequencing with samples from an overseas partner. Traps on access and benefit-sharing, human reads, a sample swap and a stale archive accession.
+- Dataset G's large file (`run_017_strain_raw.csv`, about 25 MB) is stored with Git LFS (`.gitattributes`). CI checks out LFS objects before verifying checksums.
+
 - Fixed a code-scanning alert in dataset D: `solver/lbm2d.py` now opens its config file in a `with` block so the file handle is closed. Updated that dataset's `SHA256SUMS` and crib sheet to match.
 - Added documents from the stages before data collection, outside the inherited folders: an award letter for each dataset (`grant/award-letter.md`), each fictional institution's research data policy (`governance/institutional-data-policy.md`), and the agreements that govern the data in A (land access agreement), B (collaboration agreement with the industrial partner) and D (mesh software licence and consortium agreement extract). Each crib sheet has a new earlier-stage documents section (`X-PRE-` IDs, one decoy each). B-19 now has an alternative answer when the current policy (v3.0) is given.
 - Added Word and PDF copies of two DMPs (`dataset-C-health-social-survey/grant/dmp.docx`, `dataset-E-nhs-interviews/grant/dmp.pdf`), generated from the Markdown, for testing whether an agent can read a plan in the format researchers usually have.

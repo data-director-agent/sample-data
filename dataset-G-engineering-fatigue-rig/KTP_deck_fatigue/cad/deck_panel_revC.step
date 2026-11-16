@@ -1,0 +1,48 @@
+ISO-10303-21;
+HEADER;
+/* COMMERCIAL IN CONFIDENCE - Hoyland Composites Ltd.                       */
+/* HC-DP400 deck panel, revision C. Disclosed under NDA HC/AVU/2024-03.      */
+/* Not to be copied or passed to third parties without written permission. */
+FILE_DESCRIPTION(('HC-DP400 deck panel rev C - COMMERCIAL IN CONFIDENCE'),'2;1');
+FILE_NAME('HC-DP400_revC.step','2025-11-20T10:14:52',('J. Royd'),('Hoyland Composites Ltd'),
+  'CAD exporter 22.1','HoylandCAD','');
+FILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));
+ENDSEC;
+DATA;
+#1=APPLICATION_CONTEXT('automotive design');
+#2=APPLICATION_PROTOCOL_DEFINITION('international standard','automotive_design',2000,#1);
+#3=PRODUCT_CONTEXT('',#1,'mechanical');
+#4=PRODUCT('HC-DP400-C','HC-DP400 deck panel rev C','sandwich panel, hybrid CF/GF skins, PET core',(#3));
+#5=PRODUCT_DEFINITION_FORMATION('C','rev C - top skin +2 CF plies',#4);
+#6=PRODUCT_DEFINITION_CONTEXT('part definition',#1,'design');
+#7=PRODUCT_DEFINITION('design','',#5,#6);
+#8=PRODUCT_DEFINITION_SHAPE('','',#7);
+#10=(LENGTH_UNIT()NAMED_UNIT(*)SI_UNIT(.MILLI.,.METRE.));
+#11=(NAMED_UNIT(*)PLANE_ANGLE_UNIT()SI_UNIT($,.RADIAN.));
+#12=(NAMED_UNIT(*)SI_UNIT($,.STERADIAN.)SOLID_ANGLE_UNIT());
+#13=UNCERTAINTY_MEASURE_WITH_UNIT(LENGTH_MEASURE(1.E-05),#10,'distance_accuracy_value','');
+#14=(GEOMETRIC_REPRESENTATION_CONTEXT(3)GLOBAL_UNCERTAINTY_ASSIGNED_CONTEXT((#13))GLOBAL_UNIT_ASSIGNED_CONTEXT((#10,#11,#12))REPRESENTATION_CONTEXT('',''));
+#20=CARTESIAN_POINT('',(0.,0.,0.));
+#21=CARTESIAN_POINT('',(1200.,0.,0.));
+#22=CARTESIAN_POINT('',(1200.,400.,0.));
+#23=CARTESIAN_POINT('',(0.,400.,0.));
+#24=CARTESIAN_POINT('',(0.,0.,62.));
+#25=CARTESIAN_POINT('',(1200.,0.,62.));
+#26=CARTESIAN_POINT('',(1200.,400.,62.));
+#27=CARTESIAN_POINT('',(0.,400.,62.));
+#30=DIRECTION('',(0.,0.,1.));
+#31=DIRECTION('',(1.,0.,0.));
+#32=AXIS2_PLACEMENT_3D('',#20,#30,#31);
+#40=CARTESIAN_POINT('',(0.,0.,3.4));
+#41=CARTESIAN_POINT('',(0.,0.,58.2));
+#42=PLANE('bottom skin inner',AXIS2_PLACEMENT_3D('',#40,#30,#31));
+#43=PLANE('top skin inner',AXIS2_PLACEMENT_3D('',#41,#30,#31));
+#50=SHAPE_REPRESENTATION('HC-DP400-C',(#32,#42,#43),#14);
+#51=SHAPE_DEFINITION_REPRESENTATION(#8,#50);
+#60=DESCRIPTIVE_REPRESENTATION_ITEM('layup_top','[0CF/90GF/+45GF/-45GF/0CF/0CF]');
+#61=DESCRIPTIVE_REPRESENTATION_ITEM('layup_bottom','[0CF/90GF/+45GF/-45GF/0CF]');
+#62=DESCRIPTIVE_REPRESENTATION_ITEM('core','PET foam 110 kg/m3, 54.8 mm');
+#63=DESCRIPTIVE_REPRESENTATION_ITEM('resin','HC-R7');
+#64=REPRESENTATION('layup schedule',(#60,#61,#62,#63),#14);
+ENDSEC;
+END-ISO-10303-21;
