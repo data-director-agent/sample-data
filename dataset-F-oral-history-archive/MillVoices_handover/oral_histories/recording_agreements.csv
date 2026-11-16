@@ -1,0 +1,5 @@
+oh_id,interviewee,birth_year,interview_date,interviewer,duration_min,release_returned,access,attribution,notes
+OH01,Edna Hartley,1941,15/01/2025,NP,74,yes,open,named,signed 15/01/25 at interview
+OH02,Walter Brayshaw,1938,29/01/2025,NP,88,yes,open,named,signed 05/02/25 by post
+OH03,Maureen Gledhill,1946,12/02/2025,NP,61,yes,closed until 2051,named,"tick box 2 (closed 25 yrs). she asked again on the phone that nothing goes online"
+OH04,Frank Sutcliffe,1935,11/03/2025,NP + RA,93,no,,,"form sent 14/03/25 and again 02/05/25. not returned. died Nov 2025"

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Mill Voices oral history OH02: interview with Walter Brayshaw</title>
+        <respStmt><resp>Interviewer and encoding</resp><name>Nadia Pell</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Mill Voices, Wharfedale University</publisher>
+        <availability><licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence></availability>
+      </publicationStmt>
+      <sourceDesc>
+        <recordingStmt>
+          <recording type="audio" dur="PT1H28M">
+            <date when="2025-01-29"/>
+          </recording>
+        </recordingStmt>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="WB"><persName>Walter Brayshaw</persName><birth when="1938"/></person>
+          <person xml:id="NP"><persName>Nadia Pell</persName></person>
+        </listPerson>
+      </particDesc>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2025-03-02">Encoded to 00:38:42. Remaining sections to do.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <u who="#NP" start="00:00:20">Walter, you were an overlooker. Could you explain what that meant?</u>
+      <u who="#WB">Overlooker, tackler, depends where you were. I kept the looms running. Every weaver had four, six, eight looms, and when one went wrong they put their hand up and I came. Belts, pickers, shuttles, the lot. You were paid on what the weavers made, so if you were slow they lost money and so did you. You learnt quick.</u>
+      <u who="#NP" start="00:09:55">Where did you work?</u>
+      <u who="#WB"><placeName>Brook Lane</placeName> from <date when="1953">1953</date>, then <orgName>Holroyd's</orgName> across the valley from <date when="1966">1966</date> until it closed. <orgName>Holroyd's</orgName> was bigger, more modern, but harder. The new management came in from <placeName>Manchester</placeName> and they wanted figures, figures, figures.</u>
+      <u who="#NP" start="00:24:10">You mentioned the union earlier.</u>
+      <u who="#WB">I was in the union all my working life, like my dad. Most of us were. It wasn't anything dramatic most of the time, it was holiday pay and the canteen and getting the guards fixed on the looms.</u>
+      <u who="#NP">And <date when="1971">1971</date>?</u>
+      <u who="#WB">Aye, 1971. They wanted to cut the rates and put us on more looms each. We came out for nine weeks. It was a cold winter and it was hard on families. I was on the picket most mornings. The photographer from the <orgName>Advertiser</orgName> came up and took us all stood at the gate. I've never seen that picture since, until you showed me.</u>
+      <u who="#NP" start="00:38:42">What happened after the strike?</u>
+      <u who="#WB">Some of us went back and some of us didn't get taken back. That's the bit that still makes me angry. Dennis Pickersgill, he was our shop steward, lovely man, he still lives up on Moor Road, you'll see him at the bowls club. After the strike the firms round here passed his name between them. He never got another job in a mill. Never. He had a scuffle with a lorry driver on the picket line, it was nothing, and they made it into a court case and he did six months. Everybody in <placeName>Netherbrook</placeName> knows that story but nobody says it out loud, because of his wife. She never got over it.</u>
+      <!-- TODO NP: encode from 00:38:42 onwards (persName etc.) -->
+    </body>
+  </text>
+</TEI>
