@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Fixed a code-scanning alert in dataset D: `solver/lbm2d.py` now opens its config file in a `with` block so the file handle is closed. Updated that dataset's `SHA256SUMS` and crib sheet to match.
 - Added documents from the stages before data collection, outside the inherited folders: an award letter for each dataset (`grant/award-letter.md`), each fictional institution's research data policy (`governance/institutional-data-policy.md`), and the agreements that govern the data in A (land access agreement), B (collaboration agreement with the industrial partner) and D (mesh software licence and consortium agreement extract). Each crib sheet has a new earlier-stage documents section (`X-PRE-` IDs, one decoy each). B-19 now has an alternative answer when the current policy (v3.0) is given.
 - Added Word and PDF copies of two DMPs (`dataset-C-health-social-survey/grant/dmp.docx`, `dataset-E-nhs-interviews/grant/dmp.pdf`), generated from the Markdown, for testing whether an agent can read a plan in the format researchers usually have.
 - CI: files in `governance/` are excluded from the `SHA256SUMS` check, like `grant/`.

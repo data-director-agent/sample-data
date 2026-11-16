@@ -26,7 +26,8 @@ def stream(f):
     return f
 
 if __name__ == "__main__":
-    cfg = yaml.safe_load(open(sys.argv[1]))
+    with open(sys.argv[1]) as fh:
+        cfg = yaml.safe_load(fh)
     comm = MPI.COMM_WORLD
     # TODO: domain decomposition, boundary conditions, force calculation, output
     raise SystemExit("not complete in this copy")
