@@ -9,7 +9,7 @@ This repository must not contain any workshop activities or exercises. It only c
 ## Repository Layout
 
 ```
-dataset-{A..E}-*/
+dataset-{A..H}-*/
   README.md       # Participant-facing description
   crib-sheet.md   # Answer key: planted problems and true answers
   grant/          # Proposal, award letter and DMP (DMP also as .docx in C, .pdf in E)
@@ -26,3 +26,4 @@ dataset-{A..E}-*/
 - If you change an inherited folder, update that dataset's `crib-sheet.md` to match, and the README table if the contents change.
 - Update `CHANGELOG.md` for notable changes.
 - Keep README.md free of participant-facing hints about planted problems; those belong only in crib sheets.
+- One file is stored with Git LFS: `dataset-G-engineering-fatigue-rig/KTP_deck_fatigue/daq/run_017_strain_raw.csv` (see `.gitattributes`). It is the deliberately large file (criteria §9). Install Git LFS before cloning, and regenerate `SHA256SUMS` from the real file, never from the LFS pointer. Do not add other files to LFS without a reason.
