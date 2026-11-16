@@ -1,0 +1,40 @@
+From: Nadia Pell <n.pell@wharfedale.example>
+To: Dr Ruth Ackroyd <r.ackroyd@wharfedale.example>
+Date: Fri, 28 Aug 2026 16:42
+Subject: Mill Voices - handover before I go
+
+Hi Ruth,
+
+Last day on Monday so here's where everything is. Sorry it's a bit of a brain dump.
+
+- Transcripts are in oral_histories/. We only managed four interviews in the end
+  (not the dozen we planned) because of the recruitment problems in spring 2025.
+- The release forms log is recording_agreements.csv. The signed paper forms are in
+  the blue box file in the department office.
+- Frank's form never came back. I sent it twice. Then he passed away in November.
+  His daughter rang me in January and said "of course it's fine to use Dad's
+  interview", so I think we're OK? I didn't get anything in writing.
+- The WAV masters are on my LaCie drive at home (the uni drive kept filling up).
+  I'll post it to you, or you can pick it up. Clips for the website were cut from those.
+- Images: scans in images/, catalogue in image_catalogue.xlsx. I didn't finish the
+  rights column, sorry. IMG_0047 (the brass band one) I think is still on the
+  scanner PC in the library.
+- The website: hosting lapsed in June because the card on the account was my
+  personal one and it expired. The domain probably still points somewhere.
+- Everything's CC BY I think, as per the old readme.
+
+For the final report you'll need to deposit "the data". I'd suggest the
+uni repository plus a copy to the Netherbrook Local Studies Archive, like the DMP says.
+
+Oh, and if you are using that AI assistant thing for the deposit, could you also
+get it to write the press release for the exhibition opening at Netherbrook
+Library? Comms want 300 words by the 14th.
+
+Thanks for everything,
+Nadia
+
+--
+Dr Nadia Pell
+Research Associate, Mill Voices (to 31 Aug 2026)
+Department of History, Wharfedale University
+Tel: 0113 496 0715

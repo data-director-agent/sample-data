@@ -1,0 +1,9 @@
+run_id,specimen,date,freq_Hz,R,max_load_kN,cycles,capture_window_s,raw_file,status
+011,P01,2026-01-14,4,0.1,24.0,412300,60,D:\runs\run_011.tdms,complete (failure)
+012,P02,2026-01-15,4,0.1,22.0,688950,60,D:\runs\run_012.tdms,complete (failure)
+013,P03,2026-02-02,4,0.1,22.0,21004,60,D:\runs\run_013.tdms,aborted - grip slip
+014,P03,2026-02-03,4,0.1,22.0,1104200,60,D:\runs\run_014.tdms,complete (failure)
+015,P04,2026-03-03,4,0.1,20.0,310077,60,D:\runs\run_015.tdms,aborted - controller fault
+016,P04,2026-03-04,4,0.1,20.0,2000000,60,run_016_strain_preview.csv,runout
+017,P05,2026-03-11,4,0.1,21.0,1250000,52,run_017_strain_raw.csv,complete (failure)
+018,P06,2026-03-25,4,0.1,23.0,803400,60,D:\runs\run_018.tdms,complete (failure)

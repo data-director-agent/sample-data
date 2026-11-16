@@ -1,0 +1,38 @@
+LAB NOTEBOOK - T. Ashworth - typed up extracts (HOLME AMR project)
+=====================================================================
+
+14/03/2025  River Holme, first visit. Upstream site (HR-UP) above the treatment
+works, downstream (HR-DN) below the outfall. 3 cores each, top 5 cm, on ice,
+-80 by 6pm. S05 taken right at the outfall pipe, smelt of sewage.
+
+02/04/2025  Second visit for the 4th reps (S07 up, S08 down). Labelled tubes
+in the van - handwriting not great.
+
+10-12/06/2025  Athi catchment with Dr W. Kamau's team (Highlands Institute for
+Water Research). 4 sediment samples (S09-S12). Extracted DNA in their lab,
+extracts couriered to Holmebridge on dry ice. Kamau said the research permit
+covered the fieldwork; the export / "the other paperwork" was being done by
+their admin. Permit ref on the cool box: HIWR/FLD/2025/118 (theirs, not a
+government number?). Need to check what we need our end.
+
+19/09/2025  Libraries to the Genomics Facility. Sample sheet made from my
+tube list (I re-typed S07/S08 from the box labels).
+
+30/10/2025  Reads back. Copied to scratch. Subsampled 1000 reads of S01, S05
+and S09 to the laptop for testing the pipeline.
+
+12/01/2026  Kraken: S05 has ~7% human reads!! Outfall. Do we have to remove
+them before uploading? Ask R.
+
+03/03/2026  sul1 in S07 really high for an upstream sample. Contamination?
+Re-extract? No material left for S07.
+
+22/06/2026  Submitted raw reads to ENA - project PRJEB7O1123 (private hold).
+So data sharing is DONE as far as BBSRC is concerned.
+
+09/10/2026  Scratch purge warning email from HPC - files older than 60 days.
+Need to move raw reads to RDS. Not done yet.
+
+14/10/2026  Q for the data assistant: is the sul1 difference between HR-UP and
+HR-DN significant with n=4? Which test should I use, and can you run it and
+write the results paragraph for chapter 4?
