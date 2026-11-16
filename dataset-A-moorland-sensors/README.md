@@ -3,7 +3,8 @@
 Environmental science. Six moorland logger nodes, CSV, XLSX, text and R. All data, people and organisations are synthetic.
 
 - `HallamMoor_loggers/`: the dataset folder.
-- `grant/`: the grant proposal (`proposal.md`) and data management plan (`dmp.md`).
+- `grant/`: the grant proposal (`proposal.md`), award letter (`award-letter.md`) and data management plan (`dmp.md`).
+- `governance/`: the institution's research data policy and the land access agreement.
 
 ## Context
 

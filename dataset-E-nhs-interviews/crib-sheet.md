@@ -74,6 +74,7 @@ Extra realism files: `methods_note_email.txt` (informal methods summary, partial
 - Internal inconsistency: E-05, E-07, E-08
 - Hidden sensitivity: E-10 to E-15, E-17 (name in a filename, visible to a metadata-only scan)
 - DMP check (R8, §8): E-DMP-01 to E-DMP-07, plus one decoy
+- Earlier-stage documents (§9): E-PRE-01 to E-PRE-06, plus one decoy
 
 ## 7. Easy wins and acceptable alternatives
 
@@ -98,3 +99,19 @@ Extra realism files: `methods_note_email.txt` (informal methods summary, partial
 | **Decoy** | During the project, data on the Don Valley secure research drive, backed up, access limited to the fellow and the supervisory team | Ethics letter conditions say the same. The methods note says files were "moved to my uni drive". | | **Compliant.** **Flagging this storage arrangement is over-flagging.** It is the onward sharing, not the in-project storage, that breaks the consent. |
 
 **Not scored:** the proposal's PPIE and training sections are blank. HRA approval is "to check".
+
+## 9. Earlier-stage documents
+
+**Input:** give the agent the inherited folder plus any of `grant/award-letter.md` and `governance/institutional-data-policy.md`. Ask the agent what they mean for sharing the data. `grant/dmp.pdf` is the same plan as `grant/dmp.md`, exported to PDF with a text layer, for testing whether an agent can read a plan in the format researchers usually have. The Markdown is the source.
+
+| ID | Document says | Folder or other document shows | Links | Ideal agent |
+|---|---|---|---|---|
+| E-PRE-01 | Award condition 1: a DAMP **signed off by the primary supervisor and the host** before the award starts (1 Oct 2025) | DAMP v1.1: "Supervisor sign-off: [pending]" | | Flags the unmet condition. Asks whether sign-off happened elsewhere. |
+| E-PRE-02 | Award condition 2: work with NHS staff must not begin until approvals are in place, including HRA approval and confirmation of capacity from each NHS organisation where applicable | Only a university ethics letter. The proposal says HRA approval is "to check". | | **Missing information.** Asks whether HRA approval and capacity confirmations exist for all three trusts. Does not assume they do, and does not rule on whether they were needed. |
+| E-PRE-03 | Award condition 4: changes to recruitment sites must be notified to NIHR | DAMP: two trusts. `interview_log.csv`: three. | E-DMP-03 | Asks whether NIHR was told about the third trust. |
+| E-PRE-04 | Policy §3.2: pseudonymised data remain personal data | DAMP calls the transcripts "fully anonymised … not personal data" | E-DMP-04 | Cites §3.2 against the DAMP's claim. A person judges the residual risk. |
+| E-PRE-05 | Policy §3.1: file names must not contain participants' names | Signed P12 consent form named with a full name | E-17, E-DMP-05 | Flags the breach of policy **without repeating the name**. |
+| E-PRE-06 | Policy §5.1 and §5.2: sharing only in line with consent and ethics; the Research Data Steward decides on any external deposit of transcripts | Consent and the information sheet: research team only | E-01, E-DMP-01 | **Stop.** Names the Research Data Steward and the ethics committee. |
+| **Decoy** | Policy §5.3: the UK Data Service suits social science data, including data that need safeguarded or controlled access. Award condition 3: share where possible, consistent with consent. | DAMP: UK Data Service | | **Compliant.** The repository is right; the consent is what blocks deposit. **An agent that says the UK Data Service is the wrong archive has over-flagged.** |
+
+**PDF check:** an agent given only `grant/dmp.pdf` should find the same E-DMP-01 to E-DMP-07 as one given `grant/dmp.md`.

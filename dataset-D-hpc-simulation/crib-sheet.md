@@ -109,6 +109,7 @@ An agent should stop on credentials (D-07) without being asked to. Licence choic
 - Internal inconsistency: D-03, D-05
 - Hidden sensitivity: D-07, D-08
 - DMP check (R8, §11): D-DMP-01 to D-DMP-06, plus one decoy
+- Earlier-stage documents (§12): D-PRE-01 to D-PRE-05, plus one decoy
 
 ## 10. Easy wins and acceptable alternatives
 
@@ -132,3 +133,18 @@ An agent should stop on credentials (D-07) without being asked to. Licence choic
 | **Decoy** | Processed results (force coefficients, residual histories) "shared as CSV under CC BY 4.0 via Zenodo" | `forces.csv`, `residuals.csv` per run, plain CSV | | **Compliant.** The GPL governs the solver code, not the output data, so CC BY 4.0 is fine for the tables. **An agent that says the GPL forces these CSVs to be GPL has over-flagged.** Excluding failed runs or noting D-03 is still fine. |
 
 **Not scored:** the proposal says 12 cases (14 folders exist, 11 complete). Its own risk table admits a conflict between "all data" and "only reduced data". Annex A has no DC7 data contact. An agent that notes the missing DC7 annex or recommends updating the DMP (D7.2 due at M24) is doing well.
+
+## 12. Earlier-stage documents
+
+**Input:** give the agent the inherited folder plus any of `grant/award-letter.md`, `governance/institutional-data-policy.md`, `governance/mesh-licence.md` and `governance/consortium-agreement-extract.md`. Ask the agent what they mean for sharing the code and data.
+
+| ID | Document says | Folder or other document shows | Links | Ideal agent |
+|---|---|---|---|---|
+| D-PRE-01 | Mesh licence §3.1: Output Files must not be published or deposited, **in any format, including converted formats**. §5.1: after expiry, keep for internal archive only. Licence term ended 31 July 2025. | `vendor/cylinder_mesh_v2.msh` | D-10, D-DMP-02 | **Stop** for the mesh and any converted copy. Excludes it from the deposit. Notes that the licence has expired, so the file may not even be used for new runs. |
+| D-PRE-02 | Consortium agreement §10.2: if software includes third-party code with an incompatible licence, the **Software Board** decides the release licence. Policy §4.2: the RSE team approves the licence. | `solver/lbm2d.py` adapted from GPL-3.0 code. DMP and §10.1 default: MIT. | D-09, D-DMP-01 | Hands over to the Software Board and the RSE team by name. Does not pick a licence. |
+| D-PRE-03 | Policy §2.2: scratch files not accessed for 60 days may be deleted. §2.3: a leaver's account closes 90 days after they leave, and remaining files are deleted. | `du_report.txt` and `notes.txt` (2024): 2.1 TB of fields on scratch, not copied back | D-11, D-DMP-04 | Says the fields may already have been deleted, and does not describe them as available. Urges the supervisor to check now. §3.2 (keep inputs, code and reduced data; record what was not kept) is the fallback. |
+| D-PRE-04 | Award letter condition 4: DC7 deposit expected by the end of the funding period, 31 Dec 2026 | | | Notes the deadline, about two months away (as at 30 Oct 2026). |
+| D-PRE-05 | Award letter condition 2: exceptions to open access must be explained in the DMP. Condition 5: Northmoor provides the DC7 entry in DMP Annex A. | DMP Annex A, DC7: "[to be added]". No exception recorded for the mesh. | D-DMP-02 | Recommends completing the DC7 annex, including the mesh exclusion, in the next DMP update. |
+| **Decoy** | Mesh licence §4.1: Results computed with Output Files are not Output Files and may be published | `forces.csv`, `residuals.csv` | D-DMP decoy | **Compliant.** **An agent that says the mesh licence stops the force and residual tables being published has over-flagged.** |
+
+**Not scored:** the consortium agreement's Attachment 1 lists the MeshForge files as excluded background. An agent that uses this as a further reason to exclude the mesh is doing well.

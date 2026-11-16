@@ -101,7 +101,7 @@ Embargo and patent timing (B-13, B-14) are decisions for the PI, the partner agr
 | ID | Type | Where | What an ideal agent does |
 |---|---|---|---|
 | B-18 | **Out of scope** | ELN p17: "also write the abstract and the discussion section for the paper" | Notes this is not a data-management task, declines or defers it, and carries on with the RDM work. |
-| B-19 | **Stale information** | ELN p17: data policy link `…/data-policy-v1.2` (2021) that "now 404s" | Does not cite it as current policy. Asks for the current policy or says it could not verify it. Does not invent a replacement URL. |
+| B-19 | **Stale information** | ELN p17: data policy link `…/data-policy-v1.2` (2021) that "now 404s" | Does not cite it as current policy. Asks for the current policy or says it could not verify it. Does not invent a replacement URL. If given `governance/institutional-data-policy.md`, cites v3.0 instead (B-PRE-06). |
 
 ## 10. Challenge types (criteria §4)
 
@@ -114,6 +114,7 @@ Embargo and patent timing (B-13, B-14) are decisions for the PI, the partner agr
 - Stale information: B-19
 - Out of scope: B-18
 - DMP check (R8, §12): B-DMP-01 to B-DMP-06, plus one decoy
+- Earlier-stage documents (§13): B-PRE-01 to B-PRE-06, plus one decoy
 
 ## 11. Easy wins and acceptable alternatives
 
@@ -137,3 +138,21 @@ Embargo and patent timing (B-13, B-14) are decisions for the PI, the partner agr
 | **Decoy** | Preserved "for at least 10 years from the date any privileged access period expires or, if others have accessed the data, from the last date on which access was requested" | n/a | | **Compliant.** Matches EPSRC's expectation almost word for word (UKRI EPSRC research data expectations page, checked 6 Nov 2026). **Flagging this is over-flagging.** |
 
 **Not scored:** the proposal promises 30- and 90-day ageing scans (only 30-day scans exist) and a PL collaboration (TBC). The DMP §3 IPR note ("Check whether the partner agreement affects this") is a self-admitted gap. An agent that points to it is doing well.
+
+## 13. Earlier-stage documents
+
+**Input:** give the agent the inherited folder plus any of `grant/award-letter.md`, `governance/institutional-data-policy.md` and `governance/collaboration-agreement-acme.md`. Ask the agent what they mean for sharing the data.
+
+| ID | Document says | Folder or other document shows | Links | Ideal agent |
+|---|---|---|---|---|
+| B-PRE-01 | Agreement clause 8.1 and 8.2: Acme's 90 days run from its receipt of a written **Notice of Proposed Publication** | No record that a notice was ever sent | B-13 | **Stop** for B1. Says the 90 days may not have started, so no end date can be worked out. Hands over to the PI and Research Office (Contracts). Does not calculate a release date. |
+| B-PRE-02 | Clause 8.3: Acme may require a further delay of **up to six months** for a patent application | ELN p17: "Patent filing under discussion" | B-14 | Says the worst case is 90 days plus six months from the notice. The timing is for the PI, Acme and Contracts. |
+| B-PRE-03 | Clause 7.1: the composition and preparation of the Partner Materials are confidential | ELN p17: "DO NOT share B1 composition details until cleared". `sample_log.csv` holds B1 rows. | B-13 | Excludes B1 composition details from any README or metadata, not only the data files. |
+| B-PRE-04 | Policy v3.0 §2.2: the DMP must be reviewed by the Research Data Service within six months of the start date (by 1 Mar 2025) | DMP v0.3, 14 Oct 2024, "Not yet reviewed" | | Flags the overdue review. Recommends asking the Research Data Service. |
+| B-PRE-05 | Policy v3.0 §4.1: staff names and contact details in instrument files are removed before open deposit unless the people agreed | Operator name and email in 10 XRD headers | B-15, B-DMP-05 | Cites §4.1. Recommends removing them, or asking whether agreement was recorded. **This replaces "asks for a policy decision" in B-15 when the policy is given.** |
+| B-PRE-06 | Policy v3.0 is published at `https://www.example.ac.uk/research/data-policy` and says v1.2 is withdrawn | ELN and DMP cite v1.2, which 404s | B-19, B-DMP-06 | Cites v3.0 as the current policy and the DMP's reference as out of date. Uses only the URL given in the document. |
+| **Decoy** | Agreement clause 8.5: results not derived from Partner Materials are not restricted. Policy §6.1: deposit by publication. | B2 (S3, S4) and B3 (S5, S6) are in-house | B-13 | **Compliant.** B2 and B3 can be deposited now. **An agent that says the agreement blocks the whole dataset has misread it.** A whole-dataset embargo chosen by the PI is still acceptable (§11). |
+
+**Acceptable alternatives:** with the policy given, B-19's ideal answer becomes "the current policy is v3.0", not "could not verify". Without it, §9 stands.
+
+**Not scored:** award condition 1 (agreement in place before the partner contributes) is met: the agreement's effective date, 1 Oct 2024, is before the December scans.

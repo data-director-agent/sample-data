@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- Added documents from the stages before data collection, outside the inherited folders: an award letter for each dataset (`grant/award-letter.md`), each fictional institution's research data policy (`governance/institutional-data-policy.md`), and the agreements that govern the data in A (land access agreement), B (collaboration agreement with the industrial partner) and D (mesh software licence and consortium agreement extract). Each crib sheet has a new earlier-stage documents section (`X-PRE-` IDs, one decoy each). B-19 now has an alternative answer when the current policy (v3.0) is given.
+- Added Word and PDF copies of two DMPs (`dataset-C-health-social-survey/grant/dmp.docx`, `dataset-E-nhs-interviews/grant/dmp.pdf`), generated from the Markdown, for testing whether an agent can read a plan in the format researchers usually have.
+- CI: files in `governance/` are excluded from the `SHA256SUMS` check, like `grant/`.
 - Added a GitHub Actions CI workflow (`.github/workflows/ci.yml`): verifies each dataset's `SHA256SUMS` (including that no file is unlisted), checks required files exist, and lints Markdown (`.markdownlint-cli2.jsonc`).
 - Added `CITATION.cff` (Joe Heffer, Ethel Mendocilla Sato).
 - Added a synthetic grant proposal and data management plan to each dataset (`grant/proposal.md`, `grant/dmp.md`) for testing Blueprint R8 (checking data sharing against the DMP). Each follows a real funder template: NERC Outline DMP (A), DCC institutional template for EPSRC (B), ESRC DMP (C), Horizon Europe DMP (D), NIHR DAMP (E). Each crib sheet has a new DMP-check section with the planted gaps and one compliant decoy.
