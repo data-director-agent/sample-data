@@ -3,7 +3,8 @@
 Computational science. 78 files: YAML, SLURM logs, CSV, Python. All data, people and organisations are synthetic.
 
 - `lbm_cylinder_study/`: the dataset folder.
-- `grant/`: the grant proposal (`proposal.md`) and data management plan (`dmp.md`).
+- `grant/`: the grant proposal (`proposal.md`), award letter (`award-letter.md`) and data management plan (`dmp.md`).
+- `governance/`: the institution's research data policy, the mesh software licence and an extract of the consortium agreement.
 
 ## Context
 

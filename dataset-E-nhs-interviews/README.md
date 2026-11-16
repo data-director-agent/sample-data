@@ -3,7 +3,8 @@
 Social sciences and health services research. Fourteen files: text documents, five transcript excerpts, two CSVs and some leftovers. All data, people, places and events are synthetic.
 
 - `NHS_remote_working_PhD/`: the dataset folder.
-- `grant/`: the grant proposal (`proposal.md`) and data management plan (`dmp.md`).
+- `grant/`: the grant proposal (`proposal.md`), award letter (`award-letter.md`) and data management plan (`dmp.md`, also as `dmp.pdf`).
+- `governance/`: the institution's research data policy.
 
 ## Context
 

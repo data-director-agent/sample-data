@@ -3,7 +3,8 @@
 Social and health science. Ten CSV and text files, including copies and OS leftovers. All data, people and organisations are synthetic.
 
 - `SYCAWS_wave1_JW/`: the dataset folder.
-- `grant/`: the grant proposal (`proposal.md`) and data management plan (`dmp.md`).
+- `grant/`: the grant proposal (`proposal.md`), award letter (`award-letter.md`) and data management plan (`dmp.md`, also as `dmp.docx`).
+- `governance/`: the institution's research data policy.
 
 ## Context
 
