@@ -9,10 +9,10 @@ This repository must not contain any workshop activities or exercises. It only c
 ## Repository Layout
 
 ```
-dataset-{A..H}-*/
+dataset-{A..I}-*/
   README.md       # Participant-facing description
   crib-sheet.md   # Answer key: planted problems and true answers
-  grant/          # Proposal, award letter and DMP (DMP also as .docx in C, .pdf in E)
+  grant/          # Proposal, award letter and DMP (DMP also as .docx in C and I, .pdf in E)
   governance/     # Institutional data policy and any agreements or licences
   SHA256SUMS      # Checksums of the inherited folder; regenerate after any change
   <inherited folder>/   # The messy folder participants are given
@@ -22,7 +22,7 @@ dataset-{A..H}-*/
 
 - Everything must stay synthetic: people, organisations, grant numbers, credentials, quotes. Never add real data.
 - The inherited folders are deliberately flawed. Do not "fix" inconsistencies, odd names or missing files; they are planted problems.
-- `grant/` and `governance/` sit outside the inherited folder and are not in `SHA256SUMS`. If you change one, update the crib sheet's DMP-check or earlier-stage section to match. Regenerate `dataset-C-health-social-survey/grant/dmp.docx` and `dataset-E-nhs-interviews/grant/dmp.pdf` when their `dmp.md` changes (`pandoc -f gfm+hard_line_breaks`, then LibreOffice for the PDF).
+- `grant/` and `governance/` sit outside the inherited folder and are not in `SHA256SUMS`. If you change one, update the crib sheet's DMP-check or earlier-stage section to match. Regenerate `dataset-C-health-social-survey/grant/dmp.docx`, `dataset-I-gut-microbiome-diet/grant/dmp.docx` and `dataset-E-nhs-interviews/grant/dmp.pdf` when their `dmp.md` changes (`pandoc -f gfm+hard_line_breaks`, then LibreOffice for the PDF).
 - If you change an inherited folder, update that dataset's `crib-sheet.md` to match, and the README table if the contents change.
 - Update `CHANGELOG.md` for notable changes.
 - Keep README.md free of participant-facing hints about planted problems; those belong only in crib sheets.

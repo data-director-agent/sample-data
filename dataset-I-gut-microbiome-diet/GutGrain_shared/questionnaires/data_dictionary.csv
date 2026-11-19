@@ -1,0 +1,14 @@
+variable,description,units_or_codes
+study_id,Volunteer study code GG001-GG060,
+visit,Visit code,
+date_completed,Date questionnaire completed,dd/mm/yyyy
+dob,Date of birth,dd/mm/yyyy
+sex,Sex as recorded at screening,F/M
+height_cm,Height,cm
+weight_kg,Weight,kg
+bmi,"Body mass index, calculated",kg/m2
+antibiotics_3m,Antibiotics in last 3 months (exclusion if Y),Y/N
+ibs_symptoms,Self-reported IBS symptoms,Y/N
+wholegrain_portions_wk,Usual wholegrain portions per week,count
+smoker,Smoking status,N/Y/ex
+alcohol_units_wk,Usual alcohol units per week,units

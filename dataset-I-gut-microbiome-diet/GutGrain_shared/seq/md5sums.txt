@@ -1,0 +1,4 @@
+d56be7e69dc76ba2ba7cbff30ea81688  GG007_wk00_R1.sub1k.fastq.gz
+a293d81c6a6eca5d62ecbac437cb87d7  GG007_wk00_R2.sub1k.fastq.gz
+f230173c65eb45307e7a5102efddb4e7  GG007_wk12_R1.sub1k.fastq.gz
+b6cf8066cf3a215e912bfc63af4321b9  GG007_wk12_R2.sub1k.fastq.gz
