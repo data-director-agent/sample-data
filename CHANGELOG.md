@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Added dataset **I. GutGrain diet and gut microbiome** (life and health sciences, extension): a BBSRC-funded dietary intervention with stool metagenomes, SCFA measurements, food diaries and health questionnaires. Its data management plan has four gaps findable from the plan alone (no repository, consent too narrow for sharing, no retention period, an ineligible post-grant storage cost) and three compliant decoys. The inherited folder adds traps on a linkage key stored with the data, a withdrawn volunteer, human reads, identifying free text and mixed units. The plan is also provided as `grant/dmp.docx`; `governance/` holds the institution's policy and an ethics approval letter.
 - Added three datasets to widen the disciplinary range (criteria §7), each with a README, crib sheet, `grant/`, `governance/` and `SHA256SUMS`:
   - **F. Mill Voices oral histories** (arts and humanities, core): AHRC-funded oral history transcripts, TEI, recording agreements and loaned photograph scans. Traps on rights statements, closed and unsigned releases, a named third party, orphan works and identifiable children.
   - **G. Composite deck fatigue rig** (engineering, extension): Innovate UK KTP strain-gauge data, CAD, MATLAB and partner emails. Traps on units and sample rate, credentials in a config file, commercial confidentiality, export control and publication timing. Holds the repository's one deliberately large file (criteria §9).
