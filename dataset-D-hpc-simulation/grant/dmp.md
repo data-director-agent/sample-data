@@ -16,7 +16,7 @@ Expected volumes: up to 1 TB per DC in total. **DC7 (Northmoor) expects about 20
 
 ### 2.1 Making data findable, including provisions for metadata
 
-All datasets will receive a DOI through Zenodo, in the FLOWNET-DN community. Metadata will follow the DataCite schema, with keywords from a FLOWNET vocabulary (to be developed).
+All datasets will receive a DOI through Zenodo. Metadata will follow the DataCite schema, with keywords from a FLOWNET vocabulary (to be developed).
 
 ### 2.2 Making data accessible
 

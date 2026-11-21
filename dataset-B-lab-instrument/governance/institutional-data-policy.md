@@ -30,7 +30,7 @@ This policy applies to all research data created at or on behalf of Calderbrook 
 
 ## 6. Deposit and access
 
-6.1 Research data that underpin publications must be deposited in the Calderbrook Research Data Repository, or in a suitable external repository, no later than the date of publication.
+6.1 Research data that underpin publications must be deposited in the University's research data repository (Calderbrook University on Figshare for Institutions), or in a suitable external repository, no later than the date of publication.
 
 6.2 Access may be delayed (embargoed) for a stated period to allow a patent application or to meet the terms of an agreement. The Research Office must approve any embargo for commercial reasons.
 

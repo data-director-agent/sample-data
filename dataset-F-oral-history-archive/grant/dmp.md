@@ -18,7 +18,7 @@ All data, including audio masters, will be kept on the University's secure resea
 
 ## 4. Long-term data storage
 
-At the end of the project, audio masters, transcripts and the image archive will be deposited in the Wharfedale Research Data Repository and a copy offered to the Netherbrook Local Studies Archive, the local authority archive for the valley. The project website will be maintained by the University for at least ten years.
+At the end of the project, audio masters, transcripts and the image archive will be deposited in the University's DSpace research repository and a copy of the recordings and transcripts offered to the British Library's oral history collections through National Life Stories. The project website will be maintained by the University for at least ten years.
 
 ## 5. Data sharing
 

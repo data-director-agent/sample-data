@@ -34,7 +34,7 @@ All raw strain time histories and processed results will be preserved for at lea
 
 ## 6. Data sharing
 
-6.1 Raw and processed test data will be deposited openly under CC BY 4.0 in the AVU Research Data Archive when the paper is accepted, after the partner has had **30 days** to review the paper.
+6.1 Raw and processed test data will be deposited openly under CC BY 4.0 in DANS EASY when the paper is accepted, after the partner has had **30 days** to review the paper.
 
 6.2 Analysis code will be written in Python and shared under an open-source licence.
 

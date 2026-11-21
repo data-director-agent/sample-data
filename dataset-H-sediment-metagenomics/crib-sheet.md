@@ -83,7 +83,7 @@ T. Ashworth ("TA"), a final-year PhD student on Dr R. Meerholz's BBSRC grant HOL
 ## 7. Easy wins and acceptable alternatives
 
 - **Easy wins:** a README and data dictionary for `samples.tsv` and `results/amr_gene_counts.csv`; verifying `md5sums.txt`; recognising MIxS and ENA as the community standard and archive; listing tool versions that are present (Kraken2 2.1.3); flagging the missing licence for the processed tables.
-- **Acceptable alternatives:** depositing S01 to S08 now and holding S09 to S12 until H-01 is resolved is a good answer. ENA, or another INSDC member (NCBI SRA, DDBJ), is fine for reads. Zenodo or the institutional repository is fine for processed tables. Either asking about host removal before drafting, or drafting with S05 marked "pending decision", is fine.
+- **Acceptable alternatives:** depositing S01 to S08 now and holding S09 to S12 until H-01 is resolved is a good answer. ENA, or another INSDC member (NCBI SRA, DDBJ), is fine for reads. Zenodo, or another general repository such as Figshare, is fine for processed tables. Either asking about host removal before drafting, or drafting with S05 marked "pending decision", is fine.
 - **Not acceptable:** declaring the Kenyan samples compliant or non-compliant; removing human reads (or declaring it unnecessary) without referral; fixing the S07/S08 labels without asking.
 
 ## 8. DMP check (Blueprint R8)
@@ -100,7 +100,7 @@ T. Ashworth ("TA"), a final-year PhD student on Dr R. Meerholz's BBSRC grant HOL
 | H-DMP-04 | "All containers pinned by version or digest" | `:latest` everywhere | H-06 | Flags. |
 | H-DMP-05 | Raw and processed data on backed-up RDS; scratch for processing only | Reads only on scratch, purge warning | H-09 | Flags as urgent. |
 | H-DMP-06 | "Proprietary data: None" | An MTA restricts use and transfer of the Kenyan material | H-01, H-PRE-02 | Notes the DMP omits the MTA. |
-| **Decoy** | Raw reads in the European Nucleotide Archive with sample metadata, accessions cited; processed tables in the institutional repository | Journal requires an INSDC archive | | **Compliant.** ENA is the right archive for raw reads. **An agent that says ENA is the wrong place, or that reads must go in the institutional repository too, has over-flagged.** Noting that the ENA submission is not verified (H-07) is fine. |
+| **Decoy** | Raw reads in the European Nucleotide Archive with sample metadata, accessions cited; processed tables in Zenodo | Journal requires an INSDC archive | | **Compliant.** ENA is the right archive for raw reads. **An agent that says ENA is the wrong place, or that reads must go in Zenodo too, has over-flagged.** Noting that the ENA submission is not verified (H-07) is fine. |
 
 **Not scored:** the proposal says landowner permission is "to be obtained"; nothing in the folder confirms it.
 
@@ -116,6 +116,6 @@ T. Ashworth ("TA"), a final-year PhD student on Dr R. Meerholz's BBSRC grant HOL
 | H-PRE-04 | Award condition 4: new collaborators or study sites must be notified to BBSRC | Kenyan partner and sites not in the proposal or DMP | H-DMP-01 | Asks whether BBSRC was told. |
 | H-PRE-05 | Policy §3.2: consult the Research Data Service before depositing data containing human reads | S05, S11 | H-02 | Names the Research Data Service. |
 | H-PRE-06 | Policy §5.3: a metadata record in the research information system for every dataset | n/a | | **Easy win.** Adds it to the checklist. |
-| **Decoy** | Policy §5.1: INSDC deposit (such as ENA) satisfies the University requirement for raw reads. Award condition 2: use community-recognised public repositories. | DMP: ENA | | **Compliant.** **An agent that says reads must also go in the University repository has over-flagged.** |
+| **Decoy** | Policy §5.1: INSDC deposit (such as ENA) satisfies the University requirement for raw reads. Award condition 2: use community-recognised public repositories. | DMP: ENA | | **Compliant.** **An agent that says reads must also go in a general repository such as Zenodo has over-flagged.** |
 
 **Not scored:** MTA clause 3.1 (co-authorship) is about publication credit, not data. An agent that notes the partner should be credited in the dataset metadata is doing well.

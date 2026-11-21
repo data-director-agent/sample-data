@@ -31,7 +31,7 @@ This policy applies to research data created or collected by staff and postgradu
 
 5.2 Sequence data should be deposited in an International Nucleotide Sequence Database Collaboration (INSDC) archive, such as the European Nucleotide Archive. Where sequence data from human participants cannot be shared openly, a controlled-access archive, such as the European Genome-phenome Archive, should be used.
 
-5.3 Other data may be deposited in the Nidderdale Research Data Repository, which offers open and controlled access and preserves data for at least ten years at no charge to University researchers.
+5.3 Other data may be deposited in the University's research data repository, which runs on Figshare for Institutions. It offers open, embargoed and restricted access, and the University preserves deposits for at least ten years at no charge to University researchers. Data that need managed access by application may instead go to the UK Data Service.
 
 ## 6. Costs
 
