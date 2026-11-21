@@ -27,11 +27,11 @@ This policy applies to research data created or collected by staff and students 
 
 ## 5. Sharing and deposit
 
-5.1 Research data underpinning a funded project must be deposited in the Wharfedale Research Data Repository or a suitable discipline or community archive, with access in line with the rights and agreements that apply.
+5.1 Research data underpinning a funded project must be deposited in the University's research repository (which runs on DSpace) or a suitable discipline, national or community archive, with access in line with the rights and agreements that apply.
 
 5.2 Before any deposit of recordings of people, the **Research Data Steward** reviews the agreements and, with the PI, decides which items may be open, which closed or embargoed, and which withheld.
 
-5.3 A local authority or community archive may be a suitable home for oral histories and local photographs, alongside or instead of the University repository, provided the agreements with interviewees and lenders allow it.
+5.3 A national, local authority or community archive, such as the British Library's oral history collections, may be a suitable home for oral histories and local photographs, alongside or instead of the University repository, provided the agreements with interviewees and lenders allow it.
 
 ## 6. Contacts
 

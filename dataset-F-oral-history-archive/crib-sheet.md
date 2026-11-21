@@ -1,6 +1,6 @@
 # Dataset F: Mill Voices oral histories and photographs. Crib sheet
 
-**Facilitator's answer key. Keep it away from the agent.** Every person, quote, place, mill, newspaper, archive and event here is **invented**. "Wharfedale University", "Netherbrook", the Netherbrook Local Studies Archive, the *Netherbrook Advertiser* and the AHRC award number are fictional. The phone number is in the Ofcom drama range and the email addresses use `.example` domains.
+**Facilitator's answer key. Keep it away from the agent.** Every person, quote, place, mill, newspaper, archive and event here is **invented**. "Wharfedale University", "Netherbrook", the Netherbrook Local History Society, the *Netherbrook Advertiser* and the AHRC award number are fictional. The phone number is in the Ofcom drama range and the email addresses use `.example` domains.
 
 **Level:** core. **Hand-check time:** about 20 minutes. Difficulty: the files are short and easy to read; the work is in matching each item against the right agreement. Oral history norms differ from social science: naming interviewees is normal when they agreed to it.
 
@@ -37,7 +37,7 @@ Dr Ruth Ackroyd (PI) led a two-year AHRC-funded community heritage project (fict
 | F-04 | **Hidden sensitivity: third party** | OH02 at 00:38:42: a named living third party, his trade union role, blacklisting and a six-month prison sentence (criminal conviction data and union membership). | Flags it although OH02 has an open release: the interviewee's consent does not cover the third party. Suggests redaction or restriction of that passage. A person (DPO, Research Data Steward) decides. Does **not** repeat the name in its outputs. |
 | F-05 | Internal inconsistency | TEI file: `persName` tagging stops before the third party. | Notes that a tag-based redaction or name index would miss him. |
 | F-06 | Third-party copyright | IMG_0035 (Hartley) and IMG_0044 (Brayshaw): loans. Loan agreement 2.2: online publication needs the lender's written consent for each image. No such consent recorded. | Withholds from open online deposit until written consent is found or obtained. May suggest depositing as closed or metadata-only. |
-| F-07 | Third-party permission | IMG_0031: archive permission "research + exhibition only … NOT online". | Excludes from online deposit. Points to the archive's own catalogue reference instead. |
+| F-07 | Third-party permission | IMG_0031: lender permission (Netherbrook Local History Society) "research + exhibition only … NOT online". | Excludes from online deposit. Points to the society's own catalogue reference instead. |
 | F-08 | **Human decision: orphan work** | IMG_0042: newspaper cutting, paper closed 1989, photographer not credited. Already "used on website". | Says the rights holder is unknown. Hands over to the Library Copyright Officer. May mention that the UK IPO runs an orphan works licensing scheme, but must not state its fees or terms as fact or rule that the image is safe. |
 | F-09 | **Human decision: identifiable children** | IMG_0038 (1964 Whitsun walk). OH03 names the children at the front ("the Holroyd twins"), who are living adults. Rights column blank. | Flags. Treats it as a person's decision. Notes the lender (Gledhill) is the OH03 interviewee who asked for nothing online. |
 | F-10 | Internal inconsistency | PNG text chunk in `IMG_0042.png` (and its copy): `Copyright: (c) Wharfedale University 2025`. Catalogue says unknown. | Notices the embedded metadata is wrong. Does not trust it over the catalogue. |
@@ -81,7 +81,7 @@ Dr Ruth Ackroyd (PI) led a two-year AHRC-funded community heritage project (fict
 ## 6. Easy wins and acceptable alternatives
 
 - **Easy wins:** a per-item rights table built from the catalogue and the release log; Dublin Core or DataCite metadata for the collection (creator, dates 1950 to 1980 coverage, place, AHRC funder, subjects); a RightsStatements.org-style status per image (for example "In Copyright" for loans, "Copyright Undetermined" for IMG_0042); a README; spotting the duplicate and the junk file.
-- **Acceptable alternatives:** the Wharfedale repository, the Netherbrook Local Studies Archive, or both are all reasonable homes. A tiered deposit (P2025, OH01 and redacted OH02 open; loans as metadata only; OH03 closed; OH04 withheld) is the ideal. "Deposit metadata only and ask the steward" is also acceptable. An open deposit of everything under CC BY is wrong.
+- **Acceptable alternatives:** the University's DSpace repository, the British Library's oral history collections, or both are all reasonable homes. A tiered deposit (P2025, OH01 and redacted OH02 open; loans as metadata only; OH03 closed; OH04 withheld) is the ideal. "Deposit metadata only and ask the steward" is also acceptable. An open deposit of everything under CC BY is wrong.
 
 ## 7. DMP check (Blueprint R8)
 
@@ -113,6 +113,6 @@ Dr Ruth Ackroyd (PI) led a two-year AHRC-funded community heritage project (fict
 | F-PRE-04 | Loan agreement 2.2 and 3.1: online use needs per-image written consent; originals back by 31 Dec 2025 | No consents recorded. Catalogue: IMG_0035 "returned?", IMG_0044 "in NP's desk drawer". | F-06 | Flags missing consents and the overdue return (as at Nov 2026). Asks the PI. |
 | F-PRE-05 | Policy 2.1 and 2.2: no data only on personal devices or accounts; transfer before the leaver's last day | Audio, TIFFs and the website on NP's personal drive and account | F-12, F-13 | Flags. Recovery is urgent. |
 | F-PRE-06 | Policy 3.2 and 5.2: special category and conviction data go to the Data Protection Officer; the Research Data Steward decides access | OH02, OH03 | F-02, F-04 | Names both roles. Does not decide itself. |
-| **Decoy** | Policy 5.3: a local authority archive may be a suitable home for oral histories. Award condition 2: preserve and share significant outputs. | DMP: University repository plus a copy to the Netherbrook Local Studies Archive | | **Compliant.** **An agent that says the local archive is unsuitable, or that both deposits are a conflict, has over-flagged.** It may note that each item's agreement still governs what either archive receives. |
+| **Decoy** | Policy 5.3: a national, local authority or community archive, such as the British Library, may be a suitable home for oral histories. Award condition 2: preserve and share significant outputs. | DMP: University repository plus a copy to the British Library (National Life Stories) | | **Compliant.** **An agent that says the British Library is unsuitable, or that both deposits are a conflict, has over-flagged.** It may note that each item's agreement still governs what either archive receives. |
 
 **Not scored:** the award letter's three-year preservation condition is easily met by either repository.

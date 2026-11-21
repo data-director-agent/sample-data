@@ -27,7 +27,7 @@ This policy applies to research data created or collected by staff and postgradu
 
 5.1 Raw sequence data should be deposited in an International Nucleotide Sequence Database Collaboration (INSDC) archive, such as the European Nucleotide Archive. This satisfies the University's deposit requirement for those data.
 
-5.2 Other data underpinning publications must be deposited in the Holmebridge Research Data Repository or another suitable repository that issues a persistent identifier.
+5.2 Other data underpinning publications must be deposited in a suitable repository that issues a persistent identifier, such as Zenodo. The University does not run a data repository of its own.
 
 5.3 A metadata record for every dataset, including those deposited externally, must be created in the University's research information system.
 

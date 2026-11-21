@@ -4,7 +4,7 @@
 **Research organisation:** Wharfedale University (fictional), Department of History
 **Principal investigator:** Dr R. Ackroyd
 **Named research associate:** Dr N. Pell (0.8 FTE, 23 months)
-**Project partners:** Netherbrook Library and Netherbrook Local Studies Archive (both fictional)
+**Project partners:** Netherbrook Library and Netherbrook Local History Society (both fictional)
 **Duration:** 24 months (1 October 2024 to 30 September 2026)
 **Reference on award:** AH/X999999/1 (fictional)
 

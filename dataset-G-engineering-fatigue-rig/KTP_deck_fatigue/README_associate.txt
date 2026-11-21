@@ -22,9 +22,9 @@ data in a repository with a DOI.
 
 Data deposit
 ------------
-Plan was to put everything in the AVU Research Data Archive when the
+Plan was to put everything in DANS EASY (used it for my MSc data) when the
 paper is accepted:
-https://researchdata.aire-valley.example/archive/submit
+https://easy.dans.knaw.nl/
 
 Ethics: not needed (no human participants).
 

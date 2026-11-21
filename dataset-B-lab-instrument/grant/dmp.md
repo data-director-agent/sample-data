@@ -19,7 +19,7 @@ XRD on the departmental diffractometer, exported directly from the instrument PC
 
 ## 2. Documentation and metadata
 
-Each XRD file carries a header with sample ID, date, operator, wavelength and scan settings. A README will describe the sample series and the composition of each sample (measured by EDX). Metadata will follow the University repository's DataCite schema.
+Each XRD file carries a header with sample ID, date, operator, wavelength and scan settings. A README will describe the sample series and the composition of each sample (measured by EDX). Metadata will follow the DataCite schema used by the University's research data repository, which runs on Figshare for Institutions.
 
 ## 3. Ethics and legal compliance
 
@@ -35,11 +35,11 @@ Data are stored on the University's research file store (backed up nightly), wit
 
 **Which data are of long-term value?** All raw and processed XRD and SEM data that underpin publications.
 
-**What is the long-term preservation plan?** Data will be deposited in the Calderbrook Research Data Repository. In line with EPSRC expectations, they will be securely preserved for at least 10 years from the date any privileged access period expires or, if others have accessed the data, from the last date on which access was requested.
+**What is the long-term preservation plan?** Data will be deposited in the University's Figshare research data repository. In line with EPSRC expectations, they will be securely preserved for at least 10 years from the date any privileged access period expires or, if others have accessed the data, from the last date on which access was requested.
 
 ## 6. Data sharing
 
-**How will you share the data?** All data will be made openly available in the Calderbrook Research Data Repository under a CC BY 4.0 licence at the time of publication, with a DOI cited in each paper's data access statement.
+**How will you share the data?** All data will be made openly available in the University's Figshare research data repository under a CC BY 4.0 licence at the time of publication, with a DOI cited in each paper's data access statement.
 
 **Are any restrictions on data sharing required?** No restrictions are anticipated.
 

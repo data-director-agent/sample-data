@@ -25,7 +25,7 @@ The dataset will be a reference for other UK catchment studies and for AMR surve
 ## Methods for data sharing
 
 - **Raw reads:** deposited in the **European Nucleotide Archive (ENA)**, with sample metadata, before the first paper is submitted. Accession numbers cited in publications.
-- **Processed tables and workflow:** deposited in the Holmebridge Research Data Repository with a DOI, under CC BY 4.0.
+- **Processed tables and workflow:** deposited in Zenodo with a DOI, under CC BY 4.0, with the Nextflow workflow archived from GitHub.
 - **Workflow:** a Nextflow pipeline with **all containers pinned by version or digest**, so that results can be reproduced exactly.
 - **Storage during the project:** raw and processed data held on the University's backed-up Research Data Storage (RDS). The HPC scratch area is used for processing only.
 

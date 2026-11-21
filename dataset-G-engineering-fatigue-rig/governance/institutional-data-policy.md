@@ -29,7 +29,7 @@ This policy applies to research data created or collected by staff, students and
 
 ## 6. Deposit and access
 
-6.1 Research data must be deposited in **AVU Research Data Online** or a suitable subject or funder repository. AVU Research Data Online replaced the AVU Research Data Archive, which closed to new deposits on 30 September 2025.
+6.1 The University does not run its own data repository. Research data must be deposited in a suitable subject or funder repository or, where there is none, a trusted general-purpose repository such as **Zenodo**. The Library keeps a list of recommended repositories and checks that any repository chosen is still accepting deposits.
 
 6.2 Data that underpin a publication must have a persistent identifier cited in the publication. "Available on request" is not acceptable as the only means of access. Where data cannot be open for legal or contractual reasons, a metadata record must be published and access managed through the Library.
 

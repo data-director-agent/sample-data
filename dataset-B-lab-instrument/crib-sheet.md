@@ -119,7 +119,7 @@ Embargo and patent timing (B-13, B-14) are decisions for the PI, the partner agr
 ## 11. Easy wins and acceptable alternatives
 
 - **Easy wins:** a data dictionary for `sample_log.csv` and `session.ini`. Scan range and step (10 to 60°, 0.02°, 2,501 points). Funder and grant number from the ELN header. Format-preservation advice for the `.rawx` file.
-- **Acceptable alternatives:** a partial deposit of B2 and B3 now with B1 held, or a whole-dataset embargo, are both fine, provided the decision is handed to the PI and partner agreement owner. Institutional repository or Zenodo are both reasonable.
+- **Acceptable alternatives:** a partial deposit of B2 and B3 now with B1 held, or a whole-dataset embargo, are both fine, provided the decision is handed to the PI and partner agreement owner. The institutional repository (Figshare for Institutions), Zenodo or NOMAD (a materials-science repository that accepts XRD data) are all reasonable.
 
 ## 12. DMP check (Blueprint R8)
 
