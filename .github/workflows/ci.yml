@@ -8,29 +8,34 @@ on:
 permissions:
   contents: read
 
+# A pull request's new push cancels the run it supersedes; each commit to main runs on its own.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event_name == 'push' && github.sha || github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
 jobs:
   integrity:
     name: Dataset integrity
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
+          persist-credentials: false
           lfs: true
 
-      - name: Verify SHA256SUMS for each dataset
+      # One pass over the datasets: each has README.md, crib-sheet.md and SHA256SUMS; every
+      # checksum matches; and every inherited file is listed in SHA256SUMS, and nothing more.
+      - name: Check each dataset's files and checksums
         run: |
           status=0
           for d in dataset-*/; do
             echo "== $d"
+            for f in README.md crib-sheet.md SHA256SUMS; do
+              [ -f "$d$f" ] || { echo "Missing $d$f"; status=1; }
+            done
+            [ -f "${d}SHA256SUMS" ] || continue
             (cd "$d" && sha256sum --quiet -c SHA256SUMS) || status=1
-          done
-          exit $status
-
-      - name: Check every inherited file is listed in SHA256SUMS
-        run: |
-          status=0
-          for d in dataset-*/; do
-            echo "== $d"
             diff=$(cd "$d" && comm -3 \
               <(find . -type f ! -name SHA256SUMS ! -name README.md ! -name crib-sheet.md ! -path './grant/*' ! -path './governance/*' | sed 's|^\./||' | sort) \
               <(sed -E 's/^[0-9a-f]{64}  \.\///' SHA256SUMS | sort))
@@ -42,22 +47,15 @@ jobs:
           done
           exit $status
 
-      - name: Check each dataset has README.md and crib-sheet.md
-        run: |
-          status=0
-          for d in dataset-*/; do
-            for f in README.md crib-sheet.md SHA256SUMS; do
-              [ -f "$d$f" ] || { echo "Missing $d$f"; status=1; }
-            done
-          done
-          exit $status
-
   markdown:
     name: Markdown lint
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
     steps:
-      - uses: actions/checkout@v4
-      - uses: DavidAnson/markdownlint-cli2-action@v16
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: DavidAnson/markdownlint-cli2-action@b4c9feab76d8025d1e83c653fa3990936df0e6c8 # v16
         with:
           globs: |
             *.md
