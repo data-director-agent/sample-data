@@ -6,6 +6,26 @@ Social sciences and health services research. Fourteen files: text documents, fi
 - `grant/`: the grant proposal (`proposal.md`), award letter (`award-letter.md`) and data management plan (`dmp.md`, also as `dmp.pdf`).
 - `governance/`: the institution's research data policy.
 
+## Welcome
+
+This folder belongs to a PhD student who has interviewed NHS staff about working from home. It is a typical qualitative-research folder: a log of interviews, consent and ethics paperwork, excerpts from the transcripts and an email about methods. The full transcripts are not included; five short excerpts stand in for them.
+
+## Research background
+
+Since the pandemic, many NHS staff have worked part of the week from home or on flexible patterns. Most of the existing attention has gone to office-based roles, and little is known about clinical staff whose work is largely hands-on. This PhD study asks how nurses, allied health professionals and clinical managers experience remote, hybrid and flexible working, and how these arrangements affect their well-being at work. The researcher carried out semi-structured interviews lasting 45 to 60 minutes, in person or online, with staff from NHS trusts in South Yorkshire, and is analysing them thematically. The aim is to inform fairer flexible-working policies in NHS employers.
+
+## What is in the folder
+
+| File or folder | What it holds |
+|---|---|
+| `interview_log.csv` | One row per participant: date, duration, role group, trust, working pattern and consent and recording status |
+| `transcripts/` | Excerpts of five interviews |
+| `docs/` | The participant information sheet, consent form, a completed consent form and the ethics approval letter |
+| `methods_note_email.txt` | An email about methods |
+| `old/` | An earlier version of the interview log |
+
+Participants are identified by codes such as `P03`. The consent form and information sheet describe what participants were told about how their data would be used.
+
 ## Context
 
 - **Researcher:** a PhD student with 25 transcribed interviews with NHS clinical staff about remote and flexible working and well-being.
