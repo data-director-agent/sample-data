@@ -30,12 +30,12 @@ The large file `run_017_strain_raw.csv` holds a full test at 2 kHz (about 260,00
 
 - **Researcher:** an academic structural engineer who led a two-year Knowledge Transfer Partnership with a composites company. The KTP Associate who ran the fatigue tests has since joined the company. The academic wants to publish the results and deposit the data.
 - **Funder:** Innovate UK (Knowledge Transfer Partnership), with an industrial partner.
-- **Journal (fictional):** *Journal of Composite Bridge Engineering*. Policy: *"Data supporting the results must be deposited in a repository that issues a DOI, cited in the Data Availability statement. 'Available on request' statements are not accepted."*
+- **Journal:** *Journal of Composites for Construction* (ASCE). Policy, paraphrased: a Data Availability statement is required, and data held in a repository must be cited with a DOI or URL. Check the journal's current author guidelines.
 - **Institution:** Aire Valley University (fictional).
 - **Budget for deposit fees:** none.
 - **Project stage:** the two-year partnership ended on 31 July 2026. The tests are finished and a paper draft has been sent to the company.
 - **Planned collection:** strain time histories from eight gauges on each of eight panels, plus actuator load and displacement, cycles to failure, failure modes and photographs. The data acquisition software writes TDMS files, which are exported to CSV. No overall volume is stated in the project documents.
-- **Where the data must go:** the journal requires a repository that issues a DOI. The grant offer letter names no repository. The University has no repository of its own and its policy asks for a suitable subject or general-purpose repository (for example Zenodo).
+- **Where the data must go:** the journal requires a Data Availability statement citing any repository with a DOI. The grant offer letter names no repository. The University has no repository of its own and its policy asks for a suitable subject or general-purpose repository (for example Zenodo).
 - **Plan:** the academic lead wants to deposit the data in a repository before the paper is published, so that the DOI can go in the Data Availability statement.
 
-The researchers, company, journal and projects are fictional. The funder and repositories are real.
+The researchers, company and projects are fictional. The funder, journal and repositories are real.

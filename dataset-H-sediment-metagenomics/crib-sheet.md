@@ -130,8 +130,8 @@ For the four-activity workshop (project set-up, repository choice, documentation
 |---|---|
 | Sensitive information expected | At planning stage: none ("no human or personal data", DMP). Found later: human DNA reads in S05 (6.84 %) and S11 (0.41 %) (H-02); genetic resources and a restricted MTA for S09 to S12 (H-01). |
 | How protected, who decides | Human reads: **Research Data Service**, with the Data Protection Officer where needed, decides whether to remove before deposit (policy §3.2). Kenyan samples: **Research Contracts Office** (policy §4.1, §4.2). The researcher and supervisor do not decide either. |
-| Ethical, legal, institutional rules | Ethics: no human participants, no animals; landowner permission (proposal). Award conditions 1 (follow DMP), 2 (public repositories), 3 (access and benefit-sharing), 4 (notify BBSRC of new sites). Policy §2.1, §3.2, §4.1, §4.2, §5.1 to 5.3. MTA 2.1, 2.2, 3.1, 4.1. Journal: INSDC accessions before acceptance. |
-| Embargo | **No embargo required by any document.** DMP: reads no later than first publication; tables at publication. Journal needs accessions before acceptance, so the reads must be at least reserved by then. Holding back S09 to S12 pending H-01 is withholding, not an embargo. |
+| Ethical, legal, institutional rules | Ethics: no human participants, no animals; landowner permission (proposal). Award conditions 1 (follow DMP), 2 (public repositories), 3 (access and benefit-sharing), 4 (notify BBSRC of new sites). Policy §2.1, §3.2, §4.1, §4.2, §5.1 to 5.3. MTA 2.1, 2.2, 3.1, 4.1. Journal (Applied and Environmental Microbiology): sequence data in a public INSDC database, with accessions cited (verify current guidelines). |
+| Embargo | **No embargo required by any document.** DMP: reads no later than first publication; tables at publication. Journal expects accessions cited, so the reads must be at least reserved by then. Holding back S09 to S12 pending H-01 is withholding, not an embargo. |
 | Does the DMP match | **No.** Built-in clashes: 8 UK samples and "all UK" against 12 including 4 Kenyan (H-DMP-01, the main one); "no human data" (H-DMP-02); MIxS in full (H-DMP-03); pinned containers (H-DMP-04); backed-up storage (H-DMP-05); "proprietary: none" against the MTA (H-DMP-06). The ENA and Zenodo plan is compliant (decoy). |
 
 ### 10.2 Repository decision
@@ -176,7 +176,7 @@ For the four-activity workshop (project set-up, repository choice, documentation
 |---|---|
 | Licence | Processed tables and workflow: CC BY 4.0 (DMP). A code licence is not stated anywhere; the researcher picks one. Reads in ENA carry no licence choice (verify). |
 | Access | S01 to S04, S06 to S08 open once H-03 is settled. S05: after the host-removal decision (H-02). S09 to S12: withheld until Research Contracts and the partner clear them (H-01, H-PRE-02). Not deposited: `old/`, `.DS_Store`, `notes/`. |
-| Embargo | None needed. The journal wants accessions before acceptance; the researcher may use an ENA hold date only until publication. |
+| Embargo | None needed. The journal expects accessions cited; the researcher may use an ENA hold date only until publication. |
 | Must stop for a person | H-01 and H-PRE-01 to H-PRE-04 (Research Contracts, BBSRC notification, MTA countersignature); H-02 and H-PRE-05 (Research Data Service, Data Protection Officer); H-03 (researcher); H-07 (submission receipt); H-09 (secure reads on RDS first). Depositing before the paper is submitted is fine for the cleared subset. |
 | Identifiers | BB/Z999999/1, HIWR/MTA/2025/031 and HIWR/FLD/2025/118 are synthetic and will not resolve. `PRJEB7O1123` is not a valid accession (H-07) and must not be cited. No ORCID, ROR or DOI appears in the documents. Real funder identifiers (BBSRC, UKRI) exist but are not in the documents: look up. Credit HIWR in the metadata (MTA 3.1). |
 | Paper link | The paper is unwritten or in draft: no DOI. Add the link after acceptance. |

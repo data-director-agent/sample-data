@@ -169,6 +169,6 @@ Three things only a human supplies: what the lenders consented to in writing, wh
 |---|---|
 | Licence | P2025_001 to 003: CC BY 4.0 (University owns, credit Imran Lodge). OH01 and redacted OH02: open access with named attribution, interviewees keep copyright. Do not apply CC BY by default. Library Copyright Officer to set the reuse statement. Loans, IMG_0042: rights statement "In Copyright" or "Copyright Undetermined", not CC BY. |
 | Access | Tiered (§6): open (P2025, OH01, OH02 after redaction), metadata only (loans, IMG_0042), closed (OH03), withheld (OH04). |
-| Embargo | OH03 only. Depositing before the journal article is published is fine for the open tier. |
+| Embargo | OH03 only. Depositing before the journal article (planned for *Oral History*) is published is fine for the open tier. |
 | Must stop for a person | OH03 (F-02). OH04 and the exhibition quote (F-03, F-16). OH02 third-party passage (F-04). IMG_0031, 0035, 0044 (F-06, F-07). IMG_0042 and IMG_0038 (F-08, F-09). Audio recovery (F-12). Press release is out of scope (F-14). |
 | Identifiers | AH/X999999/1: synthetic, will not resolve. No ORCID, ROR or DOI in any document. The PI's ORCID and the University's ROR must be asked for. Catalogue ref NMC/PH/12 is the society's own, and is not a persistent identifier. `millvoices.example` does not resolve and the site has lapsed (F-13). The article has no DOI yet. |

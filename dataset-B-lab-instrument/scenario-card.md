@@ -27,11 +27,11 @@ Sample names, dates and operator initials are encoded in file names and headers.
 
 - **Researcher:** a materials physicist with X-ray diffraction patterns and electron microscope images for a paper (about 2 MB in total, plus one proprietary instrument file).
 - **Funder:** EPSRC (New Investigator Award).
-- **Journal (fictional):** *Journal of Emerging Photonic Materials*. Policy: *"Raw and processed data must be deposited in an open repository with a persistent identifier before acceptance. Restrictions are allowed only with a stated justification."*
+- **Journal:** *Optical Materials Express* (Optica). Policy, paraphrased: a Data Availability statement is required, and deposit of underlying data in an open repository with a persistent identifier is encouraged. Check the journal's current author guidelines.
 - **Institution:** Calderbrook University (fictional).
 - **Stage:** the first round of experiments is finished and a paper is being written. The plan was to measure XRD patterns for each film as made and after ageing in air, take SEM images, and keep a sample log. The draft data management plan estimated under 5 GB.
-- **Where the data must go:** no funder or institution names a single repository. EPSRC expects data underpinning papers to be accessible, with an access statement in the paper. The University policy allows its own repository (Figshare for Institutions) or a suitable external one, by the date of publication. The journal requires an open repository with a persistent identifier before acceptance.
+- **Where the data must go:** no funder or institution names a single repository. EPSRC expects data underpinning papers to be accessible, with an access statement in the paper. The University policy allows its own repository (Figshare for Institutions) or a suitable external one, by the date of publication. The journal encourages an open repository with a persistent identifier.
 - **Budget for deposit fees:** none.
 - **Plan:** the researcher wants to deposit the data before the paper is published.
 
-The researchers, journals and projects are fictional. The funders and repositories are real.
+The researchers and projects are fictional. The funders, journals and repositories are real.

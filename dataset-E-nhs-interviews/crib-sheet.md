@@ -118,7 +118,7 @@ Extra realism files: `methods_note_email.txt` (informal methods summary, partial
 
 ## 10. Facilitator key: data journey
 
-Used with the four-activity workshop. IDs refer to §3, §8 and §9. The scenario card's journal line (*Journal of Health Services Workforce Research*, fictional) and its policy were added for the workshop. The proposal only mentions "two peer-reviewed papers". Unverified outside facts are marked "verify".
+Used with the four-activity workshop. IDs refer to §3, §8 and §9. The scenario card's journal line (*BMC Health Services Research*, real; policy paraphrased, verify against current guidelines) was added for the workshop. The proposal only mentions "two peer-reviewed papers". Unverified outside facts are marked "verify".
 
 ### 10.1 Governance record
 
@@ -134,7 +134,7 @@ Used with the four-activity workshop. IDs refer to §3, §8 and §9. The scenari
 
 | Question | Key |
 |---|---|
-| Mandated? | **No.** Award condition 3 says "an appropriate repository where possible, consistent with consent". The DMP names the UK Data Service. Policy §5.3 calls it suitable. No journal mandate. |
+| Mandated? | **No.** Award condition 3 says "an appropriate repository where possible, consistent with consent". The DMP names the UK Data Service. Policy §5.3 calls it suitable. No journal mandate (BMC requires an Availability of Data and Materials statement, with reasons where data cannot be shared). |
 | Recommended single repository | **UK Data Service (ReShare)**: social science, supports safeguarded and controlled access, DOI minted, trained curators (policy §5.3, decoy in §9). Certification: UKDS holds CoreTrustSeal (verify). Cost: verify with the Library (DMP §7 leaves it open). |
 | Alternatives | §7: documentation-only deposit, or ethics amendment then controlled access. The institution has no repository named. |
 
@@ -166,4 +166,4 @@ Three things only a human supplies: whether archiving can be consented or author
 | Access | Transcripts and log: not open. Closed or controlled only after amendment and steward approval. Metadata-only record visible. |
 | Embargo | See 10.1. Depositing before the paper is published is fine for documentation and metadata only. |
 | Must stop for a person | Everything touching transcripts (E-01, E-09). P12 consent-form filename (E-17: do not repeat the name). P14 gap (E-07). Withdrawals (E-06). P22 and P23 audio (E-08). Retention conflict (E-02). |
-| Identifiers | Award NIHR999999 and ethics reference EU/HSR/2025/0912: synthetic, will not resolve. No ORCID, ROR or DOI in any document. Ask the researcher. The paper has no DOI yet. The journal is fictional. |
+| Identifiers | Award NIHR999999 and ethics reference EU/HSR/2025/0912: synthetic, will not resolve. No ORCID, ROR or DOI in any document. Ask the researcher. The paper has no DOI yet.  |
