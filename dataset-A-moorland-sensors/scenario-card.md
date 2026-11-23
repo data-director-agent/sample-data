@@ -1,14 +1,12 @@
-# Dataset A: Hallam Moor sensors
+# Scenario card: Dataset A, Hallam Moor sensors
+
+Welcome! This is the working folder of an environmental scientist who has spent a year listening to a moor. Low-cost, solar-powered logger nodes were strung up a hillside to record how temperature, humidity, soil moisture and air quality change with height, and the researcher now has a paper to write and data to share. The folder is a realistic mix of raw logger exports, calibration records, field notes and a half-finished plotting script. Expect the sort of untidiness that builds up over a field season.
 
 Environmental science. Six moorland logger nodes, CSV, XLSX, text and R. All data, people and organisations are synthetic.
 
 - `HallamMoor_loggers/`: the dataset folder.
 - `grant/`: the grant proposal (`proposal.md`), award letter (`award-letter.md`) and data management plan (`dmp.md`).
 - `governance/`: the institution's research data policy and the land access agreement.
-
-## Welcome
-
-This is the working folder of an environmental scientist who has spent a year listening to a moor. Low-cost, solar-powered logger nodes were strung up a hillside to record how temperature, humidity, soil moisture and air quality change with height, and the researcher now has a paper to write and data to share. The folder is a realistic mix of raw logger exports, calibration records, field notes and a half-finished plotting script. Expect the sort of untidiness that builds up over a field season.
 
 ## Research background
 
@@ -32,6 +30,9 @@ Variable names in the CSV files are abbreviated (for example `ta` for air temper
 - **Funder:** NERC (UK Research and Innovation).
 - **Journal (fictional):** *Journal of Upland Ecology*. Policy: *"Data underpinning the results must be deposited in a publicly accessible repository that issues a DOI, and that DOI cited in the Data Availability statement. Data must be available at publication under CC BY 4.0 or CC0."*
 - **Institution:** University of the Pennine Vale (fictional), with its own repository and policy.
+- **Stage:** the monitoring year is over and a paper is being written. The plan was to log air temperature, relative humidity, soil temperature, soil moisture and PM2.5 every 30 minutes for 12 months, as CSV, with calibration and site records alongside. The outline data management plan estimated about 5 MB.
+- **Where the data must go:** the NERC award letter says the data must be offered to the NERC Environmental Data Service and not deposited elsewhere in its place. The journal requires a repository that issues a DOI. The University policy says deposit with a funder's data centre satisfies it.
 - **Budget for deposit fees:** none.
+- **Plan:** the researcher wants to deposit the data before the paper is published, so that the DOI can be cited in the Data Availability statement.
 
 The researchers, journals and projects are fictional. The funders and repositories are real.

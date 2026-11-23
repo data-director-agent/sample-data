@@ -1,14 +1,12 @@
-# Dataset D: Cylinder flow simulation
+# Scenario card: Dataset D, Cylinder flow simulation
+
+Welcome! This folder is the output of a doctoral researcher's computational fluid dynamics study, left behind when the project ended. It holds the code used for post-processing, the input files and job logs for each simulation run, small result tables, and a note pointing to a very large volume of field output that never left the cluster. It is a good example of what a simulation study looks like once the scripts and logs are all that remain.
 
 Computational science. 78 files: YAML, SLURM logs, CSV, Python. All data, people and organisations are synthetic.
 
 - `lbm_cylinder_study/`: the dataset folder.
 - `grant/`: the grant proposal (`proposal.md`), award letter (`award-letter.md`) and data management plan (`dmp.md`).
 - `governance/`: the institution's research data policy, the mesh software licence and an extract of the consortium agreement.
-
-## Welcome
-
-This folder is the output of a doctoral researcher's computational fluid dynamics study, left behind when the project ended. It holds the code used for post-processing, the input files and job logs for each simulation run, small result tables, and a note pointing to a very large volume of field output that never left the cluster. It is a good example of what a simulation study looks like once the scripts and logs are all that remain.
 
 ## Research background
 
@@ -35,6 +33,10 @@ Run folders are numbered in order of submission, not by Reynolds number, so use 
 - **Journal (fictional):** *Computational Fluid Dynamics Letters*. Policy: *"Source code and the data needed to reproduce the figures must be deposited with a DOI. Datasets larger than 50 GB should be described, and a representative subset deposited."*
 - **Institution:** Northmoor Institute of Technology (fictional), one partner in a doctoral network.
 - **Other facts:** the code was adapted from an open-source project. A commercial mesh file was used. The project ended and the scratch storage will be cleaned.
+- **Stage:** the project has ended and the paper is being written. Nothing has been deposited yet.
+- **Planned:** twelve simulation cases (six Reynolds numbers on two grids), with outputs kept on the cluster. The consortium data management plan expected about 200 GB for this doctoral researcher.
+- **Where data must go:** the plan names Zenodo. The award letter asks for deposit in a trusted repository by the end of the funding period (31 December 2026). The journal asks for a deposit with a DOI. The Institute's policy names no repository.
+- **Plan:** deposit the code and results before the paper is published.
 - **Budget for deposit fees:** none.
 
 The researchers, journals and projects are fictional. The funders and repositories are real.

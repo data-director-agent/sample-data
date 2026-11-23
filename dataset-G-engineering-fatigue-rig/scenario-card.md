@@ -1,14 +1,12 @@
-# Dataset G: Composite deck panel fatigue tests
+# Scenario card: Dataset G, Composite deck panel fatigue tests
+
+Welcome! This folder holds the results of a two-year engineering partnership between a university and a bridge-deck manufacturer. It was left by the project's KTP Associate, who ran the fatigue tests and has since moved to the company. It combines raw data acquisition output, analysis scripts, test procedures, CAD geometry and correspondence, including one very large strain-gauge file.
 
 Engineering (structural). Eighteen files: CSV, XLSX, INI, JSON, STEP, MATLAB, Python, Word, PNG and email. One file, `daq/run_017_strain_raw.csv`, is large: about 25 MB and 260,000 rows (stored with Git LFS). All data, people and organisations are synthetic.
 
 - `KTP_deck_fatigue/`: the dataset folder.
 - `grant/`: the grant application (`proposal.md`), grant offer letter (`award-letter.md`) and data management plan (`dmp.md`).
 - `governance/`: the institution's research data policy, the collaboration agreement extract and a non-disclosure agreement with the company partner.
-
-## Welcome
-
-This folder holds the results of a two-year engineering partnership between a university and a bridge-deck manufacturer. It was left by the project's KTP Associate, who ran the fatigue tests and has since moved to the company. It combines raw data acquisition output, analysis scripts, test procedures, CAD geometry and correspondence, including one very large strain-gauge file.
 
 ## Research background
 
@@ -35,5 +33,9 @@ The large file `run_017_strain_raw.csv` holds a full test at 2 kHz (about 260,00
 - **Journal (fictional):** *Journal of Composite Bridge Engineering*. Policy: *"Data supporting the results must be deposited in a repository that issues a DOI, cited in the Data Availability statement. 'Available on request' statements are not accepted."*
 - **Institution:** Aire Valley University (fictional).
 - **Budget for deposit fees:** none.
+- **Project stage:** the two-year partnership ended on 31 July 2026. The tests are finished and a paper draft has been sent to the company.
+- **Planned collection:** strain time histories from eight gauges on each of eight panels, plus actuator load and displacement, cycles to failure, failure modes and photographs. The data acquisition software writes TDMS files, which are exported to CSV. No overall volume is stated in the project documents.
+- **Where the data must go:** the journal requires a repository that issues a DOI. The grant offer letter names no repository. The University has no repository of its own and its policy asks for a suitable subject or general-purpose repository (for example Zenodo).
+- **Plan:** the academic lead wants to deposit the data in a repository before the paper is published, so that the DOI can go in the Data Availability statement.
 
 The researchers, company, journal and projects are fictional. The funder and repositories are real.

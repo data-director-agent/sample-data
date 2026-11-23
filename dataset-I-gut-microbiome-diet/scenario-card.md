@@ -1,14 +1,12 @@
-# Dataset I: GutGrain dietary intervention and gut microbiome
+# Scenario card: Dataset I, GutGrain dietary intervention and gut microbiome
+
+Welcome! This folder is the shared drive of a nutrition trial, tidied up by a postdoctoral researcher on their way out of the lab. It brings together human-participant material of several kinds: sample records, sequencing summaries, lab measurements, questionnaires, food diaries and consent paperwork. It is a good example of a project folder where scientific data, administrative records and personal information sit side by side.
 
 Life and health sciences (human microbiome, nutrition). Twenty-one files: CSV, XLSX, gzipped FASTQ and text. All data, people and organisations are synthetic.
 
 - `GutGrain_shared/`: the dataset folder.
 - `grant/`: the grant application (`proposal.md`), award letter (`award-letter.md`) and data management plan (`dmp.md`, also as `dmp.docx`).
 - `governance/`: the institution's research data policy and the research ethics committee's approval letter.
-
-## Welcome
-
-This folder is the shared drive of a nutrition trial, tidied up by a postdoctoral researcher on their way out of the lab. It brings together human-participant material of several kinds: sample records, sequencing summaries, lab measurements, questionnaires, food diaries and consent paperwork. It is a good example of a project folder where scientific data, administrative records and personal information sit side by side.
 
 ## Research background
 
@@ -37,6 +35,9 @@ Volunteers are identified by study codes `GG001` to `GG060`, and the arms are `W
 - **Funder:** BBSRC (UK Research and Innovation), responsive mode research grant.
 - **Journal (fictional):** *Journal of Nutritional Microbiome Science*. Policy: *"Sequence data must be deposited in a recognised public archive, and accession numbers given in the Data Availability statement. Data from human participants may be deposited under controlled access."*
 - **Institution:** Nidderdale University (fictional).
+- **Project stage:** the grant runs from February 2025 to January 2028. Recruitment is complete, the first of two sequencing batches is done and the first paper is planned for January.
+- **Planned collection:** 360 stool samples from 60 volunteers (shotgun metagenomic sequencing, about 2 TB), targeted metabolite measurements (about 5 GB), and food diaries and health questionnaires (about 200 MB).
+- **Where the data must go:** the journal requires a recognised public archive for sequence data and allows controlled access for human-participant data. The award letter asks for community-recognised public repositories where they exist. The University's policy asks for a repository that issues a persistent identifier, an INSDC archive (or a controlled-access archive such as the European Genome-phenome Archive) for sequences, and offers its own Figshare-based repository with open, embargoed and restricted access.
 - **Plan:** the principal investigator wants the data shared before the first paper is submitted in January.
 
 The researchers, volunteers, journal and institution are fictional. The funder, archives and place names are real.

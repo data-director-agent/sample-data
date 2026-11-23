@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- Renamed each dataset `README.md` to `scenario-card.md` ("Scenario card") and moved the friendly introduction to the first paragraph. Updated CI, `AGENTS.md` and the root README. No inherited folders changed.
+- Added scenario facts (project stage, planned collection, where the data must go, plan to deposit before the paper is published) to the Context section of every dataset scenario card, and a "Facilitator key: data journey" section to every crib sheet (governance record, repository decision, fall-back README and data dictionary, deposit-stage key), so each dataset supports the four workshop activities. Dataset E gains a fictional journal and its policy. No inherited folders changed, so `SHA256SUMS` are unaffected.
+
 - Added a friendly introduction, research background and folder guide to each dataset README (A to I), to help someone unfamiliar with the data pick it up and use it. No inherited folders changed, so `SHA256SUMS` and the crib sheets are unaffected.
 - Replaced made-up data repositories with real ones. The institutions stay fictional, so their own repositories now run on real platforms rather than having invented names: Figshare for Institutions (B, I) and DSpace (F). D deposits on plain Zenodo (no fictional community), and H's processed tables go to Zenodo. F's copy now goes to the British Library's oral history collections; the photograph lender becomes the fictional Netherbrook Local History Society (in `image_catalogue.xlsx` and the `IMG_0031.png` metadata). G-14 now uses a real closure: TB's notes and the DMP point to DANS EASY, which stopped taking deposits in December 2023 and was replaced by the DANS Data Stations; G's policy now says the University has no repository of its own. Updated the crib sheets, the F README and the `SHA256SUMS` for F and G.
 

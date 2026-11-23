@@ -137,3 +137,71 @@ Both faults lie between rows 121,337 and 216,500: the first 121,336 rows and the
 | **Decoy** | Agreement 4.1: Results vest in the Company | | | **Not a block on deposit.** Clause 6.1 and 6.3 expressly let the University deposit the Test Data. **An agent that says nothing can be shared because the company owns the IP has over-flagged.** |
 
 **Not scored:** the CAD file cites the NDA, but it was disclosed in Nov 2025, after the KTP commencement, so agreement 7.2 says the collaboration agreement governs it instead. Either way it is confidential and stays out. An agent that spots this is doing well.
+
+## 10. Facilitator key: data journey
+
+For the four-activity workshop (project set-up, repository choice, documentation, pre-deposit). Reuses the IDs above. The award letter and collaboration agreement are synthetic, so real KTP terms are not the key here.
+
+### 10.1 Governance record
+
+| Field | Key answer |
+|---|---|
+| Sensitive information expected | At planning stage: none about people (no participants, ethics not applicable). Partner confidential information (CAD, layup schedules, resin formulation; agreement §1) is expected. Found later: credentials (G-06), confidential content in three files (G-09), staff contact details in emails, a possible defence end use (G-10). |
+| How protected, who decides | Partner IP: restricted project folder, removed before deposit; **Research Contracts** confirms what may go (policy §4.1; agreement 6.2(a)). Credentials: never deposited; **IT Security** (policy §3). Export control: **Export Control Officer**; the researcher must not self-assess (policy §5). |
+| Ethical, legal, institutional rules | Ethics: not applicable (proposal; DMP 3.1). Award letter conditions 1 (agreement), 2 (DMP agreed by the LMC), 3 (export control law), 4 (publish). Agreement §4.1 (Results vest in the Company), §6.1 to 6.4 (publication and deposit), §7. Policy §2.1 (DMP agreed with partner), §3, §4.1, §5, §6.1 to 6.3, §7.1 (retain 10 years). Journal: DOI-backed deposit, no "available on request". |
+| Embargo | **Yes, short and conditional.** Reason: partner review and possible patent filing. Source: agreement 6.1 (45 days' notice) and 6.2(b) (up to 90 further days, patent reason stated). Notice sent 22 Sept 2026, so 45 days ended 6 Nov 2026. Whether the 29 Sept email is a 6.2(b) notice, and the length of any delay, is for Research Contracts (G-11, G-PRE-02). No embargo is justified on any other ground (G-PRE-07). |
+| Does the DMP match | **No.** Built-in clashes: export control "not applicable" (G-DMP-03, the main one), partner review 30 days against 45 (G-DMP-05), DANS EASY (G-14), 2 kHz and microstrain (G-DMP-01), all raw histories (G-DMP-02), standalone DAQ PC (G-DMP-04), Python code (G-DMP-06), Associate responsible (G-DMP-07). The exclusion of CAD, layup and resin is compliant (decoy). DMP is still a draft (G-PRE-01). |
+
+### 10.2 Repository decision
+
+- **Mandated?** A DOI-issuing repository is mandated by the journal and policy §6.2. No named repository is mandated by the funder, journal or agreement. Policy §6.1: no University repository; subject or trusted general repository such as Zenodo.
+- **Recommended: Zenodo.** Reasons: issues a DOI; free, so it fits the nil budget; accepts open, embargoed and restricted records; allows a DOI to be reserved before publishing a record (verify); the 25 MB file and the rest are far under policy §6.3's 20 GB. Certification and per-record size limit: verify on the day. The DMP's DANS EASY is not usable (G-14). Acceptable alternatives: §7.
+- **Order of events:** a DOI is needed for the paper, but the record must not be published until G-06, G-08 to G-10 and G-11 are resolved.
+
+### 10.3 Fall-back README skeleton and data dictionary
+
+**README skeleton** (fill from the files; gaps marked):
+
+| Section | Content from the folder | Gap |
+|---|---|---|
+| Title, project | Composite deck panel fatigue tests, HC-DP400; KTP99999X; Aire Valley University and Hoyland Composites Ltd | DOI, ORCID, ROR: **unknown** (none in the documents) |
+| Collection | Four-point bending, rig 1, R = 0.1, 4 Hz, 8 gauges; 8 specimens, 7 tested; runs 011 to 018 (`run_summary_011-018.csv`) | Why run 017 is 52 s: **unknown** |
+| Files | Specimen log; run summary; run 016 preview; run 017 capture window; channel map; analysis scripts; TP-04 | Six TDMS runs not in the folder: **unknown** location |
+| Methods and software | MATLAB R2024b with Signal Processing Toolbox; Python, numpy, matplotlib | Open alternative: not stated |
+| Licence, access | See 10.4 | |
+
+**Three things only a human supplies:** (1) the true unit and sample rate of run 017 (G-04, G-05); (2) where the six TDMS runs are and whether full histories ever existed (G-12); (3) the export-control and publication-timing decisions (G-10, G-11). This crib sheet had no such list before; these three are proposed.
+
+**Proprietary or special formats:** TDMS (National Instruments; the six raw runs, not in the folder), STEP (excluded, G-08), MATLAB `.m` (needs a paid toolbox), `.xlsx`, `.docx`.
+
+**Sensitive-data assumption (no personal data):** holds for participants. It does not cover partner IP, credentials, user names in `specimen_log.xlsx` properties and the lock file, or staff phone numbers and emails.
+
+**Data dictionary** (S = supplied in the files, I = inferred, U = unknown):
+
+| Variable | Type | Unit | Missing-value code | Definition | Source |
+|---|---|---|---|---|---|
+| `time_s` (run 016, 017) | decimal | s | none | Time since start of capture; steps 0.0002 s in run 017, so 5 kHz | I |
+| `SG1_ue` to `SG8_ue` (run 016) | decimal | microstrain | none | Gauge reading; positions in `channel_map.json` | S |
+| `SG1_ue` to `SG8_ue` (run 017) | decimal | header says microstrain; values are strain, 10^6 smaller | none; sentinels `0.0000e+00` (SG6, flat-line) and `3.2767e-03` (SG2, saturation) are faults, not codes | Same header as run 016 | S (header), I (unit conflict, G-04); true unit **U** |
+| `specimen_id` | text | none | blank | P01 to P08 | S |
+| `panel_rev` | text | none | blank | Panel design revision (B or C) | S |
+| `layup`, `resin_system` | text | none | blank (P08 resin) | Partner confidential; **remove before deposit** | S |
+| `test_date` | date | none | blank | Mixed formats (ISO, dd/mm/yyyy, dd/mm/yy); normalise with the owner's agreement | S |
+| `rig` | text | none | blank | AVU rig 1 or Hoyland rig 2 | S |
+| `max_load`, `min_load` | decimal | kN in header; P07 is lbf | blank | Peak and trough actuator load | S; P07 unit I (G-07) |
+| `freq_Hz` | decimal | Hz | blank | Loading frequency (P07 is 3, others 4) | S |
+| `cycles_to_failure` | integer | cycles | blank | Cycles at failure or runout | S |
+| `failure_mode`, `run_ids`, `notes` | text | none | blank; `n/a` in `run_ids` for P07 | As named | S |
+| Run summary: `run_id`, `specimen`, `date`, `freq_Hz`, `R`, `max_load_kN`, `cycles`, `capture_window_s`, `raw_file`, `status` | mixed | Hz, kN, cycles, s | none | As named; `raw_file` paths are DAQ PC paths | S |
+| `damage_summary.csv`: `stress_range_MPa`, `N_design`, `miner_D` | decimal | MPa, cycles, none | none | Derived by hand from MATLAB output (script header); load-to-stress factor not documented; P07 wrong (G-07) | S; method **U** |
+
+### 10.4 Deposit-stage key
+
+| Item | Key answer |
+|---|---|
+| Licence | Data: CC BY 4.0 (DMP 6.1), for the cleaned Test Data only, if Research Contracts confirms (policy §4.1). Code: an open-source licence (DMP 6.2). The researcher picks which; the documents do not name one. |
+| Access | Open for the cleaned Test Data after the stops below. Never deposited: `daq_config.ini` (or redacted), CAD, resin and layup content, the emails, leftovers (G-16). |
+| Embargo | See 10.1. Any embargo is set only to the end date Research Contracts confirms. A record with no confirmed delay should not be embargoed. |
+| Must stop for a person | G-10 (Export Control Officer, before any deposit); G-11 and G-PRE-02 (Research Contracts); G-06 (IT Security, credentials); G-08 and G-09 (Research Contracts confirms the redaction); G-04, G-05, G-07 (researcher or owner confirms units and rate). Wanting the DOI first does not override these. |
+| Identifiers | Award reference KTP99999X, NDA reference HC/AVU/2024-03: synthetic, will not resolve. No ORCID, ROR or DOI appears in any document, so the agent must ask. Real funder identifiers (Innovate UK) exist but are not in the documents: look up, do not invent. The DANS EASY link is dead (G-14). |
+| Paper link | The paper is a draft, unpublished: no DOI. Add the related-identifier link after acceptance and keep the Data Availability statement in step. |

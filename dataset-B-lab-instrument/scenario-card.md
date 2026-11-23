@@ -1,14 +1,12 @@
-# Dataset B: Perovskite XRD and SEM
+# Scenario card: Dataset B, Perovskite XRD and SEM
+
+Welcome! This folder belongs to a materials physicist who has just finished a first round of experiments on manganese-doped perovskite thin films and needs to turn them into a paper. It contains X-ray diffraction patterns, electron microscope images, a sample log and a few pages from the electronic lab notebook, all as left by the person who ran the measurements.
 
 Materials physics. 26 files: ASCII scans, PNG, INI, text. All data, people and organisations are synthetic.
 
 - `Perovskite_XRD_Novak_inherited/`: the dataset folder.
 - `grant/`: the grant proposal (`proposal.md`), award letter (`award-letter.md`) and data management plan (`dmp.md`).
 - `governance/`: the institution's research data policy and the collaboration agreement with the industrial partner.
-
-## Welcome
-
-This folder belongs to a materials physicist who has just finished a first round of experiments on manganese-doped perovskite thin films and needs to turn them into a paper. It contains X-ray diffraction patterns, electron microscope images, a sample log and a few pages from the electronic lab notebook, all as left by the person who ran the measurements.
 
 ## Research background
 
@@ -31,6 +29,9 @@ Sample names, dates and operator initials are encoded in file names and headers.
 - **Funder:** EPSRC (New Investigator Award).
 - **Journal (fictional):** *Journal of Emerging Photonic Materials*. Policy: *"Raw and processed data must be deposited in an open repository with a persistent identifier before acceptance. Restrictions are allowed only with a stated justification."*
 - **Institution:** Calderbrook University (fictional).
+- **Stage:** the first round of experiments is finished and a paper is being written. The plan was to measure XRD patterns for each film as made and after ageing in air, take SEM images, and keep a sample log. The draft data management plan estimated under 5 GB.
+- **Where the data must go:** no funder or institution names a single repository. EPSRC expects data underpinning papers to be accessible, with an access statement in the paper. The University policy allows its own repository (Figshare for Institutions) or a suitable external one, by the date of publication. The journal requires an open repository with a persistent identifier before acceptance.
 - **Budget for deposit fees:** none.
+- **Plan:** the researcher wants to deposit the data before the paper is published.
 
 The researchers, journals and projects are fictional. The funders and repositories are real.
