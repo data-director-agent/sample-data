@@ -1,14 +1,12 @@
-# Dataset H: River sediment antimicrobial resistance metagenomes
+# Scenario card: Dataset H, River sediment antimicrobial resistance metagenomes
+
+Welcome! This folder belongs to a final-year PhD student who has sequenced DNA from river mud to see how wastewater affects antibiotic resistance. It contains the sample metadata, sequencing and quality-control summaries, a few small excerpts of the raw sequence reads, the analysis pipeline and the resulting gene counts. It is a good example of a modern bioinformatics project folder.
 
 Life sciences (environmental microbiology and genomics). Eighteen files: tab- and comma-separated tables, gzipped FASTQ, text, a Nextflow configuration and an R script. All data, people and organisations are synthetic.
 
 - `AMR_sediment_metagenomes/`: the dataset folder.
 - `grant/`: the grant proposal (`proposal.md`), award letter (`award-letter.md`) and data management plan (`dmp.md`).
 - `governance/`: the institution's research data policy and the material transfer agreement with the overseas partner.
-
-## Welcome
-
-This folder belongs to a final-year PhD student who has sequenced DNA from river mud to see how wastewater affects antibiotic resistance. It contains the sample metadata, sequencing and quality-control summaries, a few small excerpts of the raw sequence reads, the analysis pipeline and the resulting gene counts. It is a good example of a modern bioinformatics project folder.
 
 ## Research background
 

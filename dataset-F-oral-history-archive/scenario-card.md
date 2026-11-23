@@ -1,14 +1,12 @@
-# Dataset F: Mill Voices oral histories and photographs
+# Scenario card: Dataset F, Mill Voices oral histories and photographs
+
+Welcome! This folder is a project handover. A community heritage project's research associate has left, and the principal investigator has inherited everything: interview transcripts, scanned family photographs, new photographs, catalogues, draft exhibition text and a handover email. It is a rich, human collection of oral history and images, and a good test of how well someone can make sense of a folder they did not create.
 
 Arts and humanities (oral history, local and industrial history). Twenty files: transcripts, TEI XML, CSV, PNG images, XLSX, DOCX, text and some leftovers. All data, people, places and organisations are synthetic.
 
 - `MillVoices_handover/`: the dataset folder.
 - `grant/`: the grant proposal (`proposal.md`), award letter (`award-letter.md`) and data management plan (`dmp.md`).
 - `governance/`: the institution's research data policy, the oral history recording agreement template and the photograph loan agreement template.
-
-## Welcome
-
-This folder is a project handover. A community heritage project's research associate has left, and the principal investigator has inherited everything: interview transcripts, scanned family photographs, new photographs, catalogues, draft exhibition text and a handover email. It is a rich, human collection of oral history and images, and a good test of how well someone can make sense of a folder they did not create.
 
 ## Research background
 

@@ -1,14 +1,12 @@
-# Dataset B: Perovskite XRD and SEM
+# Scenario card: Dataset B, Perovskite XRD and SEM
+
+Welcome! This folder belongs to a materials physicist who has just finished a first round of experiments on manganese-doped perovskite thin films and needs to turn them into a paper. It contains X-ray diffraction patterns, electron microscope images, a sample log and a few pages from the electronic lab notebook, all as left by the person who ran the measurements.
 
 Materials physics. 26 files: ASCII scans, PNG, INI, text. All data, people and organisations are synthetic.
 
 - `Perovskite_XRD_Novak_inherited/`: the dataset folder.
 - `grant/`: the grant proposal (`proposal.md`), award letter (`award-letter.md`) and data management plan (`dmp.md`).
 - `governance/`: the institution's research data policy and the collaboration agreement with the industrial partner.
-
-## Welcome
-
-This folder belongs to a materials physicist who has just finished a first round of experiments on manganese-doped perovskite thin films and needs to turn them into a paper. It contains X-ray diffraction patterns, electron microscope images, a sample log and a few pages from the electronic lab notebook, all as left by the person who ran the measurements.
 
 ## Research background
 

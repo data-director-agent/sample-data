@@ -1,14 +1,12 @@
-# Dataset D: Cylinder flow simulation
+# Scenario card: Dataset D, Cylinder flow simulation
+
+Welcome! This folder is the output of a doctoral researcher's computational fluid dynamics study, left behind when the project ended. It holds the code used for post-processing, the input files and job logs for each simulation run, small result tables, and a note pointing to a very large volume of field output that never left the cluster. It is a good example of what a simulation study looks like once the scripts and logs are all that remain.
 
 Computational science. 78 files: YAML, SLURM logs, CSV, Python. All data, people and organisations are synthetic.
 
 - `lbm_cylinder_study/`: the dataset folder.
 - `grant/`: the grant proposal (`proposal.md`), award letter (`award-letter.md`) and data management plan (`dmp.md`).
 - `governance/`: the institution's research data policy, the mesh software licence and an extract of the consortium agreement.
-
-## Welcome
-
-This folder is the output of a doctoral researcher's computational fluid dynamics study, left behind when the project ended. It holds the code used for post-processing, the input files and job logs for each simulation run, small result tables, and a note pointing to a very large volume of field output that never left the cluster. It is a good example of what a simulation study looks like once the scripts and logs are all that remain.
 
 ## Research background
 

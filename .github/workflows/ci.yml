@@ -24,20 +24,20 @@ jobs:
           persist-credentials: false
           lfs: true
 
-      # One pass over the datasets: each has README.md, crib-sheet.md and SHA256SUMS; every
+      # One pass over the datasets: each has scenario-card.md, crib-sheet.md and SHA256SUMS; every
       # checksum matches; and every inherited file is listed in SHA256SUMS, and nothing more.
       - name: Check each dataset's files and checksums
         run: |
           status=0
           for d in dataset-*/; do
             echo "== $d"
-            for f in README.md crib-sheet.md SHA256SUMS; do
+            for f in scenario-card.md crib-sheet.md SHA256SUMS; do
               [ -f "$d$f" ] || { echo "Missing $d$f"; status=1; }
             done
             [ -f "${d}SHA256SUMS" ] || continue
             (cd "$d" && sha256sum --quiet -c SHA256SUMS) || status=1
             diff=$(cd "$d" && comm -3 \
-              <(find . -type f ! -name SHA256SUMS ! -name README.md ! -name crib-sheet.md ! -path './grant/*' ! -path './governance/*' | sed 's|^\./||' | sort) \
+              <(find . -type f ! -name SHA256SUMS ! -name scenario-card.md ! -name crib-sheet.md ! -path './grant/*' ! -path './governance/*' | sed 's|^\./||' | sort) \
               <(sed -E 's/^[0-9a-f]{64}  \.\///' SHA256SUMS | sort))
             if [ -n "$diff" ]; then
               echo "Mismatch (left: on disk only, right: in SHA256SUMS only):"
@@ -60,5 +60,5 @@ jobs:
           globs: |
             *.md
             docs/**/*.md
-            dataset-*/README.md
+            dataset-*/scenario-card.md
             dataset-*/crib-sheet.md

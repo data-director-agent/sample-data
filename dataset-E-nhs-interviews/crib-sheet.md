@@ -118,7 +118,7 @@ Extra realism files: `methods_note_email.txt` (informal methods summary, partial
 
 ## 10. Facilitator key: data journey
 
-Used with the four-activity workshop. IDs refer to §3, §8 and §9. The README's journal line (*Journal of Health Services Workforce Research*, fictional) and its policy were added for the workshop. The proposal only mentions "two peer-reviewed papers". Unverified outside facts are marked "verify".
+Used with the four-activity workshop. IDs refer to §3, §8 and §9. The scenario card's journal line (*Journal of Health Services Workforce Research*, fictional) and its policy were added for the workshop. The proposal only mentions "two peer-reviewed papers". Unverified outside facts are marked "verify".
 
 ### 10.1 Governance record
 

@@ -119,7 +119,7 @@ Dr Ruth Ackroyd (PI) led a two-year AHRC-funded community heritage project (fict
 
 ## 9. Facilitator key: data journey
 
-Used with the four-activity workshop. IDs refer to §3, §7 and §8. The README's context lines on stage, planned volumes and the journal article were added for the workshop (the article comes from the proposal, Strand 3). Unverified outside facts are marked "verify".
+Used with the four-activity workshop. IDs refer to §3, §7 and §8. The scenario card's context lines on stage, planned volumes and the journal article were added for the workshop (the article comes from the proposal, Strand 3). Unverified outside facts are marked "verify".
 
 ### 9.1 Governance record
 

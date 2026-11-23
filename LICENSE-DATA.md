@@ -1,6 +1,6 @@
 # Licence for data and documentation
 
-The synthetic data sets, READMEs, crib sheets and documents in this repository are licensed under the
+The synthetic data sets, scenario cards, crib sheets and documents in this repository are licensed under the
 [Creative Commons Attribution 4.0 International licence (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
 
 Any code in this repository remains under the MIT licence in `LICENSE`.

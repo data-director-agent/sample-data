@@ -25,7 +25,7 @@ Nine datasets, each shaped like a folder a researcher might genuinely inherit. A
 
 ```
 docs/                criteria for good test data sets
-dataset-*/           README, crib sheet, grant/, governance/ and the inherited folder for each dataset
+dataset-*/           scenario card, crib sheet, grant/, governance/ and the inherited folder for each dataset
 ```
 
 > [!NOTE]

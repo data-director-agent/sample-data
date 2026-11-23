@@ -1,14 +1,12 @@
-# Dataset I: GutGrain dietary intervention and gut microbiome
+# Scenario card: Dataset I, GutGrain dietary intervention and gut microbiome
+
+Welcome! This folder is the shared drive of a nutrition trial, tidied up by a postdoctoral researcher on their way out of the lab. It brings together human-participant material of several kinds: sample records, sequencing summaries, lab measurements, questionnaires, food diaries and consent paperwork. It is a good example of a project folder where scientific data, administrative records and personal information sit side by side.
 
 Life and health sciences (human microbiome, nutrition). Twenty-one files: CSV, XLSX, gzipped FASTQ and text. All data, people and organisations are synthetic.
 
 - `GutGrain_shared/`: the dataset folder.
 - `grant/`: the grant application (`proposal.md`), award letter (`award-letter.md`) and data management plan (`dmp.md`, also as `dmp.docx`).
 - `governance/`: the institution's research data policy and the research ethics committee's approval letter.
-
-## Welcome
-
-This folder is the shared drive of a nutrition trial, tidied up by a postdoctoral researcher on their way out of the lab. It brings together human-participant material of several kinds: sample records, sequencing summaries, lab measurements, questionnaires, food diaries and consent paperwork. It is a good example of a project folder where scientific data, administrative records and personal information sit side by side.
 
 ## Research background
 

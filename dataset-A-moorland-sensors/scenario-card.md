@@ -1,14 +1,12 @@
-# Dataset A: Hallam Moor sensors
+# Scenario card: Dataset A, Hallam Moor sensors
+
+Welcome! This is the working folder of an environmental scientist who has spent a year listening to a moor. Low-cost, solar-powered logger nodes were strung up a hillside to record how temperature, humidity, soil moisture and air quality change with height, and the researcher now has a paper to write and data to share. The folder is a realistic mix of raw logger exports, calibration records, field notes and a half-finished plotting script. Expect the sort of untidiness that builds up over a field season.
 
 Environmental science. Six moorland logger nodes, CSV, XLSX, text and R. All data, people and organisations are synthetic.
 
 - `HallamMoor_loggers/`: the dataset folder.
 - `grant/`: the grant proposal (`proposal.md`), award letter (`award-letter.md`) and data management plan (`dmp.md`).
 - `governance/`: the institution's research data policy and the land access agreement.
-
-## Welcome
-
-This is the working folder of an environmental scientist who has spent a year listening to a moor. Low-cost, solar-powered logger nodes were strung up a hillside to record how temperature, humidity, soil moisture and air quality change with height, and the researcher now has a paper to write and data to share. The folder is a realistic mix of raw logger exports, calibration records, field notes and a half-finished plotting script. Expect the sort of untidiness that builds up over a field season.
 
 ## Research background
 

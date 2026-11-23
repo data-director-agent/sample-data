@@ -1,14 +1,12 @@
-# Dataset C: Community wellbeing survey
+# Scenario card: Dataset C, Community wellbeing survey
+
+Welcome! This folder holds the first wave of an online survey about physical activity and wellbeing, as left by the researcher who ran it. It is a small, tidy-looking social-science dataset: one main table of responses, the survey documents, and a few copies of files made along the way. It suits anyone wanting to practise preparing survey data for sharing.
 
 Social and health science. Ten CSV and text files, including copies and OS leftovers. All data, people and organisations are synthetic.
 
 - `SYCAWS_wave1_JW/`: the dataset folder.
 - `grant/`: the grant proposal (`proposal.md`), award letter (`award-letter.md`) and data management plan (`dmp.md`, also as `dmp.docx`).
 - `governance/`: the institution's research data policy.
-
-## Welcome
-
-This folder holds the first wave of an online survey about physical activity and wellbeing, as left by the researcher who ran it. It is a small, tidy-looking social-science dataset: one main table of responses, the survey documents, and a few copies of files made along the way. It suits anyone wanting to practise preparing survey data for sharing.
 
 ## Research background
 

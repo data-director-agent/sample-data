@@ -1,14 +1,12 @@
-# Dataset E: NHS staff interviews on remote working
+# Scenario card: Dataset E, NHS staff interviews on remote working
+
+Welcome! This folder belongs to a PhD student who has interviewed NHS staff about working from home. It is a typical qualitative-research folder: a log of interviews, consent and ethics paperwork, excerpts from the transcripts and an email about methods. The full transcripts are not included; five short excerpts stand in for them.
 
 Social sciences and health services research. Fourteen files: text documents, five transcript excerpts, two CSVs and some leftovers. All data, people, places and events are synthetic.
 
 - `NHS_remote_working_PhD/`: the dataset folder.
 - `grant/`: the grant proposal (`proposal.md`), award letter (`award-letter.md`) and data management plan (`dmp.md`, also as `dmp.pdf`).
 - `governance/`: the institution's research data policy.
-
-## Welcome
-
-This folder belongs to a PhD student who has interviewed NHS staff about working from home. It is a typical qualitative-research folder: a log of interviews, consent and ethics paperwork, excerpts from the transcripts and an email about methods. The full transcripts are not included; five short excerpts stand in for them.
 
 ## Research background
 
