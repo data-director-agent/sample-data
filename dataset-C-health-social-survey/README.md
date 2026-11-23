@@ -31,6 +31,9 @@ Questions are labelled `Q1` to `Q12` in the data. The questionnaire text and the
 - **Funder:** ESRC.
 - **Journal (fictional):** *Journal of Community Health Studies*. Policy: *"Authors must make anonymised data available to reviewers on request and deposit them in a trusted repository on publication."*
 - **Institution:** Lindenford University (fictional).
+- **Stage:** wave 1 has closed and papers are being written. The plan was an online survey of about 300 adults, exported as CSV, with a codebook kept alongside.
+- **Where the data must go:** the ESRC award letter says the data must be offered for deposit with the UK Data Service within three months of the end of the grant (30 September 2026), or a reason given for not doing so. The data management plan names UK Data Service ReShare. The University policy names the UK Data Service as its preferred repository for social science data. The journal requires a trusted repository on publication.
 - **Budget for deposit fees:** none.
+- **Plan:** the researcher wants to deposit the data before the paper is published.
 
 The researchers, journals and projects are fictional. The funders and repositories are real.

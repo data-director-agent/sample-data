@@ -116,3 +116,59 @@ Dr Ruth Ackroyd (PI) led a two-year AHRC-funded community heritage project (fict
 | **Decoy** | Policy 5.3: a national, local authority or community archive, such as the British Library, may be a suitable home for oral histories. Award condition 2: preserve and share significant outputs. | DMP: University repository plus a copy to the British Library (National Life Stories) | | **Compliant.** **An agent that says the British Library is unsuitable, or that both deposits are a conflict, has over-flagged.** It may note that each item's agreement still governs what either archive receives. |
 
 **Not scored:** the award letter's three-year preservation condition is easily met by either repository.
+
+## 9. Facilitator key: data journey
+
+Used with the four-activity workshop. IDs refer to §3, §7 and §8. The README's context lines on stage, planned volumes and the journal article were added for the workshop (the article comes from the proposal, Strand 3). Unverified outside facts are marked "verify".
+
+### 9.1 Governance record
+
+| Field | Key |
+|---|---|
+| Sensitive information expected | DMP says none. Folder shows: third-party union and conviction data (F-04), harassment disclosure (OH03), identifiable children (F-09), named living interviewees (normal, F-17). |
+| How protected, who decides | Data Protection Officer reviews special category and conviction data (policy §3.2). Research Data Steward with the PI decides open, closed, embargoed, withheld (policy §5.2). Library Copyright Officer advises on rights and orphan works (policy §4). |
+| Ethical, legal, institutional rules | Recording agreement §1.1 (interviewee keeps copyright), §2 (access choice), §3.1, §4 (unsigned: not released). Loan agreement §2.2 (per-image written consent online), §3.1. Award conditions 1 to 4. Policy §2, §3, §4, §5. Ethics approval letter is not in the folder (not scored). |
+| Embargo | **Yes, for OH03 only.** Closed until a date: 25 years from the agreement date, which the log gives as 2051. Reason: interviewee's choice (recording agreement §2), repeated by phone. 25 years from 12 Feb 2025 is 12 Feb 2050, so the log's "2051" may be wrong: verify against the signed paper form (**not a planted issue, could not tell**). OH04 is withheld, not embargoed. |
+| DMP matches? | **No.** Built-in clash: F-DMP-01 (all interviewees assign copyright and everything open under CC BY, versus a non-exclusive licence, closed OH03 and unsigned OH04). Also F-DMP-02 to 06. |
+
+### 9.2 Repository decision
+
+| Question | Key |
+|---|---|
+| Mandated? | Funder: no repository named (award condition 2). Policy §5.1: the University repository **or** a suitable archive. DMP: DSpace plus a copy to the British Library. |
+| Recommended single repository | **Wharfedale University's DSpace repository.** It is named in the DMP and policy, has no fee, can hold items at different access levels (open, closed, embargoed) so the tiered deposit works, and persists after the website lapsed (F-13). DOI minting and certification depend on the installation: verify. |
+| Alternatives | British Library oral history collections as a copy, if the agreements allow it (§8 decoy, §6). |
+
+### 9.3 Fall-back README and data dictionary (18 months on)
+
+README skeleton: title; creators (PI Dr Ruth Ackroyd, interviewer NP; photographer credited per image); funder AHRC AH/X999999/1 (synthetic); coverage (Netherbrook, 1950 to 1980; interviews Jan to Mar 2025); contents per tier (P2025, OH01, redacted OH02 open; loans metadata only; OH03 closed; OH04 withheld); rights per item (not blanket CC BY, F-01); known gaps (audio masters and TIFFs not in folder, F-12; IMG_0047 file missing, F-11; four interviews not twelve); website stale (F-13); contact.
+
+Dictionary for `recording_agreements.csv` and `image_catalogue.xlsx`:
+
+| Variable | Type | Unit | Missing code | Definition | Source |
+|---|---|---|---|---|---|
+| `oh_id` | text | none | none | Interview ID OH01 to OH04 | Supplied |
+| `interviewee`, `birth_year` | text, integer | none, year | none | Name and year of birth (personal data) | Supplied |
+| `interview_date` | date (`dd/mm/yyyy`) | none | none | Date of interview | Supplied |
+| `interviewer` | text | none | none | `NP`, `NP + RA` | Supplied. `RA` not expanded |
+| `duration_min` | integer | minutes | none | Length of recording | Supplied |
+| `release_returned` | yes/no | none | none | Signed agreement received | Supplied |
+| `access` | category | none | blank (OH04) | `open`, `closed until 2051` | Supplied |
+| `attribution` | category | none | blank (OH04) | `named` | Inferred. Anonymous option exists in the agreement |
+| `notes` (CSV) | free text | none | none | Handling notes | Supplied |
+| `image_id` | text | none | none | `IMG_nnnn` or `P2025_nnn` | Supplied |
+| `description`, `date` | text | none | `?` after year, e.g. `1968?` | Subject and approximate year | Supplied |
+| `source`, `rights_holder`, `permission`, `credit_line` | text | none | blank or `??` (rights half empty) | Where from, who owns, what was agreed, credit | Supplied for 6, unknown for others |
+| `original_location`, `notes` (xlsx) | text | none | blank | Where the original is, handling notes | Supplied |
+
+Three things only a human supplies: what the lenders consented to in writing, who speaks for OH04's estate, and where the audio masters are. Proprietary formats: `.docx` and `.xlsx` (convert to open formats for the deposit). Sensitive-data assumption: DMP says none. **It does not hold** (F-04, OH03, F-09).
+
+### 9.4 Deposit-stage key
+
+| Item | Key |
+|---|---|
+| Licence | P2025_001 to 003: CC BY 4.0 (University owns, credit Imran Lodge). OH01 and redacted OH02: open access with named attribution, interviewees keep copyright. Do not apply CC BY by default. Library Copyright Officer to set the reuse statement. Loans, IMG_0042: rights statement "In Copyright" or "Copyright Undetermined", not CC BY. |
+| Access | Tiered (§6): open (P2025, OH01, OH02 after redaction), metadata only (loans, IMG_0042), closed (OH03), withheld (OH04). |
+| Embargo | OH03 only. Depositing before the journal article is published is fine for the open tier. |
+| Must stop for a person | OH03 (F-02). OH04 and the exhibition quote (F-03, F-16). OH02 third-party passage (F-04). IMG_0031, 0035, 0044 (F-06, F-07). IMG_0042 and IMG_0038 (F-08, F-09). Audio recovery (F-12). Press release is out of scope (F-14). |
+| Identifiers | AH/X999999/1: synthetic, will not resolve. No ORCID, ROR or DOI in any document. The PI's ORCID and the University's ROR must be asked for. Catalogue ref NMC/PH/12 is the society's own, and is not a persistent identifier. `millvoices.example` does not resolve and the site has lapsed (F-13). The article has no DOI yet. |

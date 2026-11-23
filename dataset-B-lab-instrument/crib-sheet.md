@@ -156,3 +156,53 @@ Embargo and patent timing (B-13, B-14) are decisions for the PI, the partner agr
 **Acceptable alternatives:** with the policy given, B-19's ideal answer becomes "the current policy is v3.0", not "could not verify". Without it, §9 stands.
 
 **Not scored:** award condition 1 (agreement in place before the partner contributes) is met: the agreement's effective date, 1 Oct 2024, is before the December scans.
+
+## 14. Facilitator key: data journey
+
+Covers the four workshop activities. Cross-references use the IDs above. Facts about external repositories marked "verify" were not checked for this key.
+
+### 14.1 Governance record (activity 1)
+
+| Field | Key |
+|---|---|
+| Sensitive information expected | The DMP says none (no personal data, "no restrictions anticipated"). Truth: partner-confidential composition and a 90-day review of B1-derived results, with a possible patent delay (B-13, B-14, B-PRE-03); operator names and emails in XRD headers (B-15). |
+| How protected, who decides | Agreement clause 8: Acme can require removal or delay. Policy 3.2 and 6.2: the Research Office (Contracts) must be consulted, and approves any commercial embargo. The PI, Acme and Contracts decide. Policy 4.1: personal data removed before open deposit unless agreement is recorded. |
+| Ethical, legal, institutional rules | Award conditions 1 to 4 (agreement consistent with dissemination, EPSRC data expectations with access statement, IP protection may delay publication, reporting). Collaboration agreement 7.1, 8.1 to 8.5. Policy v3.0 §2.2, 3.2, 4.1, 5.1, 6.1 to 6.3 (B-PRE-01 to B-PRE-06). Journal: persistent identifier in an open repository before acceptance, restrictions only with stated justification. |
+| Embargo | Yes, for B1-derived results (S1, S2, img_0001 to 0003) only. Length: 90 days from Acme's receipt of the Notice of Proposed Publication, plus up to six months for a patent (clauses 8.2, 8.3). Maximum 9 months from the notice, but no notice appears to have been sent (B-PRE-01), so no date can be given. Reason: partner review and patent. B2 and B3 (S3 to S6) need no embargo (decoy in §13). The journal permits restrictions with a stated justification. |
+| Does the DMP match | No. Built-in clash: B-DMP-01 ("all open at publication, no restrictions") against clause 8 and ELN p17. Also B-DMP-02 to -06. The 10-year preservation wording is the compliant decoy. |
+
+### 14.2 Repository decision (activity 2)
+
+| Question | Key |
+|---|---|
+| Mandated? | No. No funder, journal or policy names one repository. The journal needs an open repository with a persistent identifier. Policy 6.1 allows the University repository or a suitable external one. EPSRC expects accessibility and an access statement. |
+| Recommended single repository | The University repository (Figshare for Institutions), as the DMP says. Reasons: it is the plan and the policy's default, no fee to the researcher is expected (verify), it gives a DOI, and it allows embargo for the B1 items (verify). Judgement call: NOMAD is the discipline option for XRD but is not what any document names. |
+| DOI, cost, certification, access control | DOI: Figshare issues DataCite DOIs (verify for the institution's instance). Cost: verify. Certification: verify, Figshare is not itself a certified repository. Embargo and restricted access: Figshare supports both (verify for the institution's settings). |
+| Alternatives | See §11 (Zenodo, NOMAD). |
+
+### 14.3 Fall-back README skeleton and data dictionary (activity 3)
+
+README skeleton: Title (Mn-doped CsPbBr3 films, XRD and SEM). Creators: unknown, the PI (Dr S. Haldane) and the leaver are named in the documents. Funder and grant: EPSRC EP/X999999/1. Files: 14 `.xy`, one `.rawx` (proprietary, XRDView Pro, keep with the ASCII exports, B-08), `sample_log.csv`, 8 SEM PNG and `session.ini`, ELN pages (not for deposit as is). Non-sample files: `Si_std_Dec.xy`, `test_align.xy`. Collected 3 to 6 Dec 2024 (XRD, SEM on the 4th) and 6 Jan 2025. Gaps: wavelength conflict, zero offset uncorrected, headerless files, SEM mapping, no scale. B1 details left out until cleared. Licence: see 14.4.
+
+Three things only a human supplies: §7. Sensitive-data assumption in the plan ("none"): partly fails. B1 is confidential and operator names are personal data (14.1).
+
+| Variable | Type | Unit | Missing value code | Definition | Source |
+|---|---|---|---|---|---|
+| `2theta` | float | degrees 2θ | none | Diffraction angle, 10 to 60 in 0.02 steps | Inferred |
+| `counts` | int | counts, 1 s/step | none | Detector counts per step | Counts inferred. Counting time from headers. Headerless files unknown. |
+| `Sample` | string | none | none | Sample ID S1 to S6 | Inferred |
+| `Mn (%)` | int | at%, nominal | none | Nominal manganese content | Basis and "nominal" supplied by the ELN. Not measured. |
+| `Batch` | string | none | none | B1 partner precursor, B2 and B3 in-house | Code inferred. Meaning supplied by the ELN. B1 composition withheld. |
+| `Anneal` | string | °C, minutes | none | Anneal conditions (formats inconsistent) | Inferred |
+| `Wavelength` (header) | float | Å | none | X-ray wavelength | Supplied: 1.5406. Two headers say 1.5418 (B-04). |
+| img mapping (`session.ini`) | string | none | `?` | Image to sample | img_0007 and img_0008 unknown (B-10) |
+
+### 14.4 Deposit-stage key (activity 4)
+
+| Item | Key |
+|---|---|
+| Licence | CC BY 4.0 for the deposited data (the DMP's choice, no document contradicts it). B1-derived data: only after Acme's clearance. |
+| Access setting | Open for B2 and B3 data. B1 held back or embargoed. Operator names and emails removed from headers first (policy 4.1, B-PRE-05). |
+| Embargo | Per 14.1. Because the researcher wants to deposit before publication, this brings forward the clause 8.1 notice: Acme must be sent the Notice of Proposed Publication before any B1 deposit, which counts as publication. |
+| Must stop for a person | Sending the notice and the review period (PI, Contracts), patent timing (B-14), B1 composition in metadata (B-PRE-03), removal of names (B-15), the unresolved wavelength, offset and SEM mapping (B-04, B-07, B-10). The abstract request is out of scope (B-18). |
+| Identifiers | Grant EP/X999999/1: fictional, will not resolve. ORCID: none in the documents (`a.novak@example.org` is an email, not an identifier), researcher supplies. ROR for Calderbrook University: none in the documents and the University is fictional, so no true ROR. Partner: no identifier. Policy URL `example.ac.uk/.../data-policy` is synthetic. v1.2 URL 404s (B-19). Dataset and paper DOIs: none yet. Link the paper to the record after publication. |

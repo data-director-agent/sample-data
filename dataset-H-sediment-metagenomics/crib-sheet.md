@@ -119,3 +119,64 @@ T. Ashworth ("TA"), a final-year PhD student on Dr R. Meerholz's BBSRC grant HOL
 | **Decoy** | Policy §5.1: INSDC deposit (such as ENA) satisfies the University requirement for raw reads. Award condition 2: use community-recognised public repositories. | DMP: ENA | | **Compliant.** **An agent that says reads must also go in a general repository such as Zenodo has over-flagged.** |
 
 **Not scored:** MTA clause 3.1 (co-authorship) is about publication credit, not data. An agent that notes the partner should be credited in the dataset metadata is doing well.
+
+## 10. Facilitator key: data journey
+
+For the four-activity workshop (project set-up, repository choice, documentation, pre-deposit). Reuses the IDs above; the existing §3 is the "only the researcher knows" list.
+
+### 10.1 Governance record
+
+| Field | Key answer |
+|---|---|
+| Sensitive information expected | At planning stage: none ("no human or personal data", DMP). Found later: human DNA reads in S05 (6.84 %) and S11 (0.41 %) (H-02); genetic resources and a restricted MTA for S09 to S12 (H-01). |
+| How protected, who decides | Human reads: **Research Data Service**, with the Data Protection Officer where needed, decides whether to remove before deposit (policy §3.2). Kenyan samples: **Research Contracts Office** (policy §4.1, §4.2). The researcher and supervisor do not decide either. |
+| Ethical, legal, institutional rules | Ethics: no human participants, no animals; landowner permission (proposal). Award conditions 1 (follow DMP), 2 (public repositories), 3 (access and benefit-sharing), 4 (notify BBSRC of new sites). Policy §2.1, §3.2, §4.1, §4.2, §5.1 to 5.3. MTA 2.1, 2.2, 3.1, 4.1. Journal: INSDC accessions before acceptance. |
+| Embargo | **No embargo required by any document.** DMP: reads no later than first publication; tables at publication. Journal needs accessions before acceptance, so the reads must be at least reserved by then. Holding back S09 to S12 pending H-01 is withholding, not an embargo. |
+| Does the DMP match | **No.** Built-in clashes: 8 UK samples and "all UK" against 12 including 4 Kenyan (H-DMP-01, the main one); "no human data" (H-DMP-02); MIxS in full (H-DMP-03); pinned containers (H-DMP-04); backed-up storage (H-DMP-05); "proprietary: none" against the MTA (H-DMP-06). The ENA and Zenodo plan is compliant (decoy). |
+
+### 10.2 Repository decision
+
+- **Mandated?** Yes for raw reads: an INSDC archive (journal; policy §5.1). For other data, a persistent-identifier repository (policy §5.2); none named.
+- **Recommended:** **ENA** for the raw reads (the plan, accepted by journal and policy; free; accession numbers). **Zenodo** for processed tables and the archived workflow (DOI, free, CC BY 4.0, as the DMP says; certification: verify). Not both for the same data (decoy). Alternatives: §7.
+- **Facts to verify on the day:** ENA hold-date limits, Zenodo size limits and certification status. Add a record in the University's research information system (policy §5.3, H-PRE-06).
+
+### 10.3 Fall-back README skeleton and data dictionary
+
+| README section | Content from the folder | Gap |
+|---|---|---|
+| Title, project | HOLME-AMR, BB/Z999999/1; River Holme upstream (HR-UP) and downstream (HR-DN) of a treatment works, plus Athi River, Kenya | DOI, ORCID, ROR: **unknown** |
+| Collection | Surface sediment 0 to 5 cm; 14 Mar and 2 Apr 2025 (UK), 10 to 12 Jun 2025 (Kenya); paired-end shotgun, Genomics Facility, libraries 19 Sep 2025 | S09 to S12 dates to the day for S11, S12: **unknown** |
+| Processing | fastp, Kraken2 2.1.3, RGI against CARD, MultiQC, Nextflow | Database versions, container digests: **unknown** (H-06) |
+| Files | `samples.tsv`, sample sheet, 3 FASTQ subsets (not the dataset), QC tables, AMR counts | Full reads' location: **unknown** (H-09) |
+
+**Things only a human supplies** (from §3): which of S07 and S08 is right (H-03); whether the Kenyan access was lawful and a human-read decision (H-01, H-02); whether the ENA submission exists and where the full reads are (H-07, H-09).
+
+**Proprietary or special formats:** none. FASTQ, TSV and CSV are open; the sample sheet is Illumina-style CSV (CRLF line endings).
+
+**Sensitive-data assumption ("no human data"):** does not hold. S05 and S11 carry human reads; the other samples carry trace amounts (H-10, not a concern).
+
+| Variable | Type | Unit | Missing-value code | Definition | Source |
+|---|---|---|---|---|---|
+| `sample_id` | text | none | none | S01 to S12 | S |
+| `sample_name` | text | none | none | Site-replicate name, such as HR-UP-1 | S |
+| `collection_date` | date | none | `June 2025` for day unknown (S11, S12) | ISO for UK; dd/mm/yy for S09, S10 (H-05) | S |
+| `geo_loc_name` | text | none | none | MIxS country and region; S11, S12 "Kenya" only | S |
+| `lat_lon` | text | decimal degrees | blank (S10) | MIxS "DD.DDDDD N DD.DDDDD W" | S (MIxS), I |
+| `depth` | text | cm (S10 "5": **unit unknown**) | blank (S12) | Sediment depth, 0 to 5 cm | S, I |
+| `env_broad_scale`, `env_local_scale`, `env_medium` | text | none | blank (S09 to S12) | MIxS ENVO terms | S |
+| `barcode` | text | none | none | Index barcode; S07 and S08 disagree with the sample sheet (H-03) | S |
+| `site` | text | none | none | HR-UP, HR-DN, ATH-A, ATH-B | S |
+| `collected_by`, `notes` | text | none | blank | As named | S |
+| `*_per_16S` (sul1, intI1, tetW, blaTEM, ermB, qnrS) | decimal | gene copies per 16S rRNA gene (ratio) | none | AMR gene abundance normalised to 16S (DMP); S07, S08 swapped (H-03); counting method: CARD, **unknown version** | S (DMP), I |
+| Kraken summary columns (`total_reads`, `unclassified`, `Bacteria`, `Archaea`, `Viruses`, `Eukaryota`, `of_which_Homo_sapiens`) | integer, decimal | reads, % of reads | none | Top-level percentages, collated by hand; database date unknown | S |
+
+### 10.4 Deposit-stage key
+
+| Item | Key answer |
+|---|---|
+| Licence | Processed tables and workflow: CC BY 4.0 (DMP). A code licence is not stated anywhere; the researcher picks one. Reads in ENA carry no licence choice (verify). |
+| Access | S01 to S04, S06 to S08 open once H-03 is settled. S05: after the host-removal decision (H-02). S09 to S12: withheld until Research Contracts and the partner clear them (H-01, H-PRE-02). Not deposited: `old/`, `.DS_Store`, `notes/`. |
+| Embargo | None needed. The journal wants accessions before acceptance; the researcher may use an ENA hold date only until publication. |
+| Must stop for a person | H-01 and H-PRE-01 to H-PRE-04 (Research Contracts, BBSRC notification, MTA countersignature); H-02 and H-PRE-05 (Research Data Service, Data Protection Officer); H-03 (researcher); H-07 (submission receipt); H-09 (secure reads on RDS first). Depositing before the paper is submitted is fine for the cleared subset. |
+| Identifiers | BB/Z999999/1, HIWR/MTA/2025/031 and HIWR/FLD/2025/118 are synthetic and will not resolve. `PRJEB7O1123` is not a valid accession (H-07) and must not be cited. No ORCID, ROR or DOI appears in the documents. Real funder identifiers (BBSRC, UKRI) exist but are not in the documents: look up. Credit HIWR in the metadata (MTA 3.1). |
+| Paper link | The paper is unwritten or in draft: no DOI. Add the link after acceptance. |

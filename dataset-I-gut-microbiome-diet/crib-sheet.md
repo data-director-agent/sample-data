@@ -152,3 +152,69 @@ These items are compliant. **An agent that flags them as BBSRC non-compliance ha
 | **Decoy** | Ethics condition 5: opinion valid until 31 March 2028 | Remaining work (batch 2 sequencing, analysis) ends by January 2028 | | **Compliant.** **An agent that says the ethics approval has lapsed or must be renewed now has over-flagged.** Sharing still needs an amendment (I-PRE-02), which is a different point. |
 
 **Not scored:** the annual ethics progress report is due each July; nothing in the folder shows whether the 2026 report was sent. An agent that asks is doing well.
+
+## 10. Facilitator key: data journey
+
+For the four-activity workshop (project set-up, repository choice, documentation, pre-deposit). Reuses the IDs above; the existing §3 is the "only the researcher knows" list.
+
+### 10.1 Governance record
+
+| Field | Key answer |
+|---|---|
+| Sensitive information expected | Personal data and special category health data (policy §3.1): questionnaires, diaries, the linkage key. Human DNA in every stool metagenome (policy §3.3, I-04). Third-party health information (I-06). |
+| How protected, who decides | Key in the Secure Data Area, named staff only (ethics condition 3; policy §3.2). The **Faculty Research Ethics Committee** decides whether a new way of sharing is allowed (amendment; ethics condition 2; policy §3.4). The **Data Protection Officer** and **Research Data Service** advise on identifiable data and human reads. The **Research Office** decides on the cost (I-11). The PI does not decide alone. |
+| Ethical, legal, institutional rules | Award conditions 2 (public repositories), 3 (consent and approval), 4 (costs within dates), 5 (notify changes). Ethics letter NU-FREC-2025-0417 conditions 1 to 5. Consent v1 items 2, 5, 6. Policy §3.1 to 3.4, §4.1, §5.1 to 5.3, §6.1. Journal: public archive for sequences; controlled access allowed for human data. |
+| Embargo | **No embargo is required by any document.** DMP §7: release at publication and within three years of generation. Open release before the first paper conflicts with consent, not with timing. If the researcher wants to hold data until publication, DMP §7 allows it; no document gives a reason. |
+| Does the DMP match | **No.** Built-in clashes: open sharing on a website against consent (I-DMP-02, the main one); no repository or identifier (I-DMP-01); no retention period (I-DMP-03); £9,000 ineligible cost (I-DMP-04); key kept by the nurse (I-DMP-05); README and MIxS (I-DMP-06). Short proprietary section, release timing and the £4,000 data manager cost are compliant (decoys). |
+
+### 10.2 Repository decision
+
+- **Mandated?** Partly. Journal and policy §5.2: sequence data in a public archive (INSDC, or controlled access such as EGA). Policy §5.1: a persistent-identifier repository; a website alone is unacceptable. No single repository is mandated.
+- **Recommended:** reads to **EGA** (controlled access) unless host reads are removed and the ethics committee and Data Protection Officer agree to ENA (I-04). SCFA tables and processed profiles, and any restricted material, to the **University's Figshare repository** (policy §5.3: open, embargoed and restricted access; ten years' preservation; free). DOI and access facts there are from policy. The **UK Data Service** is the alternative for managed access (verify its certification and terms). EGA's access process and timescales: verify. Alternatives: §7.
+- **Cost:** none. The £9,000 cloud storage is not needed and is ineligible (I-11).
+
+### 10.3 Fall-back README skeleton and data dictionary
+
+| README section | Content from the folder | Gap |
+|---|---|---|
+| Title, project | GutGrain, BB/Z999990/1; 60 volunteers, WG against RG, 12 weeks | DOI, ORCID, ROR: **unknown** |
+| Collection | Stool samples at weeks 0, 2, 4, 8, 12, 16 from Sept 2025; GC-FID SCFA (batch 1 run 14 Apr 2026); batch 1 sequencing GG001 to GG012, weeks 0 and 12 | Batch 2 not yet; ENA status **unknown** (I-09) |
+| Processing | Kraken2 2.1.3, `k2_standard_2024` | Other tools: **unknown** |
+| Files | Manifest, SCFA, questionnaire and dictionary, kraken summary, 4 FASTQ subsets, diaries | Key, consent, notes, `old/`: not for deposit |
+
+**Things only a human supplies** (from §3): whether the ENA submission exists and where full reads are; whether Batch 2 mM values can be converted (faecal water content) and the re-consent decision; which tube is GG045 week 2.
+
+**Proprietary or special formats:** `.xlsx` (batch 2 SCFA, merged title cell). Nothing else.
+
+**Sensitive-data assumption (coded data are safe to share):** does not hold. The questionnaire has full date of birth, postcode, medications and free text; diaries name third parties; the key is in the folder; human reads are in every sample (I-01, I-04 to I-06).
+
+| Variable | Type | Unit | Missing-value code | Definition | Source |
+|---|---|---|---|---|---|
+| Manifest `tube_id` | text | none | none | Tube label; T0259 duplicated (I-08) | S |
+| `study_id` | text | none | none | GG001 to GG060 | S |
+| `visit` | text | none | none | wk00, wk02, wk04, wk08, wk12, wk16 | S |
+| `collection_date` | date | none | blank | ISO date | S |
+| `arm` | text | none | none | WG (wholegrain barley) or RG (refined grain) | I |
+| `freezer_box` | text | none | none | Box code | I |
+| `status` | text | none | none | `stored -80` or `not collected - withdrawn` | S |
+| `sequenced` | text | none | blank = not sequenced | `Y` if in batch 1 | I |
+| SCFA `sample` | text | none | none | `GGnnn_wkNN` | S |
+| `acetate`, `propionate`, `butyrate`, `isobutyrate`, `valerate` | decimal | batch 1 µmol/g wet faeces; batch 2 mM (I-07) | none; no GG037 wk12 row | Concentration by GC-FID | S (batch 1 comment); batch 2 unit S in sheet, conversion **U** |
+| Questionnaire `study_id`, `visit`, `date_completed` | text, text, date | dd/mm/yyyy | none | In the existing dictionary | S |
+| `dob` | date | dd/mm/yyyy | none | Identifying: age band instead | S |
+| `sex`, `height_cm`, `weight_kg`, `bmi`, `antibiotics_3m`, `ibs_symptoms`, `wholegrain_portions_wk`, `smoker`, `alcohol_units_wk` | mixed | F/M, cm, kg, kg/m2, Y/N, count, N/Y/ex, units | none | In the existing dictionary | S |
+| `postcode`, `bristol_typical`, `medications`, `comments` | text, integer, text, text | postcode; 1 to 7 scale (values 3, 4, 5); none; none | blank | **Not in the existing dictionary.** Bristol stool score inferred; others identifying or free text | I |
+| Kraken summary columns | integer, decimal | reads, % of reads | none | Top-level percentages for 24 samples | S |
+
+The existing `data_dictionary.csv` uses columns `variable, description, units_or_codes`, not the required shape.
+
+### 10.4 Deposit-stage key
+
+| Item | Key answer |
+|---|---|
+| Licence | SCFA tables and processed profiles: CC BY 4.0 is reasonable once the unit issue and GG037 are settled; the DMP says only "openly" and names no licence. Questionnaires, diaries and any reads: no open licence; repository restricted-access terms. The researcher confirms the choice. |
+| Access | SCFA and processed tables open (GG037 excluded). Reads controlled (or host-filtered open if approved). Questionnaire and diaries restricted or not deposited. Never deposited: `admin/volunteer_key.xlsx`, consent forms, notes, quote, `old/`. |
+| Embargo | None required. The researcher may restrict until publication within DMP §7. |
+| Must stop for a person | I-01 (Data Protection Officer); I-02 and I-PRE-02 (ethics committee, amendment); I-03 and I-PRE-06 (PI, ethics committee); I-04 (Research Data Service, Data Protection Officer); I-07, I-08 (lab, researcher); I-09 (submission receipt); I-11 (Research Office). Depositing before the paper is submitted is acceptable only for the cleared, non-personal subset. |
+| Identifiers | BB/Z999990/1 and NU-FREC-2025-0417 are synthetic and will not resolve. No ORCID, ROR, DOI or accession appears in the documents ("on ENA now" has none, I-09). Real funder identifiers (BBSRC, UKRI) exist but are not in the documents: look up. |
+| Paper link | First paper planned for January 2027: no DOI yet. Add the link after acceptance. |

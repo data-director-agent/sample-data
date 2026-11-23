@@ -31,6 +31,9 @@ Sample names, dates and operator initials are encoded in file names and headers.
 - **Funder:** EPSRC (New Investigator Award).
 - **Journal (fictional):** *Journal of Emerging Photonic Materials*. Policy: *"Raw and processed data must be deposited in an open repository with a persistent identifier before acceptance. Restrictions are allowed only with a stated justification."*
 - **Institution:** Calderbrook University (fictional).
+- **Stage:** the first round of experiments is finished and a paper is being written. The plan was to measure XRD patterns for each film as made and after ageing in air, take SEM images, and keep a sample log. The draft data management plan estimated under 5 GB.
+- **Where the data must go:** no funder or institution names a single repository. EPSRC expects data underpinning papers to be accessible, with an access statement in the paper. The University policy allows its own repository (Figshare for Institutions) or a suitable external one, by the date of publication. The journal requires an open repository with a persistent identifier before acceptance.
 - **Budget for deposit fees:** none.
+- **Plan:** the researcher wants to deposit the data before the paper is published.
 
 The researchers, journals and projects are fictional. The funders and repositories are real.

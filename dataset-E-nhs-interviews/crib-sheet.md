@@ -115,3 +115,55 @@ Extra realism files: `methods_note_email.txt` (informal methods summary, partial
 | **Decoy** | Policy §5.3: the UK Data Service suits social science data, including data that need safeguarded or controlled access. Award condition 3: share where possible, consistent with consent. | DAMP: UK Data Service | | **Compliant.** The repository is right; the consent is what blocks deposit. **An agent that says the UK Data Service is the wrong archive has over-flagged.** |
 
 **PDF check:** an agent given only `grant/dmp.pdf` should find the same E-DMP-01 to E-DMP-07 as one given `grant/dmp.md`.
+
+## 10. Facilitator key: data journey
+
+Used with the four-activity workshop. IDs refer to §3, §8 and §9. The README's journal line (*Journal of Health Services Workforce Research*, fictional) and its policy were added for the workshop. The proposal only mentions "two peer-reviewed papers". Unverified outside facts are marked "verify".
+
+### 10.1 Governance record
+
+| Field | Key |
+|---|---|
+| Sensitive information expected | Yes: health-related and workplace-sensitive interviews. Special category data (long Covid, a child's diabetes, E-12), third parties (E-11), indirect identifiers (E-10, E-13, E-15). |
+| How protected, who decides | Pseudonymised codes only (still personal data, E-PRE-04). Storage on the secure research drive. Research Data Steward decides with the supervisor on any external deposit and on open, safeguarded or controlled access (policy §5.2). Ethics committee decides on an amendment (E-04). |
+| Ethical, legal, institutional rules | Consent item 4 and information sheet (research team only, destroy after five years, withdrawal four weeks). Ethics letter (access change needs amendment, valid to 31 Dec 2026). Policy §3.1, §3.2, §4.2, §5.1 to §5.3. Award conditions 2 to 4. UK GDPR as cited in the DMP. |
+| Embargo | **No document requires an embargo.** The barrier is consent and access, not time. Open transcript deposit is not possible (E-01). Documentation-only or metadata-only record is possible now. Controlled access needs the amendment and steward approval. Any embargo is the steward's call: **judgement call, no single true answer.** |
+| DMP matches? | **No.** Built-in clash: E-DMP-01 (consent to archive "anonymised transcripts" and open licence, but consent covers the research team only). Also E-DMP-02 to 07 (retention 10 years vs 5, anonymised vs pseudonymised, filename, scope). Sign-off pending (E-PRE-01). |
+
+### 10.2 Repository decision
+
+| Question | Key |
+|---|---|
+| Mandated? | **No.** Award condition 3 says "an appropriate repository where possible, consistent with consent". The DMP names the UK Data Service. Policy §5.3 calls it suitable. No journal mandate. |
+| Recommended single repository | **UK Data Service (ReShare)**: social science, supports safeguarded and controlled access, DOI minted, trained curators (policy §5.3, decoy in §9). Certification: UKDS holds CoreTrustSeal (verify). Cost: verify with the Library (DMP §7 leaves it open). |
+| Alternatives | §7: documentation-only deposit, or ethics amendment then controlled access. The institution has no repository named. |
+
+### 10.3 Fall-back README and data dictionary (18 months on)
+
+README skeleton: study title; creator (the fellow, name not supplied); funder NIHR999999 (synthetic); sampling (staff of three trusts, 25 interviews, 5 Feb to 16 Apr 2026, mostly Teams, 45 to 60 minutes); what is included (log, excerpts, documents) and excluded (full transcripts, audio deleted except P22 and P23); anonymisation (pseudonymised codes only); access (restricted, via steward); versions; known gaps (transcription partly automated and unchecked, in `methods_note_email.txt`); retention.
+
+Dictionary for `interview_log.csv`:
+
+| Variable | Type | Unit | Missing code | Definition | Source |
+|---|---|---|---|---|---|
+| `participant_code` | text | none | none | P01 to P25 | Supplied |
+| `interview_date` | date (ISO) | none | none | Date of interview. The old log uses `d/m/yy` | Supplied |
+| `duration_min` | integer | minutes | none | Interview length | Supplied |
+| `role_group` | category | none | none | Nurse, Allied health professional, Clinical manager, Doctor, Healthcare scientist | Inferred |
+| `trust` | category | none | none | Trust A, B or C (pseudonymised) | Supplied |
+| `working_pattern` | category | none | none | Compressed hours, Hybrid 1-2 days home, Hybrid 3 days home, On site, Remote, Shift work | Inferred. Category definitions unknown |
+| `consent_form_initialled` | text list | none | none (P14 lacks item 5) | Consent items 1 to 6 initialled, `;` separated | Inferred from the form |
+| `withdrawal_requested` | date | none | blank = none | Date withdrawal requested | Inferred |
+| `recording_deleted` | yes/no | none | none | Audio deleted | Inferred |
+
+Three things only a human supplies: whether archiving can be consented or authorised (steward and ethics), whether HRA approval and trust capacity exist (E-PRE-02), and what the auto-transcriber retains. Proprietary format: none. Sensitive-data assumption: the DMP says anonymised and not personal data. **It does not hold** (E-DMP-04).
+
+### 10.4 Deposit-stage key
+
+| Item | Key |
+|---|---|
+| Licence | None can be chosen for transcripts at present. The DMP's "open licence" is not supported by consent. For a documentation or metadata record, CC BY 4.0 is reasonable. |
+| Access | Transcripts and log: not open. Closed or controlled only after amendment and steward approval. Metadata-only record visible. |
+| Embargo | See 10.1. Depositing before the paper is published is fine for documentation and metadata only. |
+| Must stop for a person | Everything touching transcripts (E-01, E-09). P12 consent-form filename (E-17: do not repeat the name). P14 gap (E-07). Withdrawals (E-06). P22 and P23 audio (E-08). Retention conflict (E-02). |
+| Identifiers | Award NIHR999999 and ethics reference EU/HSR/2025/0912: synthetic, will not resolve. No ORCID, ROR or DOI in any document. Ask the researcher. The paper has no DOI yet. The journal is fictional. |

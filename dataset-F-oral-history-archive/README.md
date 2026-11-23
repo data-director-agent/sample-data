@@ -32,7 +32,10 @@ Interviewees are referred to by identifiers such as `OH01`. The recording agreem
 - **Researcher:** the principal investigator of a two-year community heritage project, whose research associate has just left. The folder holds four interview transcripts, digitised photographs lent by residents, new photographs of the mill buildings, and exhibition text (about 2.5 MB).
 - **Funder:** AHRC (UK Research and Innovation). A final report, saying where the data can be found, is due at the end of December 2026.
 - **Institution:** Wharfedale University (fictional), with its own repository and policy. A local history society is a project partner.
-- **Plan:** deposit the archive before the final report.
+- **Stage:** the funded period ended on 30 September 2026. Nothing has been deposited yet. A journal article is planned.
+- **Planned:** about twelve interviews, about 60 scanned photographs and about 20 new photographs (about 40 GB including audio), per the data management plan.
+- **Where data must go:** AHRC asks for significant data to be made available and preserved for at least three years after the award ends, and does not name a repository. The plan names the University's DSpace repository and a copy to the British Library. University policy allows its repository or a suitable archive.
+- **Plan:** deposit the archive before the final report, and before the journal article is published.
 - **Budget for deposit fees:** none.
 
 The researchers, town, mills, local history society and project are fictional. The funder and archives are real.

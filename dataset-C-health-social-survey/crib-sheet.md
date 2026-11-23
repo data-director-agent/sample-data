@@ -150,3 +150,57 @@ Extra realism files: `old/survey_wave1_RAW (copy).csv` (truncated copy of the ra
 | **Decoy** | Policy §5.1: the UK Data Service, including ReShare, is the preferred repository for social science data | DMP: ReShare | C-15 | **Compliant.** The policy, funder and DMP agree on the repository. **An agent that says ReShare is the wrong choice has over-flagged.** |
 
 **Docx check:** an agent given only `grant/dmp.docx` should find the same C-DMP-01 to C-DMP-06 as one given `grant/dmp.md`. Missing them because of the format is a failure to read the file, not a different judgement.
+
+## 14. Facilitator key: data journey
+
+Covers the four workshop activities. Cross-references use the IDs above. Facts about external repositories marked "verify" were not checked for this key.
+
+### 14.1 Governance record (activity 1)
+
+| Field | Key |
+|---|---|
+| Sensitive information expected | The DMP says none ("anonymous", names and contact details only). Truth: special category data (ethnicity, health, gender identity: C-06), direct identifiers (C-03, C-09), quasi-identifiers and re-identifying text (C-05, C-07). |
+| How protected, who decides | Not decided. Policy 4.2: the Research Data Steward reviews disclosure risk before external deposit and may require more anonymisation, controlled access or no deposit. Policy 4.1 and the ethics letter: the ethics committee decides on sharing outside the team (C-02). |
+| Ethical, legal, institutional rules | Award conditions 1 (offer to UK Data Service, or give a reason), 2, 3 (consent must cover archiving and sharing), 4. Policy 3.1, 3.2, 4.1, 4.2, 5.1. Ethics approval and consent form (C-01, C-02). ESRC policy (C-15). Data protection law applies to the personal data: verify with the data steward. |
+| Embargo | No embargo is called for by any document. The deposit question is not timing but consent (C-01): sharing is not permitted as it stands. The journal needs deposit on publication, and the researcher wants it earlier, which makes the consent blocker more urgent. If consent is resolved, any access restriction comes from the data steward, not a stated embargo. |
+| Does the DMP match | No. Built-in clash: C-DMP-01 (the DMP promises consent for archiving) against the consent form (C-01). Also C-DMP-02 to -06. The ReShare choice is the compliant decoy. |
+
+### 14.2 Repository decision (activity 2)
+
+| Question | Key |
+|---|---|
+| Mandated? | Not mandated, but strongly expected. Award condition 1 and ESRC policy point to the UK Data Service (ReShare or another responsible repository), the DMP names ReShare, and policy 5.1 prefers the UK Data Service. Condition 1 allows a reason for not depositing. |
+| Recommended single repository | UK Data Service ReShare. Reasons: funder, DMP and policy agree (decoy in §13). Recommendation is conditional: nothing is deposited until C-01 is resolved. If consent cannot be amended, documentation only, or controlled access, are the fall-backs (§11). |
+| DOI, cost, certification, access control | DOI: yes (verify). Cost: no charge (verify). Certification: CoreTrustSeal (verify). Access controls: ReShare offers safeguarded and controlled access routes (verify which apply). End-user licence is the DMP's choice. |
+| Alternatives | See §11. |
+
+### 14.3 Fall-back README skeleton and data dictionary (activity 3)
+
+README skeleton: Title (SYCAWS wave 1). Creators: PI Dr J. Whitlock, Co-I Dr P. Ramasamy, RA S. Oduya (named in the documents). Funder and grant: ESRC ES/X999999/1. Collected 3 Feb to 25 Apr 2025 online. Files: raw (312 rows) and cleaned (191 rows, not the same dataset, C-08), questionnaire, documents, duplicates excluded (§9). Missing codes. Known gaps: no codebook (C-13), scale unknown (C-14). Access: under review (14.4). Not for deposit as they stand: both CSVs.
+
+Three things only a human supplies: §7. Sensitive-data assumption in the plan ("none"): does not hold (14.1).
+
+| Variable | Type | Unit | Missing value code | Definition | Source |
+|---|---|---|---|---|---|
+| `RespID` | string | none | none | Respondent ID | Inferred |
+| `IPAddress`, `LocationLatitude`, `LocationLongitude` | string, float | none, degrees | none | Survey tool paradata (raw only) | Inferred. Direct identifiers. |
+| `StartDate` | datetime | three formats | none | Response start | Inferred |
+| `Duration_sec` | int | seconds | none | Completion time (raw only) | Inferred. Speeder threshold of 90 s is in the notes and the DMP. |
+| `Q1` | int | years | `99` (conflicts with real age) | Age | Wording inferred. `99` supplied by the notes. |
+| `Q2`, `Q3`, `Q6`, `Q9`, `Q12` | int | code | `99`, `-1` for `Q6` | Gender, ethnic group, sector, condition, contact | Question wording supplied. Codes unknown (C-13). `99` supplied by the notes only. |
+| `Q4` | string | postcode district | blank | Postcode district | Inferred. Some full postcodes. |
+| `Q5`, `Q10`, `Q11` | string | free text | blank | Occupation, condition, comment | Inferred. Identifying content. |
+| `Q7` | int | minutes per week | `888` | Moderate activity | Wording supplied. `888` unknown until supplied. |
+| `Q8` | float | hours per night | blank | Sleep | Wording supplied |
+| `WB_total` | int | score | blank | Sum of seven items, each 1 to 5, higher better | Supplied by the notes. Scale name unknown, do not invent (C-14). |
+| `Q12_email` | string | none | blank | Contact email | Inferred. Direct identifier. |
+
+### 14.4 Deposit-stage key (activity 4)
+
+| Item | Key |
+|---|---|
+| Licence | None can be set while consent blocks sharing. If approved, the DMP says the ReShare standard end-user licence, which is a registered-user licence, not CC BY. Whether open licensing is allowed is for the steward and ethics. |
+| Access setting | Not open. Safeguarded or controlled access, or documentation only (§11). Emails, IPs, coordinates, free text and health text removed or withheld (C-03 to C-07), by the steward's decision. |
+| Embargo | None required. Depositing before publication does not change the consent blocker (C-01). |
+| Must stop for a person | Whether sharing is permitted at all (C-01, C-02, ethics committee), disclosure risk (C-05, steward), approval status (lapsed 31 Dec 2025), retention clash (C-16), which file is authoritative (C-08), award condition 1 reasoning. |
+| Identifiers | Grant ES/X999999/1: fictional, will not resolve. Ethics reference in the letter: synthetic. ORCID for the PI: none in the documents, the researcher supplies. ROR for Lindenford University: none, and the University is fictional, so no true ROR. `sycaws@example.org` is a contact email, not an identifier. Dataset and paper DOIs: none yet, link the paper after publication. |
