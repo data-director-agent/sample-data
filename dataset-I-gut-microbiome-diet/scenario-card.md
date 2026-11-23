@@ -33,11 +33,11 @@ Volunteers are identified by study codes `GG001` to `GG060`, and the arms are `W
 
 - **Researcher:** a principal investigator running a 12-week dietary trial in which 60 healthy volunteers ate wholegrain barley or refined grain foods and gave stool samples, food diaries and health questionnaires. The project postdoc has just left. The folder holds the sample manifest, the first batch of sequencing summaries with a small subset of reads, short-chain fatty acid results, questionnaires, diaries, consent forms and notes.
 - **Funder:** BBSRC (UK Research and Innovation), responsive mode research grant.
-- **Journal (fictional):** *Journal of Nutritional Microbiome Science*. Policy: *"Sequence data must be deposited in a recognised public archive, and accession numbers given in the Data Availability statement. Data from human participants may be deposited under controlled access."*
+- **Journal:** *Microbiome* (BMC). Policy, paraphrased: sequence data must be deposited in a public repository with accession numbers in the Availability of Data and Materials statement; restricted human-participant data should say how access can be obtained. Check the journal's current author guidelines.
 - **Institution:** Nidderdale University (fictional).
 - **Project stage:** the grant runs from February 2025 to January 2028. Recruitment is complete, the first of two sequencing batches is done and the first paper is planned for January.
 - **Planned collection:** 360 stool samples from 60 volunteers (shotgun metagenomic sequencing, about 2 TB), targeted metabolite measurements (about 5 GB), and food diaries and health questionnaires (about 200 MB).
 - **Where the data must go:** the journal requires a recognised public archive for sequence data and allows controlled access for human-participant data. The award letter asks for community-recognised public repositories where they exist. The University's policy asks for a repository that issues a persistent identifier, an INSDC archive (or a controlled-access archive such as the European Genome-phenome Archive) for sequences, and offers its own Figshare-based repository with open, embargoed and restricted access.
 - **Plan:** the principal investigator wants the data shared before the first paper is submitted in January.
 
-The researchers, volunteers, journal and institution are fictional. The funder, archives and place names are real.
+The researchers, volunteers and institution are fictional. The funder, journal, archives and place names are real.

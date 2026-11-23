@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Replaced the fictional target journals in the scenario cards with real ones (A *Journal of Applied Ecology*, B *Optical Materials Express*, C *Journal of Epidemiology and Community Health*, D *Journal of Fluid Mechanics*, E *BMC Health Services Research*, F *Oral History*, G *Journal of Composites for Construction*, H *Applied and Environmental Microbiology*, I *Microbiome*). Policies are paraphrased, not quoted, and marked for checking against current author guidelines. Crib sheets updated where they relied on the invented policies (notably D, where the 50 GB subset rule is gone). No inherited folders changed.
 - Renamed each dataset `README.md` to `scenario-card.md` ("Scenario card") and moved the friendly introduction to the first paragraph. Updated CI, `AGENTS.md` and the root README. No inherited folders changed.
 - Added scenario facts (project stage, planned collection, where the data must go, plan to deposit before the paper is published) to the Context section of every dataset scenario card, and a "Facilitator key: data journey" section to every crib sheet (governance record, repository decision, fall-back README and data dictionary, deposit-stage key), so each dataset supports the four workshop activities. Dataset E gains a fictional journal and its policy. No inherited folders changed, so `SHA256SUMS` are unaffected.
 

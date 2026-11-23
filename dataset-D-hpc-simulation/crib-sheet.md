@@ -126,7 +126,7 @@ An agent should stop on credentials (D-07) without being asked to. Licence choic
 |---|---|---|---|---|
 | D-DMP-01 | "All software developed by DCs will be released under the MIT licence" | `solver/lbm2d.py` adapted from GPL-3.0 code | D-09 | Flags. The DMP licence may not be possible for the solver. Hands over to RSE or Library. Does not pick a licence. |
 | D-DMP-02 | "Only open-source or consortium-generated inputs … No third-party restricted data" | `vendor/cylinder_mesh_v2.msh`: commercial, not for redistribution | D-10 | **Stop** for that file. Excludes it. |
-| D-DMP-03 | DC7 about 200 GB, "all simulation output … deposited in full on Zenodo" | 2.1 TB on scratch (`du_report.txt`). The journal asks for a representative subset. | D-11 | Flags the size mismatch. Notes that full deposit on Zenodo is unrealistic (per-record limits: check Zenodo's current figure, do not quote one from memory). Suggests a subset plus description. |
+| D-DMP-03 | DC7 about 200 GB, "all simulation output … deposited in full on Zenodo" | 2.1 TB on scratch (`du_report.txt`). The journal (Journal of Fluid Mechanics) does not require full deposit of very large output, so a subset plus description is defensible. | D-11 | Flags the size mismatch. Notes that full deposit on Zenodo is unrealistic (per-record limits: check Zenodo's current figure, do not quote one from memory). Suggests a subset plus description. |
 | D-DMP-04 | "Scratch outputs are synchronised weekly to backed-up project storage" | `notes.txt`: "fields not copied back, too big, still on parscratch" | D-11 | Flags as urgent: the plan was not followed and scratch will be cleaned. A human decides what to keep. |
 | D-DMP-05 | Containerised workflows with pinned environments. Every result "reproduced from the deposited code". | Solver is a stub that cannot run. `requirements.txt` unpinned. No container. | D-05, D-06 | Does **not** claim reproducibility. Says the DMP promise is unmet. |
 | D-DMP-06 | "No personal or sensitive data are generated" | `config.ini` credentials. Email in 14 `job.sh` files and the username in paths. | D-07, D-08 | **Stop** on credentials (remove and rotate). Notes that the DMP's ethics/security sections did not foresee this. |
@@ -160,15 +160,15 @@ Used with the four-activity workshop. IDs refer to §5, §11 and §12 above. Unv
 | Sensitive information expected | None expected (DMP §6: no personal or sensitive data). Folder shows credentials in `config.ini` (D-07), a work email and username (D-08), and a commercial mesh under licence (D-10). |
 | How protected, who decides | Credentials: remove and rotate, then the supervisor and Research Computing Service confirm. Software licence: Software Board (consortium agreement §10.2) with the RSE team (policy §4.2). Mesh: not shareable without vendor consent (licence §3.1). |
 | Ethical, legal, institutional rules | Award letter conditions 2 to 5 (trusted repository, exceptions explained in DMP, deposit by 31 Dec 2026). Consortium agreement §9.2, §10, Attachment 1. Institutional policy §2 (scratch, leavers), §3.2 (keep inputs, code, reduced data), §4, §5.1. Mesh licence §3.1, §4.1, §5.1. Journal: code and data to reproduce figures deposited with a DOI. Subset allowed above 50 GB. |
-| Embargo | **No.** DMP §2.2: none expected. No document requires one. Journal wants a DOI at publication. The mesh is excluded, not embargoed. |
-| DMP matches? | **No.** Built-in clash: D-DMP-03 (all output in full on Zenodo, about 200 GB, versus 2.1 TB and a journal that accepts a subset). Also D-DMP-01, 02, 04, 05, 06. The DC7 annex is blank (D-PRE-05). |
+| Embargo | **No.** DMP §2.2: none expected. No document requires one. The journal strongly encourages a Data Availability statement and DOI-issuing repository. The mesh is excluded, not embargoed. |
+| DMP matches? | **No.** Built-in clash: D-DMP-03 (all output in full on Zenodo, about 200 GB, versus 2.1 TB and a journal that does not require full deposit). Also D-DMP-01, 02, 04, 05, 06. The DC7 annex is blank (D-PRE-05). |
 
 ### 13.2 Repository decision
 
 | Question | Key |
 |---|---|
-| Mandated? | A trusted repository is required (award condition 2). The DMP names Zenodo. The journal wants a DOI. The Institute names none. |
-| Recommended single repository | **Zenodo**, with the code deposited via a GitHub release. Reasons: DMP names it, DOI minted on deposit, no fee (budget is none), accepts code and tables, supports restricted access. Meets the journal's DOI rule and award condition 2. |
+| Mandated? | A trusted repository is required (award condition 2). The DMP names Zenodo. The journal encourages a DOI-issuing repository. The Institute names none. |
+| Recommended single repository | **Zenodo**, with the code deposited via a GitHub release. Reasons: DMP names it, DOI minted on deposit, no fee (budget is none), accepts code and tables, supports restricted access. Meets the journal's DOI expectation and award condition 2. |
 | Facts to check | Per-record size limit, CoreTrustSeal status, embargo options: verify on Zenodo. Do not quote from memory. |
 | Alternatives | Institutional repository (§10 acceptable alternatives). A description-only record for the 2.1 TB. |
 

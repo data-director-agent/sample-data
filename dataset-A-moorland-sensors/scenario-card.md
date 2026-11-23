@@ -28,11 +28,11 @@ Variable names in the CSV files are abbreviated (for example `ta` for air temper
 
 - **Researcher:** an environmental scientist with a year of microclimate sensor data (two CSV files, about 4 MB) for a paper.
 - **Funder:** NERC (UK Research and Innovation).
-- **Journal (fictional):** *Journal of Upland Ecology*. Policy: *"Data underpinning the results must be deposited in a publicly accessible repository that issues a DOI, and that DOI cited in the Data Availability statement. Data must be available at publication under CC BY 4.0 or CC0."*
+- **Journal:** *Journal of Applied Ecology* (British Ecological Society). Policy, paraphrased: data supporting the results must be archived in a public repository that issues a DOI, cited in the Data Availability statement, by publication. Check the journal's current author guidelines.
 - **Institution:** University of the Pennine Vale (fictional), with its own repository and policy.
 - **Stage:** the monitoring year is over and a paper is being written. The plan was to log air temperature, relative humidity, soil temperature, soil moisture and PM2.5 every 30 minutes for 12 months, as CSV, with calibration and site records alongside. The outline data management plan estimated about 5 MB.
 - **Where the data must go:** the NERC award letter says the data must be offered to the NERC Environmental Data Service and not deposited elsewhere in its place. The journal requires a repository that issues a DOI. The University policy says deposit with a funder's data centre satisfies it.
 - **Budget for deposit fees:** none.
 - **Plan:** the researcher wants to deposit the data before the paper is published, so that the DOI can be cited in the Data Availability statement.
 
-The researchers, journals and projects are fictional. The funders and repositories are real.
+The researchers and projects are fictional. The funders, journals and repositories are real.
